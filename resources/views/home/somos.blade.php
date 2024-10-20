@@ -42,7 +42,7 @@
             <!-- Card 4 -->
             <div class="card">
                 <span class="media">
-                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-globe-americas"></i>
                 </span>
                 <h3 class="cardTitle">VISIÓN SOSTENIBLE</h3>
                 <p class="cardDescription">

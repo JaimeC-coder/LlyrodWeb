@@ -63,18 +63,21 @@
 
     <section class="cardsSection">
         <span class="quehacemos">Nuestros desarrollos y soluciones</span>
-        <div class="carrusel-container">
+        <div class="carruselContainer2">
             <div class="carrusel">
                 @foreach ($cardsTecnologia as $index => $card)
                     <div class="carrusel-item {{ $loop->even ? 'cardPar' : 'card' }}">
-                        <div class="imageContainer" data-total-duration="{{ count($card['imagenes']) * 2 + $loop->iteration }}">
-                            @foreach ($card['imagenes'] as $img)
-                                <img class="cardImage" src="{{ asset($img['imagen']) }}" alt="{{ $card['tittle'] }}">
-                            @endforeach
-                        </div>
-                        <div class="cardcontexttext">
-                            <span class="cardTittle">{{ $card['tittle'] }}</span>
-                            <span class="cardTexto">{{ $card['texto'] }}</span>
+                        <div class="card-content">
+                            <div class="imageContainer" data-total-duration="{{ count($card['imagenes']) * 2 + $loop->iteration }}">
+                                @foreach ($card['imagenes'] as $img)
+                                    <img class="cardImage" src="{{ asset($img['imagen']) }}" alt="{{ $card['tittle'] }}">
+                                @endforeach
+                            </div>
+                            <div class="cardcontexttext">
+                                <span class="cardTittle">{{ $card['tittle'] }}</span>
+                                <span class="cardTexto">{{ $card['texto'] }}</span>
+                                <a href="#" class="readMore">Read More &gt;</a>
+                            </div>
                         </div>
                     </div>
                 @endforeach
