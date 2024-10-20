@@ -1,0 +1,58 @@
+.footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark);
+    padding: 40px 0;
+    color: var(--white);
+    flex-direction: column;
+    font-family: var(--ibm);
+    gap: 20px;
+  }
+
+  .contacto{
+    font-size: var(--32);
+    color: var(--amarillo);
+  }
+
+  .info{
+    font-size: var(--16);
+    font-weight: 100;
+  }
+  .contentMedia{
+    display: flex;
+    gap: 20px;
+  }
+  .media{
+    font-size: var(--32);
+    color: var(--white);
+  }
+  .icon{
+    font-size: var(--32);
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    padding: 8px;
+  }
+  .wpp{
+    width: 60px;
+    height: 60px;
+    background-color: aliceblue;
+      padding: 5px 10px 16px 11px;
+    font-size: 40px;
+    color: rgb(4, 113, 11);
+    z-index: 1000;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 640px) {
+    .footer{
+      padding: 40px 40px;
+      text-align: center;
+    }
+  }
