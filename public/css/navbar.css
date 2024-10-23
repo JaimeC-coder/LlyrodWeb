@@ -52,7 +52,7 @@
   .a {
     color: var(--white);
     font-size: var(--16);
-    font-family: var(--ibm);
+    font-family: "Raleway", sans-serif !important;
   }
 
   .menuToggle {

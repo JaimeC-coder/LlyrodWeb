@@ -7,7 +7,7 @@
     padding: 40px 0;
     color: var(--white);
     flex-direction: column;
-    font-family: var(--ibm);
+    font-family: "Raleway", sans-serif !important;
     gap: 20px;
   }
 

@@ -69,7 +69,7 @@
     </section>
 
     <section class="containerCardPrincipal1">
-        <div class="containerCarousel2">
+        <div class="containerCarousel2 cardsSection">
             <span class="quehacemos">Nuestros desarrollos y soluciones</span>
             <div class="carouselContainer2">
                 <div class="carrusel2">
@@ -142,20 +142,24 @@
 
 @section('scripts')
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const carousel = document.querySelector('.carouselInner1');
-            const images = carousel.querySelectorAll('img');
-            let currentIndex = 0;
+      document.addEventListener('DOMContentLoaded', function() {
+    const carousels = document.querySelectorAll('.carouselInner1');
 
-            function showNextImage() {
-                images[currentIndex].classList.remove('active');
-                currentIndex = (currentIndex + 1) % images.length;
-                images[currentIndex].classList.add('active');
-                carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-            }
+    carousels.forEach(carousel => {
+        const images = carousel.querySelectorAll('img');
+        let currentIndex = 0;
 
-            setInterval(showNextImage, 3000);
-        });
+        function showNextImage() {
+            images[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].classList.add('active');
+            carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        setInterval(showNextImage, 3000);
+    });
+});
+
 
         document.addEventListener('DOMContentLoaded', function() {
             const carousel = document.querySelector('.carrusel2');
