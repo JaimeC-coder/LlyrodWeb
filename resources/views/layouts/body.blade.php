@@ -26,7 +26,7 @@
 
 <body>
     @include('layouts.nav')
-    <div style="padding-top: 80px;">
+    <div >
         @yield('content')
     </div>
     @include('layouts.footer')

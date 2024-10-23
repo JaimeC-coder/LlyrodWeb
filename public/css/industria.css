@@ -287,6 +287,19 @@ p {
         display: none;
     }
 
+    .containerCardCarrucel1 ,.containerCardCarrucel1par{
+        flex-direction: column;
+    }
+    .cardContainer1 , .carouselConteiner1 {
+        width: 100%;
+    }
+
+    .cardContainer1{
+        margin-bottom: 0px;
+    width: 100%;
+    }
+
+
     .cardsContainer {
         width: 100%;
         display: flex;
