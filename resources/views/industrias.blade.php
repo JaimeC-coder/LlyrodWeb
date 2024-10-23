@@ -29,17 +29,24 @@
         <span class="quehacemos">Nuestros desarrollos y soluciones</span>
         <div class="cardsContainer">
             @foreach ($cardsMineria as $card)
+                <div class="{{ $loop->even ? 'containerCardCarrucel1par' : 'containerCardCarrucel1' }}">
 
-                <div class="{{ $loop->even ? 'cardPar' : 'card' }}">
-                  <div class="imageContainer" data-total-duration="{{ count($card['imagenes']) * 2 + $loop->iteration }}
-                        @foreach ($card['imagenes'] as $img)
-                            <img class="cardImage" src="{{ asset($img['imagen']) }}" alt="Card Title 1">
-                        @endforeach
+                    <div class="cardContainer1">
+                        <h2>{{ $card['tittle'] }}</h2>
+                        <p>
+                            {{ $card['texto'] }}
+                        </p>
                     </div>
-                    <div class="cardcontexttext">
-                        <span class="cardTittle">{{ $card['tittle'] }}</span>
-                        <span class="cardTexto">{{ $card['texto'] }}</span>
+                    <div class="carouselConteiner1">
+                        <div class="carouselInner1">
+                            @foreach ($card['imagenes'] as $img)
+                                <img src="{{ asset($img['imagen']) }}" alt="Card Title 1">
+                            @endforeach
+
+                        </div>
+                        <div class="caption">Pie de página para la imagen</div>
                     </div>
+
                 </div>
             @endforeach
         </div>
@@ -61,36 +68,28 @@
         </div>
     </section>
 
-    <section class="cardsSection">
-        <span class="quehacemos">Nuestros desarrollos y soluciones</span>
-        <div class="carruselContainer2">
-            <div class="carrusel">
-                @foreach ($cardsTecnologia as $index => $card)
-                    <div class="carrusel-item {{ $loop->even ? 'cardPar' : 'card' }}">
-                        <div class="card-content">
-                            <div class="imageContainer" data-total-duration="{{ count($card['imagenes']) * 2 + $loop->iteration }}">
-                                @foreach ($card['imagenes'] as $img)
-                                    <img class="cardImage" src="{{ asset($img['imagen']) }}" alt="{{ $card['tittle'] }}">
-                                @endforeach
-                            </div>
-                            <div class="cardcontexttext">
-                                <span class="cardTittle">{{ $card['tittle'] }}</span>
-                                <span class="cardTexto">{{ $card['texto'] }}</span>
+    <section class="containerCardPrincipal1">
+        <div class="containerCarousel2">
+            <span class="quehacemos">Nuestros desarrollos y soluciones</span>
+            <div class="carouselContainer2">
+                <div class="carrusel2">
+                    @foreach ($cardsTecnologia as $index)
+                        <div class="carouselItem2">
+                            <img src="{{ asset($index['imagenes']['imagen']) }}">
+                            <div class="carouselContent">
+                                <h3>{{ $index['tittle'] }}</h3>
+                                <p>{{ $index['texto'] }}</p>
                                 <a href="#" class="readMore">Read More &gt;</a>
                             </div>
                         </div>
-                    </div>
-                @endforeach
-            </div>
-            <button class="carrusel-control prev" aria-label="Anterior">&lt;</button>
-            <button class="carrusel-control next" aria-label="Siguiente">&gt;</button>
-            <div class="carrusel-indicators">
-                @foreach ($cardsTecnologia as $index => $card)
-                    <button class="carrusel-indicator" data-index="{{ $index }}" aria-label="Ir a la tarjeta {{ $index + 1 }}"></button>
-                @endforeach
+                    @endforeach
+                </div>
+                <div class="carouselButton">
+                    <button class="carousel-button prev" aria-label="Previous slide">&#10094;</button>
+                    <button class="carousel-button next" aria-label="Next slide">&#10095;</button>
+                </div>
             </div>
         </div>
-
     </section>
 
     <!-- Tecnología Section -->
@@ -113,78 +112,88 @@
         <span class="quehacemos">Nuestros desarrollos y soluciones</span>
         <div class="cardsContainer">
             @foreach ($cardsBi as $card)
+                <div class="{{ $loop->even ? 'containerCardCarrucel1par' : 'containerCardCarrucel1' }}">
 
-                <div class="{{ $loop->even ? 'cardPar' : 'card' }}">
-                    <div class="imageContainer"  style="--totalDuration: {{ count($card['imagenes']) * 2 }}s;">
-                        @foreach ($card['imagenes'] as $img)
-                            <img class="cardImage" src="{{ asset($img['imagen']) }}" alt="Card Title 1">
-                        @endforeach
+                    <div class="cardContainer1">
+                        <h2>{{ $card['tittle'] }}</h2>
+                        <p>
+                            {{ $card['texto'] }}
+                        </p>
                     </div>
-                    <div class="cardcontexttext">
-                        <span class="cardTittle">{{ $card['tittle'] }}</span>
-                        <span class="cardTexto">{{ $card['texto'] }}</span>
+                    <div class="carouselConteiner1">
+                        <div class="carouselInner1">
+                            @foreach ($card['imagenes'] as $img)
+                                <img src="{{ asset($img['imagen']) }}" alt="Card Title 1">
+                            @endforeach
+
+                        </div>
+                        <div class="caption">Pie de página para la imagen</div>
                     </div>
+
                 </div>
             @endforeach
         </div>
     </section>
+
+
+
 @endsection
 
 
 @section('scripts')
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-    const carrusel = document.querySelector('.carrusel');
-    const items = carrusel.querySelectorAll('.carrusel-item');
-    const prevBtn = document.querySelector('.carrusel-control.prev');
-    const nextBtn = document.querySelector('.carrusel-control.next');
-    const indicators = document.querySelectorAll('.carrusel-indicator');
-    let currentIndex = 0;
+            const carousel = document.querySelector('.carouselInner1');
+            const images = carousel.querySelectorAll('img');
+            let currentIndex = 0;
 
-    function updateCarrusel() {
-        carrusel.style.transform = `translateX(-${currentIndex * 100}%)`;
-        indicators.forEach((indicator, index) => {
-            indicator.classList.toggle('active', index === currentIndex);
+            function showNextImage() {
+                images[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % images.length;
+                images[currentIndex].classList.add('active');
+                carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
+
+            setInterval(showNextImage, 3000);
         });
-    }
 
-    function goToSlide(index) {
-        currentIndex = index;
-        updateCarrusel();
-    }
+        document.addEventListener('DOMContentLoaded', function() {
+            const carousel = document.querySelector('.carrusel2');
+            const items = document.querySelectorAll('.carouselItem2');
+            const prevButton = document.querySelector('.carousel-button.prev');
+            const nextButton = document.querySelector('.carousel-button.next');
+            //quiero que captures el tamaño de la pantalla
+            const screenWidth = window.innerWidth;
+            let currentIndex = 2;
+            const totalItems = items.length;
 
-    prevBtn.addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + items.length) % items.length;
-        updateCarrusel();
-    });
+            function updateCarousel() {
+                if (screenWidth < 800) {
+                    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+                } else {
+                    carousel.style.transform = `translateX(-${currentIndex * 50}%)`;
+                }
+            }
 
-    nextBtn.addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % items.length;
-        updateCarrusel();
-    });
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % totalItems;
+                updateCarousel();
+            }
 
-    indicators.forEach((indicator, index) => {
-        indicator.addEventListener('click', () => goToSlide(index));
-    });
+            function prevSlide() {
+                currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+                updateCarousel();
+            }
 
-    // Implementar rotación automática de imágenes dentro de cada tarjeta
-    items.forEach(item => {
-        const imageContainer = item.querySelector('.imageContainer');
-        const images = imageContainer.querySelectorAll('.cardImage');
-        let imageIndex = 0;
-        const totalDuration = parseFloat(imageContainer.dataset.totalDuration);
+            nextButton.addEventListener('click', nextSlide);
+            prevButton.addEventListener('click', prevSlide);
 
-        function rotateImages() {
-            images[imageIndex].style.opacity = '0';
-            imageIndex = (imageIndex + 1) % images.length;
-            images[imageIndex].style.opacity = '1';
-        }
+            // Clone first item and append to the end for infinite effect
+            const firstItemClone = items[0].cloneNode(true);
+            carousel.appendChild(firstItemClone);
 
-        setInterval(rotateImages, (totalDuration * 1000) / images.length);
-    });
-
-    // Inicializar el carrusel
-    updateCarrusel();
-});
+            // Auto-advance carousel
+            setInterval(nextSlide, 5000);
+        });
     </script>
 @endsection

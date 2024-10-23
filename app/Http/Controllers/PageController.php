@@ -20,17 +20,17 @@ class PageController extends Controller
                 "link" => "#",
             ],
             [
-                "id" => "tecnologia",
+                "id" => "due_diligence",
                 "imagen" => "assets/img/home/inteligencia_home.png",
                 "icon" => "<BsGraphUpArrow size={24} />",
                 "tittle" => "Due Diligence",
                 "link" => "#",
             ],
             [
-                "id" => "due_diligence",
+                "id" => "tecnologia",
                 "imagen" => "assets/img/home/incubadora_home.png",
                 "icon" => "<BsSun size={24} />",
-                "tittle" => "Incubadora de desarrollo",
+                "tittle" => "Digital information",
                 "link" => "#",
             ]
         ];
@@ -170,146 +170,42 @@ class PageController extends Controller
         $cardsTecnologia = [
             [
                 "imagenes" => [
-                    [
-                        "imagen" => "assets/industrial/tranformacionDigital/transformacion1.jpg",
-                        "alt" => "transformacion1"
-                    ],
-                    [
-                        "imagen" => "assets/industrial/tranformacionDigital/transformacion27.jpg",
-                        "alt" => "transformacion2"
-                    ],
-                    [
-                        "imagen" => "assets/industrial/tranformacionDigital/transformacion3.jpg",
-                        "alt" => "transformacion3"
-                    ],
-                    [
-                        "imagen" => "assets/industrial/tranformacionDigital/transformacion4.jpg",
-                        "alt" => "transformacion4"
-                    ]
+                    "imagen" => "assets/industrial/tranformacionDigital/transformacion1.jpg",
+                    "alt" => "transformacion1"
                 ],
                 "tittle" => "Programas Intensivos de Aprendizaje",
                 "texto" =>
                 "Experiencia de aprendizaje inmersiva y de alto impacto, que proporciona las habilidades y conceptos esenciales en un corto período e impulsa el desarrollo personal y profesional.",
             ],
             [
-                "imagenes" =>[
-                [
+                "imagenes" => [
                     "imagen" => "assets/industrial/tranformacionDigital/transformacion1.jpg",
                     "alt" => "transformacion1"
                 ],
-                [
-                    "imagen" => "assets/industrial/tranformacionDigital/transformacion27.jpg",
-                    "alt" => "transformacion2"
-                ],
-                [
-                    "imagen" => "assets/industrial/tranformacionDigital/transformacion3.jpg",
-                    "alt" => "transformacion3"
-                ],
-                [
-                    "imagen" => "assets/industrial/tranformacionDigital/transformacion4.jpg",
-                    "alt" => "transformacion4"
-                ],
-            ],
                 "tittle" => "Entrenamiento para Data Engineers jr.",
                 "texto" =>
                 "Desarrollamos diagnósticos de potenciales productivas y articulación comercial en zonas de influencia minera, derivando en el análisis de la viabilidad de cadenas.",
             ],
             [
-                "imagenes" => [  [
+                "imagenes" => [
                     "imagen" => "assets/industrial/tranformacionDigital/transformacion1.jpg",
                     "alt" => "transformacion1"
                 ],
-                [
-                    "imagen" => "assets/industrial/tranformacionDigital/transformacion27.jpg",
-                    "alt" => "transformacion2"
-                ],
-                [
-                    "imagen" => "assets/industrial/tranformacionDigital/transformacion3.jpg",
-                    "alt" => "transformacion3"
-                ],
-                [
-                    "imagen" => "assets/industrial/tranformacionDigital/transformacion4.jpg",
-                    "alt" => "transformacion4"
-                ]],
                 "tittle" => "Outsourcing especializado",
                 "texto" =>
                 "Confía en Grupo Llyrod para obtener soluciones de outsourcing especializado. Nuestro enfoque se centra en brindarte servicios personalizados que optimizan tus operaciones y te permiten concentrarte en lo que realmente importa.",
             ],
+
         ];
 
-        $cardsBi = [
-            [
-                "imagenes" =>  [ [
-                    "imagen" => "assets/industrial/inteligenciaNegocios/inteligenciaNegocios1.png",
-                    "alt" => "Inteligencia de Negocios 1"
-                ],
-                [
-                    "imagen" => "assets/industrial/inteligenciaNegocios/inteligenciaNegocios2.png",
-                    "alt" => "Inteligencia de Negocios 2"
-                ],
-                [
-                    "imagen" => "assets/industrial/inteligenciaNegocios/inteligenciaNegocios2.png",
-                    "alt" => "Inteligencia de Negocios 3"
-                ],
-                [
-                    "imagen" => "assets/industrial/inteligenciaNegocios/inteligenciaNegocios1.png",
-                    "alt" => "Inteligencia de Negocios 4"
-                ]],
-                "tittle" => "Análisis Predictivo",
-                "texto" =>
-                "Descubriendo oportunidades ocultas y anticipando cambios en la industria a través de análisis avanzados que ayudarán a tomar desiciones.",
-            ],
-            [
-                "imagenes" =>  [ [
-                    "imagen" => "assets/industrial/inteligenciaNegocios/inteligenciaNegocios1.png",
-                    "alt" => "Inteligencia de Negocios 1"
-                ],
-                [
-                    "imagen" => "assets/industrial/inteligenciaNegocios/inteligenciaNegocios2.png",
-                    "alt" => "Inteligencia de Negocios 2"
-                ],
-                [
-                    "imagen" => "assets/industrial/inteligenciaNegocios/inteligenciaNegocios2.png",
-                    "alt" => "Inteligencia de Negocios 3"
-                ],
-                [
-                    "imagen" => "assets/industrial/inteligenciaNegocios/inteligenciaNegocios1.png",
-                    "alt" => "Inteligencia de Negocios 4"
-                ]],
-                "tittle" => "Desarrollo de Soluciones",
-                "texto" =>
-                "Desarrollando soluciones informadas a medida para abordar los desafíos únicos de nuestros clientes y fomentar su éxito.",
-            ],
-            [
-                "imagenes" => [  [
-                    "imagen" => "assets/industrial/inteligenciaNegocios/inteligenciaNegocios1.png",
-                    "alt" => "Inteligencia de Negocios 1"
-                ],
-                [
-                    "imagen" => "assets/industrial/inteligenciaNegocios/inteligenciaNegocios2.png",
-                    "alt" => "Inteligencia de Negocios 2"
-                ],
-                [
-                    "imagen" => "assets/industrial/inteligenciaNegocios/inteligenciaNegocios2.png",
-                    "alt" => "Inteligencia de Negocios 3"
-                ],
-                [
-                    "imagen" => "assets/industrial/inteligenciaNegocios/inteligenciaNegocios1.png",
-                    "alt" => "Inteligencia de Negocios 4"
-                ]],
-                "tittle" => "Cloud Computing",
-                "texto" =>
-                "Utilizando tecnologías de vanguardia para impulsar la evolución de los negocios hacia un futuro más prometedor.",
-            ],
-        ];
+
 
         return view('industrias', compact('cardsMineria', 'cardsTecnologia', 'cardsBi', 'pageTitle'));
-
     }
     public function contact()
     {
         $pageTitle = "Llyrod | Contacto";
 
-        return view('contact' , compact('pageTitle'));
+        return view('contact', compact('pageTitle'));
     }
 }
