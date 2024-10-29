@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="{{ asset('css/home.css') }}">
 <link rel="stylesheet" href="{{ asset('css/somos.css') }}">
 <link rel="stylesheet" href="{{ asset('css/youtube.css') }}">
+<link rel="stylesheet" href="{{ asset('css/clients.css') }}">
 @endsection
 
 @section('content')
@@ -17,7 +18,7 @@
 
         <div class="textandGraph">
             <div class="texto">
-                <span class="textoSecundario">Transformamos Desafíos en Oportunidades:</span>
+                <span class="textoSecundario">Transformamos Desafíos en Oportunidades</span>
                 <span class="textoPrincipal">
                     En <strong>Grupo Llyrod</strong>, creemos en el poder de la innovación y el talento joven para impulsar el cambio y el crecimiento sostenible.
                     Somos una consultora especializada que combina experiencia técnica y tecnología de vanguardia para ofrecer soluciones que trascienden lo convencional.
@@ -52,9 +53,10 @@
 
 <section class="infoSection" id="somos">
     @include('home.somos')
-    <br>
-    <br>
-    <br>
+
+    @include('home.clients')
+
+
     @include('home.youtube')
 </section>
 

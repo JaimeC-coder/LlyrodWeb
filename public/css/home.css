@@ -44,7 +44,7 @@
  }
 
  .textoSecundario{
-    font-size: var(--tituloSecundario);
+    font-size: var(--tituloPrincipal);
     font-weight: 300;
     font-family: "Raleway", sans-serif !important;
   color: var(--white);
@@ -54,7 +54,7 @@
  .textoPrincipal{
     padding-top: 10px;
     width: 60%;
-    font-size: var(--textTerciario);
+    font-size: var(--textSecundario);
     font-weight: 300;
     font-family: "Raleway", sans-serif !important;
     color: var(--white);
@@ -166,14 +166,11 @@
  /*---------------------------------------------------------- info -------------------------------------------------*/
 
  .infoSection{
-    padding: 0px 20px;
-    display: flex;
-     flex-direction: column;
      width: 100%;
-     justify-content: center;
-     align-items: center;
-    background-color: var(--white);
-    padding: 40px 60px 80px 60px;
+     display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
  }
 
  .infoContainer{

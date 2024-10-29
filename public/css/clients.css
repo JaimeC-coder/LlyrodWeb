@@ -1,22 +1,21 @@
-.containerSomos {
+.containerClient {
     width: 100%;
-    background-color: #FFFFFF;
-    padding: 5% 8% 10% 7%;
+    background-color: #F9F9F9;
+    padding: 5% 8%;
     .content {
-        margin-top: 5%;
+        margin-top: 8%;
         .title {
             font-size: var(--tituloPrincipal);
             font-weight: bold;
             text-align: center;
-            color: #2d3748;
+            color: rgb(0, 0, 0);
             margin-bottom: 1rem;
         }
-
         .description {
             font-size: var(--textSecundario);
             text-align: justify;
             line-height: 1.5;
-            color: #4a5568;
+            color: rgb(0, 0, 0);
             margin-left: auto;
             margin-right: auto;
             margin-top: 5rem;
@@ -28,62 +27,38 @@
             grid-template-columns: repeat(1, 1fr);
             gap: 2rem;
             .card {
-                height: auto;
-                 background-color: #F9F9F9;
-                padding: 2.5rem;
+                height: 150px;
+                background-color: white;
                 border-radius: 0.5rem;
-                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-                    0 4px 6px -2px rgba(0, 0, 0, 0.05);
                 display: flex;
-                flex-direction: column;
-                align-items: center;
+                flex-direction: row;
                 text-align: center;
+                justify-content: space-evenly;
+                
+                align-items: center;
                 .media {
                     width: 3rem;
                     height: 3rem;
-                    color: #4a5568;
-                    margin-top: 2rem;
-                    margin-bottom: 2rem;
+                    color: rgb(1, 1, 1);
+                    margin-bottom: 1rem;
                     .icon {
                         font-size: var(--tituloPrincipal);
-                        color: #4a5568;
+                        color: white;
                         margin-bottom: 1rem;
                     }
                 }
 
                 .cardTitle {
                     height: 40px;
-
+                    margin-top: 30px;
                     font-size: var(--textTerciario);
                     font-weight: 600;
                     color: #2d3748;
-                }
-
-                .cardDescription {
-                    height: 100px;
-                    font-size: var(--textTerciario);
-                    text-align: justify;
-                    color: #4a5568;
-                }
-                &:hover {
-                    background-color: #1d2771;
-                    color: white !important;
-                    cursor: pointer;
-                    transition: background-color 0.3s;
-                    & .media {
-                        color: white;
-                    }
-                    & .cardTitle {
-                        color: white;
-                    }
-                    & .cardDescription {
-                        color: white;
-                    }
+                    margin-bottom: 0.5rem;
                 }
             }
         }
-
-          @media (min-width: 768px) {
+        @media (min-width: 768px) {
             .cardGrid {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -96,6 +71,5 @@
         }
     }
 }
-
 
 
