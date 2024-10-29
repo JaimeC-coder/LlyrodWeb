@@ -9,13 +9,13 @@
   }
 
   .icon{
-    font-size: 35px;
+    font-size: var(--tituloPrincipal);
     color: #4a5568;
     margin-bottom: 1rem;
   }
 
   .title {
-    font-size: 5.5rem;
+    font-size: var(--tituloPrincipal);
     font-weight: bold;
     text-align: center;
     color: #2d3748;
@@ -23,7 +23,7 @@
   }
 
   .description {
-    font-size: 2.25rem;
+    font-size: var(--textSecundario);
     text-align: justify;
     color: #4a5568;
     margin-left: auto;
@@ -61,9 +61,8 @@
   .cardTitle {
     height: 40px;
     margin-top: 30px;
-    font-size: 1.125rem;
+    font-size: var(--textTerciario);
     font-weight: 600;
-    font-size: 20px;
     color: #2d3748;
     margin-bottom: 0.5rem;
   }
@@ -71,14 +70,14 @@
   .cardDescription {
     height: 100px;
     margin-top: 30px;
-    font-size: 18px;
+    font-size: var(--textTerciario);
     text-align: start;
     color: #4a5568;
     margin-bottom: 1rem;
 
   }
 
-  .button {
+  /* .button {
     margin-top: 50px;
     background-color: #ed8936;
     color: white;
@@ -93,7 +92,7 @@
 
   .button:hover {
     background-color: #dd6b20;
-  }
+  } */
 
   @media (min-width: 768px) {
     .cardGrid {

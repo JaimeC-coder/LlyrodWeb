@@ -12,12 +12,12 @@
   }
 
   .contacto{
-    font-size: var(--32);
+    font-size: var(--textPrincipal);
     color: var(--amarillo);
   }
 
   .info{
-    font-size: var(--16);
+    font-size: var(--textSecundario);
     font-weight: 100;
   }
   .contentMedia{
@@ -25,16 +25,32 @@
     gap: 20px;
   }
   .media{
-    font-size: var(--32);
+    font-size: var(--tituloPrincipal);
     color: var(--white);
   }
-  .icon{
-    font-size: var(--32);
-    color: var(--white);
-    border: 1px solid var(--white);
-    border-radius: 50%;
-    padding: 8px;
+
+/* instagram */
+  .ig:hover{
+    color: #df0b0b; ;
   }
+
+/* facebook */
+    .fb:hover{
+        color: #3b5998;
+    }
+
+/* youtube */
+    .yt:hover{
+        color: #ff0000;
+    }
+
+/* linkedint */
+    .lk:hover{
+        color: #0e76a8;
+    }
+
+
+
   .wpp{
     width: 60px;
     height: 60px;

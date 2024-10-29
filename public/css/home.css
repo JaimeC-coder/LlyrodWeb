@@ -44,31 +44,31 @@
  }
 
  .textoSecundario{
-    font-size: var(--36);
+    font-size: var(--tituloPrincipal);
     font-weight: 300;
     font-family: "Raleway", sans-serif !important;
-    color: var(--white);
+  color: var(--white);
+
  }
 
  .textoPrincipal{
     padding-top: 10px;
-    width: 60%;
-
-    font-size: 24px;
+    width: 65%;
+    font-size: var(--textPrincipal);
     font-weight: 300;
     font-family: "Raleway", sans-serif !important;
     color: var(--white);
  }
 
  .textoPrincipalmovil{
-
     display: none;
  }
+
  .buttonVer{
     border: 1px solid var(--white);
     background-color: var(--white);
     color: var(--dark);
-    font-size: var(--16);
+    font-size: var(--textTerciario);
     font-family: var(--inter);
     padding: 8px 36px;
     margin: 24px 0px;
@@ -128,7 +128,7 @@
  .cardTittle{
     text-align: left;
     font-family: "Raleway", sans-serif !important;
-    font-size: var(--20);
+    font-size: var(--textSecundario);
     font-weight: 500;
     color: var(--white);
     display: flex;
@@ -143,7 +143,7 @@
     cursor: pointer;
     color: var(--white);
     font-family: "Raleway", sans-serif !important;
-    font-size: var(--16);
+    font-size: var(--textTerciario);
     font-weight: 600;
  }
 
@@ -194,14 +194,6 @@
     height: auto;
  }
 
- .infoHome{
-    font-family: "Raleway", sans-serif !important;
-    font-weight:400;
-    color: var(--dark);
-    font-size: var(--20);
-    text-align: center;
-    width: 60%;
- }
 
 
  @media (max-width: 800px){
@@ -223,22 +215,19 @@
     }
 
     .textoPrincipal{
-       font-size: 20px;
-       text-align: left;
-       font-weight: 500;
        display: none;
     }
     .textoPrincipalmovil{
-       font-size: 18px;
+         display: block;
+       font-size: var(--textPrincipalMedia);
        padding-top: 25px;
        text-align: left;
        font-weight: 500;
-
-
        width: 100%;
        font-weight: 300;
        font-family: "Raleway", sans-serif !important;
        color: var(--white);
+
     }
 
     .cardsSection{

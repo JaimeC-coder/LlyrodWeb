@@ -56,9 +56,9 @@
     <section class="photoSection" id="due_diligence">
         <div class="degradadoPortafolioTop1"></div>
         <img class="photo"src="{{ asset('assets/industrial/inteligenciaNegocios/titulo.jpg') }}" alt="Due Diligence">
-        <div class="photoContainerPar">
+        <div class="photoContainer">
             <div class="subtittleContainer">
-                <h2 class="tittlePrincipalIndustriasPar">Due diligence</h2>
+                <h2 class="tittlePrincipalIndustrias">Due Diligence</h2>
                 <div class="textIndustrias">
                     <h2 class="textPrincipalIndustrias">
                         En medio de una industria que está experimentando un cambio fundamental...

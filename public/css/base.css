@@ -21,6 +21,20 @@
     --poppins: 'Poppins', sans-serif;
     --ibm: 'IBM Plex Sans', sans-serif;
     --roboto: 'Roboto', sans-serif;
+    /* titulos */
+    --tituloPrincipal: 35px;
+    --tituloSecundario: 30px;
+    /* textos */
+    --textPrincipal:25px;
+    --textSecundario:20px;
+    --textTerciario:15px;
+    --textCuarto:10px;
+    /* -----------textos media query ----------------*/
+    --textPrincipalMedia:20px;
+    --textSecundarioMedia:15px;
+    --textTerciarioMedia:12px;
+    --textCuartoMedia:10px;
+
   }
 
   * {
