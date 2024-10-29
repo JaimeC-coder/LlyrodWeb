@@ -22,7 +22,7 @@
  .textandGraph{
     width: 100%;
     position: absolute;
-    top: 55%;
+    top: 45%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,7 +44,7 @@
  }
 
  .textoSecundario{
-    font-size: var(--tituloPrincipal);
+    font-size: var(--tituloSecundario);
     font-weight: 300;
     font-family: "Raleway", sans-serif !important;
   color: var(--white);
@@ -53,8 +53,8 @@
 
  .textoPrincipal{
     padding-top: 10px;
-    width: 65%;
-    font-size: var(--textPrincipal);
+    width: 60%;
+    font-size: var(--textTerciario);
     font-weight: 300;
     font-family: "Raleway", sans-serif !important;
     color: var(--white);
