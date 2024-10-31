@@ -15,10 +15,8 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-                <h2>Programa de formación para Data Engenieers Jr. Sessión 01</h2>
-                <p>En este episodio de #LíderesEnAcción | Episodio #01, Rojas, Partner en UMAAN entrevista a Giancarlo
-                    Sanguinetti, CEO Latin América de UNILABS quien nos cuenta su visión sobre el liderazgo en la era de
-                    la incertidumbre.</p>
+                <h2>Programa de formación para Data Eng. Jr. Sesión 01</h2>
+                <p>Aprenderás los fundamentos de la Ingeniería de Datos, conocerás la sintaxis básica de Scala y su integración con Apache Spark, además de explorar las principales herramientas de almacenamiento y procesamiento de Big Data usadas en la industria.</p>
             </div>
 
             <div class="video-item">
@@ -29,9 +27,8 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-                <h2>Programa de formación para Data Engenieers Jr. Sessión 02</h2>
-                <p>Ari Sabbagh — Partner de UMAAN — nos cuenta sobre 3 casos de aplicación de inteligencia artificial en
-                    procesos de planeamiento estratégico y cómo esto generó impacto en esas organizaciones.</p>
+                <h2>Programa de formación para Data Eng. Jr. Sesión 02</h2>
+                <p>En esta sesión se cubren tecnologías esenciales para el procesamiento de Big Data, desde herramientas ETL y streaming como DataFlow y Pub/Sub, hasta plataformas cloud como AWS y Google Cloud, incluyendo visualización con Power BI y conceptos de machine learning para construir arquitecturas de datos robustas.</p>
             </div>
 
             <div class="video-item">
@@ -42,9 +39,8 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-                <h2>Programa de formación para Data Engenieers Jr. Sessión 03</h2>
-                <p>Escucha a Juan Manuel Jordan VP Personas y Sustentabilidad Komatsu, Andrés Leongo Sanchez Chief
-                    Development Officer WSP Chile y Facundo Porolli, Gerente Comercial en Agrosuper.</p>
+                <h2>Programa de formación para Data Eng. Jr. Sesión 03</h2>
+                <p>En esta sesión se profundiza en los servicios de Google Cloud Platform esenciales para ingenieros de datos, explorando herramientas como DataFlow, BigQuery y Bigtable, junto con la orquestación de datos mediante Cloud Functions y Composer, enfatizando la gestión de datos tanto en tiempo real como en batch.</p>
             </div>
         </div>
     </div>

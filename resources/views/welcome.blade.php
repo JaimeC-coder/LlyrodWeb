@@ -64,3 +64,25 @@
 
 @endsection
 
+@section('scripts')
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cardGrid = document.querySelector('.cardGrid');
+            console.log(cardGrid);
+            let scrollAmount = 0;
+            const scrollStep = 2; // Cantidad de píxeles por desplazamiento
+            const maxScrollLeft = cardGrid.scrollWidth - cardGrid.clientWidth;
+
+            function autoScroll() {
+                scrollAmount += scrollStep;
+                if (scrollAmount >= maxScrollLeft) {
+                    scrollAmount = 0; // Reinicia el desplazamiento al inicio
+                }
+                cardGrid.scrollLeft = scrollAmount;
+            }
+
+            // Ajusta la velocidad del desplazamiento (ms)
+            setInterval(autoScroll, 20);
+        });
+    </script>
+@endsection

@@ -29,7 +29,7 @@
         <span class="quehacemos">Nuestros desarrollos y soluciones</span>
         <div class="cardsContainer">
             @foreach ($cardsMineria as $card)
-                <div class="{{ $loop->even ? 'containerCardCarrucel1par' : 'containerCardCarrucel1' }}">
+                <div class="{{ $loop->even ? 'containerCardCarrucel1par' : 'containerCardCarrucel1' }}" >
 
                     <div class="cardContainer1">
                         <h2>{{ $card['tittle'] }}</h2>
@@ -38,13 +38,13 @@
                         </p>
                     </div>
                     <div class="carouselConteiner1">
-                        <div class="carouselInner1">
+                        <div class="carouselInner1" >
                             @foreach ($card['imagenes'] as $img)
                                 <img src="{{ asset($img['imagen']) }}" alt="Card Title 1">
                             @endforeach
 
                         </div>
-                        <div class="caption">Pie de página para la imagen</div>
+
                     </div>
 
                 </div>
@@ -127,7 +127,7 @@
                             @endforeach
 
                         </div>
-                        <div class="caption">Pie de página para la imagen</div>
+
                     </div>
 
                 </div>
@@ -156,7 +156,14 @@
             carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
         }
 
-        setInterval(showNextImage, 3000);
+        // Generamos un retraso aleatorio entre 0 y 2000 ms
+        const delay = Math.floor(Math.random() * 2000);
+
+        // Usamos setTimeout para iniciar el carrusel después del retraso
+        setTimeout(() => {
+            setInterval(showNextImage, 3000);
+        }, delay);
+    
     });
 });
 

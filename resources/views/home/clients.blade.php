@@ -2,44 +2,55 @@
     <div class="content">
         <h2 class="title">Nuestros Clientes</h2>
         <p class="description">
-            Somos una consultora que transforma organizaciones y revoluciona industrias con innovación y tecnología. Nos especializamos en generar impacto positivo en el sector minero e industrial, enfocándonos en la gestión social, mejora continua y la transformación digital. Alineamos nuestros proyectos con los Objetivos de Desarrollo Sostenible (ODS) y los principios ESG, mejorando el bienestar comunitario y la eficiencia operativa mediante tecnologías avanzadas.
+            En
+            <strong>
+                Grupo Llyrod
+            </strong>
+            , cada colaboración con nuestros clientes es una oportunidad para crecer juntos. Nos enorgullece ser parte
+            de sus logros, brindándoles soluciones innovadoras y un compromiso constante con su éxito. Descubre cómo la
+            satisfacción de nuestros clientes es el reflejo de nuestra pasión por la excelencia. ¡Unidos, hacemos
+            posible lo extraordinario!
         </p>
 
         <div class="cardGrid">
-            <!-- Card 1 -->
-            <div class="card">
-                <span class="media">
-                    <i class="bi bi-people"></i>
-                </span>
-                <h3 class="cardTitle">ENFOQUE HUMANO</h3>
+            {{-- @foreach ($cliens as $client)
+                <div class="card">
+                    <div class="media">
+                        <img src="{{ $client['imagen'] }}" alt="{{ $client['nombre'] }}" />
+                    </div>
+                    <h3 class="cardTitle">{{ $client['nombre'] }}</h3>
+                </div>
+            @endforeach --}}
 
+
+            <div class="cardGrid">
+                @foreach ($cliens as $client)
+                    <div class="card">
+                        <div class="media">
+                            <img src="{{ $client['imagen'] }}" alt="{{ $client['nombre'] }}" />
+                        </div>
+                        <div class="mediaMobil">
+                            <img src="{{ $client['imagenResponsive'] }}" alt="{{ $client['nombre'] }}" />
+                        </div>
+                        <h3 class="cardTitle">{{ $client['nombre'] }}</h3>
+                    </div>
+                @endforeach
+                @foreach ($cliens as $client) <!-- Duplicado para efecto de carrusel continuo -->
+                    <div class="card">
+                        <div class="media">
+                            <img src="{{ $client['imagen'] }}" alt="{{ $client['nombre'] }}" />
+                        </div>
+                        <div class="mediaMobil">
+                            <img src="{{ $client['imagenResponsive'] }}" alt="{{ $client['nombre'] }}" />
+                        </div>
+                        <h3 class="cardTitle">{{ $client['nombre'] }}</h3>
+                    </div>
+                @endforeach
             </div>
 
-            <!-- Card 2 -->
-            <div class="card">
-                <span class="media">
-                    <i class="bi bi-lightbulb"></i>
-                </span>
-                <h3 class="cardTitle">EXPERIENCIA Y PASIÓN</h3>
-
-            </div>
-
-            <!-- Card 3 -->
-            <div class="card">
-                <span class="media">
-                    <i class="bi bi-shield-check"></i>
-                </span>
-                <h3 class="cardTitle">COMPROMISO CON LA EXCELENCIA</h3>
-
-            </div>
-
-            <!-- Card 4 -->
-            <div class="card">
-                <span class="media">
-                    <i class="bi bi-globe-americas"></i>
-                </span>
-                <h3 class="cardTitle">VISIÓN SOSTENIBLE</h3>
-            </div>
         </div>
+
     </div>
 </div>
+
+

@@ -34,7 +34,56 @@ class PageController extends Controller
                 "link" => "#",
             ]
         ];
-        return view('welcome', compact('cards', 'pageTitle'));
+
+
+        $cliens = [
+            [
+                'nombre' => 'NTT data',
+                'imagen' => 'assets/img/clients/NTT_DATA.png',
+                'imagenResponsive' => 'assets/img/clients/NTT_DATA_logo.png'
+            ],
+            [
+                'nombre' => 'Minsur',
+                'imagen' => 'assets/img/clients/MINSUR.png',
+                'imagenResponsive' => 'assets/img/clients/MINSUR_logo.png'
+            ],
+            [
+                'nombre' => 'Minera Raura',
+                'imagen' => 'assets/img/clients/MINERIA_RAURA_logo.png',
+                'imagenResponsive' => 'assets/img/clients/MINERIA_RAURA.png'
+            ],
+            [
+                'nombre' => 'Insuco – Yanacocha',
+                'imagen' => 'assets/img/clients/minsur.png',
+                'imagenResponsive' => 'assets/img/clients/minsur.png'
+            ],
+            [
+                'nombre' => 'Mar Co. Ltd. - Yamae Group Holding Japan – Japan',
+                'imagen' => 'assets/img/clients/Mar_Co._Ltd.png',
+                'imagenResponsive' => 'assets/img/clients/Mar_Co._Ltd.png'
+            ],
+            [
+                'nombre' => 'Reybanpac – Ecuador',
+                'imagen' => 'assets/img/clients/REYBANPAC.png',
+                'imagenResponsive' => 'assets/img/clients/REYBANPAC.png'
+            ],
+            [
+                'nombre' => 'Favorita',
+                'imagen' => 'assets/img/clients/FAVORITA.png',
+                'imagenResponsive' => 'assets/img/clients/FAVORITA.png'
+            ],
+            [
+                'nombre' => 'Pesquera Reymar – Chile',
+                'imagen' => 'assets/img/clients/PESQUEDA_REYMAR.png',
+                'imagenResponsive' => 'assets/img/clients/PESQUEDA_REYMAR.png'
+            ],
+
+        ];
+
+
+
+
+        return view('welcome', compact('cards', 'pageTitle','cliens'));
     }
     public function industria()
     {
