@@ -28,7 +28,7 @@
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <h2>Programa de formación para Data Eng. Jr. Sesión 02</h2>
-                <p>En esta sesión se cubren tecnologías esenciales para el procesamiento de Big Data, desde herramientas ETL y streaming como DataFlow y Pub/Sub, hasta plataformas cloud como AWS y Google Cloud, incluyendo visualización con Power BI y conceptos de machine learning para construir arquitecturas de datos robustas.</p>
+                <p>Esta sesión aborda herramientas clave para Big Data, incluyendo ETL y streaming con DataFlow y Pub/Sub, servicios cloud de AWS y Google Cloud, visualización en Power BI y fundamentos de machine learning para crear arquitecturas de datos efectivas.</p>
             </div>
 
             <div class="video-item">
@@ -40,7 +40,7 @@
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <h2>Programa de formación para Data Eng. Jr. Sesión 03</h2>
-                <p>En esta sesión se profundiza en los servicios de Google Cloud Platform esenciales para ingenieros de datos, explorando herramientas como DataFlow, BigQuery y Bigtable, junto con la orquestación de datos mediante Cloud Functions y Composer, enfatizando la gestión de datos tanto en tiempo real como en batch.</p>
+                <p>Esta sesión explora los servicios fundamentales de Google Cloud Platform para ingeniería de datos, cubriendo DataFlow, BigQuery y Bigtable, además de la orquestación con Cloud Functions y Composer para manejar datos en tiempo real y batch.</p>
             </div>
         </div>
     </div>

@@ -1,13 +1,13 @@
 .containerSomos {
-    width: 100%;
+    width: 85%;
     background-color: #FFFFFF;
     padding: 5% 8% 10% 7%;
     .content {
         margin-top: 5%;
         .title {
-            font-size: var(--tituloPrincipal);
+            font-size: var(--titulo);
             font-weight: bold;
-            text-align: center;
+            text-align: left;
             color: #2d3748;
             margin-bottom: 1rem;
         }
@@ -46,7 +46,7 @@
                     margin-bottom: 2rem;
                     .icon {
                         font-size: var(--tituloPrincipal);
-                        
+
                         margin-bottom: 1rem;
                     }
                 }

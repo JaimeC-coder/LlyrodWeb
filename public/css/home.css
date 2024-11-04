@@ -1,271 +1,130 @@
-.imageSection{
+.imageSection {
     display: flex;
-     flex-direction: column;
-     width: 100%;
-     justify-content: center;
-     align-items: center;
- }
-
- .imageContainer{
-    position: relative;
+    flex-direction: column;
     width: 100%;
- }
-
- .degradadoPortafolioTop {
-    position: relative;
-    height: 600px;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, rgba(8, 17, 1, 0.863) 100%);
-    z-index: 0;
-    margin-bottom: -600px;
- }
-
- .textandGraph{
-    width: 100%;
-    position: absolute;
-    top: 45%;
-    display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 0px 80px;
- }
+    .imageContainer {
+        width: 100%;
+        flex-shrink: 0;
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+        height: 100vh;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        text-decoration: none;
+        .imagen {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .degradadoPortafolioTop {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(200deg, rgb(4, 2, 33,0)10%, rgb(0, 0, 0,0.85)100%);
+            z-index: 1;
+        }
+        .textandGraph {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 80px;
+            z-index: 2;
 
- .imagen{
-    max-width: 100%;
+            .texto {
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                text-align: start;
+                .textoSecundario {
+                    font-size: var(--titulo);
+                    font-weight: 300;
+                    font-family: "Raleway", sans-serif !important;
+                    color: var(--white);
+                }
+
+                .textoPrincipal {
+                    padding-top: 10px;
+                    padding-left: 10px;
+                    width: 70%;
+                    text-align: justify;
+                    font-size: var(--textSecundario);
+                    font-weight: 300;
+                    font-family: "Raleway", sans-serif !important;
+                    color: var(--white);
+                    border-left: var(--BotonEnlaces) 2px solid;
+                }
+
+                .textoPrincipalmovil {
+                    display: none;
+                }
+                .buttonVer {
+                    border: 1px solid var(--white);
+                    background-color: var(--white);
+                    color: var(--dark);
+                    font-size: var(--textTerciario);
+                    font-family: var(--inter);
+                    padding: 8px 36px;
+                    margin: 24px 0px;
+                    border-radius: 30px;
+                    text-align: center;
+                    width: 160px;
+                    font-weight: bold;
+                }
+                .buttonVer:hover {
+                    border-radius: 15px;
+                    transition: 0.5s;
+                }
+            }
+        }
+        @media (max-width: 800px) {
+            .textandGraph {
+                top: 40%;
+                display: flex;
+                flex-direction: column;
+                padding: 0px 40px;
+                .texto {
+                    justify-content: center;
+                    align-items: center;
+                    .textoSecundario {
+                        font-size: 25px;
+                        text-align: left;
+                    }
+
+                    .textoPrincipal {
+                        display: none;
+                    }
+                    .textoPrincipalmovil {
+                        display: block;
+                        font-size: var(--textPrincipalMedia);
+                        padding-top: 25px;
+                        text-align: left;
+                        font-weight: 500;
+                        width: 100%;
+                        font-weight: 300;
+                        font-family: "Raleway", sans-serif !important;
+                        color: var(--white);
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.infoSection {
     width: 100%;
-    height: 600px;
-    object-fit: cover;
-    display:block;
- }
-
- .texto{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
- }
-
- .textoSecundario{
-    font-size: var(--tituloPrincipal);
-    font-weight: 300;
-    font-family: "Raleway", sans-serif !important;
-  color: var(--white);
-
- }
-
- .textoPrincipal{
-    padding-top: 10px;
-    width: 60%;
-    font-size: var(--textSecundario);
-    font-weight: 300;
-    font-family: "Raleway", sans-serif !important;
-    color: var(--white);
- }
-
- .textoPrincipalmovil{
-    display: none;
- }
-
- .buttonVer{
-    border: 1px solid var(--white);
-    background-color: var(--white);
-    color: var(--dark);
-    font-size: var(--textTerciario);
-    font-family: var(--inter);
-    padding: 8px 36px;
-    margin: 24px 0px;
-    border-radius: 8px;
-    width: 140px;
- }
-
- .graficohome{
-    height: 400px;
-    width: auto;
- }
-
- /*---------------------------------------------------------- cards -------------------------------------------------*/
-
- .cardsSection{
-    display: flex;
-     flex-direction: column;
-     width: 100%;
-     justify-content: center;
-     align-items: center;
-    background-color:#081101;
-    padding: 40px 60px;
- }
-
- .cardsContainer{
-     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
- }
-
- .linkCard{
-    width: 32%;
- }
-
- .imageContainerCards:hover{
-    transform: scale(1.05);
-    transition: transform 0.5s;
- }
-
- .textoCard{
-    position: absolute;
-    bottom: 32px;
-    left: 32px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
- }
-
- .cardIcon{
-    text-align: center;
-    color: var(--white);
-    display: flex;
- }
-
- .cardTittle{
-    text-align: left;
-    font-family: "Raleway", sans-serif !important;
-    font-size: var(--textSecundario);
-    font-weight: 500;
-    color: var(--white);
-    display: flex;
-    width: 100%;
- }
-
- .buttonAccordion{
-    text-align: left;
-    border: none;
-    background: none;
-    outline: none;
-    cursor: pointer;
-    color: var(--white);
-    font-family: "Raleway", sans-serif !important;
-    font-size: var(--textTerciario);
-    font-weight: 600;
- }
-
- .degradadoPortafolioTopCards {
-    position: relative;
-    height: 520px;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0) 1%, rgba(3, 3, 33, 0.80) 100%);
-    z-index: 0;
-    border-radius: 10px;
-    margin-bottom: -520px;
- }
-
- .imagenCard{
-    max-width: 100%;
-    width: 100%;
-    height: 520px;
-    object-fit: cover;
-    display:block;
-    border-radius: 10px;
- }
-
- /*---------------------------------------------------------- info -------------------------------------------------*/
-
- .infoSection{
-     width: 100%;
-     display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
- }
-
- .infoContainer{
-    max-width: 120rem;
-     width: 100%;
- }
-
- .cardInfo{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
- }
+}
 
- .infoLogo{
-    width: 200px;
-    height: auto;
- }
-
-
-
- @media (max-width: 800px){
-    .textandGraph{
-       top: 40%;
-       display: flex;
-       flex-direction: column;
-       padding: 0px 40px;
+@media (max-width: 800px) {
+    .infoSection {
+        padding: 40px;
     }
-
-    .texto{
-       justify-content: center;
-       align-items: center;
-    }
-
-    .textoSecundario{
-       font-size: 25px;
-       text-align: left;
-    }
-
-    .textoPrincipal{
-       display: none;
-    }
-    .textoPrincipalmovil{
-         display: block;
-       font-size: var(--textPrincipalMedia);
-       padding-top: 25px;
-       text-align: left;
-       font-weight: 500;
-       width: 100%;
-       font-weight: 300;
-       font-family: "Raleway", sans-serif !important;
-       color: var(--white);
-
-    }
-
-    .cardsSection{
-       display: flex;
-       flex-direction: row;
-    }
-    .cardsContainer{
-       display: flex;
-       flex-direction: column;
-       gap: 20px;
-    }
-
-    .linkCard{
-       width: 100%;
-    }
-
-
-    .graficohome{
-       width: 280px;
-       height: auto;
-    }
-
-    /* .cardsSection{
-       padding: 20px 20px;
-    } */
-
-    .degradadoPortafolioTopCards {
-       height: 360px;
-       margin-bottom: -360px;
-    }
-
-    .imagenCard{
-       height: 360px;
-    }
-
-    /*---------------------------------------------------------- info -------------------------------------------------*/
-
-    .infoSection{
-       padding: 40px;
-    }
-
- }
+}

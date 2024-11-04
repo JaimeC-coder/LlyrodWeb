@@ -7,133 +7,180 @@
 @endsection
 
 @section('content')
-    <section class="photoSection" id="mineria">
-        <div class="degradadoPortafolioTop1"></div>
-        <div class="photoContainer">
-            <div class="subtittleContainer">
-                <h2 class="tittlePrincipalIndustrias">Minería & Gestión Social</h2>
-                <div class="textIndustrias">
-                    <h2 class="textPrincipalIndustrias">
-                        Desarrollamos estudios especializados y proyectos destinados a atender la zona de influencia directa
-                        e indirecta de mina. Nuestros estandares secundan las politicas corporativas de alto nivel.
-                        Orientamos el desarrollo de nuestros proyectos e intervenciones bajo un enfoque ESG: Enviromental,
-                        Social and Governance.
-                    </h2>
-                </div>
-            </div>
-        </div>
-        <img class="photo" src="{{ asset('assets/industrial/mineria/titulo.png') }}" alt="Minería">
-    </section>
-
-    <section class="cardsSection">
-        <span class="quehacemos">Nuestros desarrollos y soluciones</span>
-        <div class="cardsContainer">
-            @foreach ($cardsMineria as $card)
-                <div class="{{ $loop->even ? 'containerCardCarrucel1par' : 'containerCardCarrucel1' }}" >
-
-                    <div class="cardContainer1">
-                        <h2>{{ $card['tittle'] }}</h2>
-                        <p>
-                            {{ $card['texto'] }}
+    <div class="photosContainer">
+        <section class="photoSection" id="mineria">
+            <div class="photoContainer">
+                <img class="photo" src="{{ asset('assets/industrial/mineria/titulo.png') }}" alt="Minería">
+                <div class="degradadoPortafolioTop1"></div>
+                <div class="textContent">
+                    <div class="text">
+                        <h2 class="titlePrincipal">Minería & Gestión Social</h2>
+                        <p class="textPrincipalIndustrias">
+                            Desarrollamos estudios especializados y proyectos destinados a atender la zona de influencia
+                            directa
+                            e indirecta de mina. Nuestros estandares secundan las politicas corporativas de alto nivel.
+                            Orientamos el desarrollo de nuestros proyectos e intervenciones bajo un enfoque ESG:
+                            Enviromental,
+                            Social and Governance.
                         </p>
                     </div>
-                    <div class="carouselConteiner1">
-                        <div class="carouselInner1" >
-                            @foreach ($card['imagenes'] as $img)
-                                <img src="{{ asset($img['imagen']) }}" alt="Card Title 1">
-                            @endforeach
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="informationContainer">
+        <section class="cardsSection">
+            <span class="quehacemos">Nuestros desarrollos y soluciones</span>
+            <div class="cardsContainer">
+                @foreach ($cardsMineria as $card)
+                    <div class="{{ $loop->even ? 'containerCardCarrucel1par' : 'containerCardCarrucel1' }}">
+
+                        <div class="cardContainer1">
+                            <h2>{{ $card['tittle'] }}</h2>
+                            <p>
+                                {{ $card['texto'] }}
+                            </p>
+                        </div>
+                        <div class="carouselConteiner1">
+                            <div class="carouselInner1">
+                                @foreach ($card['imagenes'] as $img)
+                                    <img src="{{ asset($img['imagen']) }}" alt="Card Title 1">
+                                @endforeach
+
+                            </div>
 
                         </div>
 
                     </div>
+                @endforeach
+            </div>
+        </section>
+    </div>
 
-                </div>
-            @endforeach
-        </div>
-    </section>
 
     <!-- Due Diligence Section -->
-    <section class="photoSection" id="due_diligence">
-        <div class="degradadoPortafolioTop1"></div>
-        <img class="photo"src="{{ asset('assets/industrial/inteligenciaNegocios/titulo.jpg') }}" alt="Due Diligence">
-        <div class="photoContainer">
-            <div class="subtittleContainer">
-                <h2 class="tittlePrincipalIndustrias">Due Diligence</h2>
-                <div class="textIndustrias">
-                    <h2 class="textPrincipalIndustrias">
-                        En medio de una industria que está experimentando un cambio fundamental...
-                    </h2>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="containerCardPrincipal1">
-        <div class="containerCarousel2 cardsSection">
-            <span class="quehacemos">Nuestros desarrollos y soluciones</span>
-            <div class="carouselContainer2">
-                <div class="carrusel2">
-                    @foreach ($cardsTecnologia as $index)
-                        <div class="carouselItem2">
-                            <img src="{{ asset($index['imagenes']['imagen']) }}">
-                            <div class="carouselContent">
-                                <h3>{{ $index['tittle'] }}</h3>
-                                <p>{{ $index['texto'] }}</p>
-                                <a href="#" class="readMore">Read More &gt;</a>
-                            </div>
+    <div class="photosContainer">
+        <div class="photosContainer">
+            <section class="photoSection" id="due_diligence">
+                <div class="photoContainer">
+                    <img class="photo"src="{{ asset('assets/industrial/inteligenciaNegocios/titulo.jpg') }}"
+                        alt="Due Diligence">
+                    <div class="degradadoPortafolioTop1"></div>
+                    <div class="textContent">
+                        <div class="text">
+                            <h2 class="titlePrincipal">Due Diligence</h2>
+                            <p class="textPrincipalIndustrias">
+                                Desarrollamos estudios especializados y proyectos destinados a atender la zona de influencia
+                                directa
+                                e indirecta de mina. Nuestros estandares secundan las politicas corporativas de alto nivel.
+                                Orientamos el desarrollo de nuestros proyectos e intervenciones bajo un enfoque ESG:
+                                Enviromental,
+                                Social and Governance.
+                            </p>
                         </div>
-                    @endforeach
+                    </div>
                 </div>
-                <div class="carouselButton">
-                    <button class="carousel-button prev" aria-label="Previous slide">&#10094;</button>
-                    <button class="carousel-button next" aria-label="Next slide">&#10095;</button>
+            </section>
+        </div>
+    </div>
+
+
+
+    <div class="informationContainer">
+        <section class="containerCardPrincipal1">
+            <div class="containerCarousel2 cardsSection">
+                <span class="quehacemos">Nuestros desarrollos y soluciones</span>
+                <div class="carouselContainer2">
+                    <div class="carrusel2">
+                        @foreach ($cardsTecnologia as $index)
+                            <div class="carouselItem2">
+                                <img src="{{ asset($index['imagenes']['imagen']) }}">
+                                <div class="carouselContent">
+                                    <h3>{{ $index['tittle'] }}</h3>
+                                    <p>{{ $index['texto'] }}</p>
+                                    <a href="#" class="readMore">Read More &gt;</a>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                    <div class="carouselButton">
+                        <button class="carousel-button prev" aria-label="Previous slide">&#10094;</button>
+                        <button class="carousel-button next" aria-label="Next slide">&#10095;</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
-    <!-- Tecnología Section -->
-    <section class="photoSection" id="tecnologia">
-        <div class="degradadoPortafolioTop1"></div>
-        <img class="photo" src="{{ asset('assets/industrial/tranformacionDigital/titulo.jpg') }}" alt="Tecnología">
-        <div class="photoContainer">
-            <div class="subtittleContainer">
-                <h2 class="tittlePrincipalIndustrias">Transformación digital & IA</h2>
-                <div class="textIndustrias">
-                    <h2 class="textPrincipalIndustrias">
-                        Facilitamos la transición hacia la digitalización democratizando el uso de nuevas tecnologías...
-                    </h2>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="cardsSection">
-        <span class="quehacemos">Nuestros desarrollos y soluciones</span>
-        <div class="cardsContainer">
-            @foreach ($cardsBi as $card)
-                <div class="{{ $loop->even ? 'containerCardCarrucel1par' : 'containerCardCarrucel1' }}">
-
-                    <div class="cardContainer1">
-                        <h2>{{ $card['tittle'] }}</h2>
-                        <p>
-                            {{ $card['texto'] }}
+    <div class="photosContainer">
+        <section class="photoSection" id="due_diligence">
+            <div class="photoContainer">
+                <img class="photo" src="{{ asset('assets/industrial/tranformacionDigital/titulo.jpg') }}"
+                    alt="Tecnología">
+                <div class="degradadoPortafolioTop1"></div>
+                <div class="textContent">
+                    <div class="text">
+                        <h2 class="titlePrincipal">Transformación digital & IA</h2>
+                        <p class="textPrincipalIndustrias">
+                            Grupo Llyrod es un punto de encuentro para mentes inquisitivas y apasionadas. Aquí, nuestros
+                            equipos y colaboradores exploran ideas vanguardistas, desarrollan soluciones disruptivas y
+                            forjan alianzas estratégicas para el futuro. Fomentamos la experimentación y el aprendizaje
+                            constante, brindando un entorno que nutre la innovación y el crecimiento.
+                            Utilizamos sistemas de gestión de datos y análisis avanzados para recopilar información valiosa
+                            sobre el rendimiento de nuestras operaciones, lo que nos permite tomar decisiones más acertadas
+                            y basadas en datos en tiempo real.
                         </p>
                     </div>
-                    <div class="carouselConteiner1">
-                        <div class="carouselInner1">
-                            @foreach ($card['imagenes'] as $img)
-                                <img src="{{ asset($img['imagen']) }}" alt="Card Title 1">
-                            @endforeach
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="informationContainer">
+        <section class="cardsSection">
+            <span class="quehacemos">Nuestros desarrollos y soluciones</span>
+            <div class="cardsContainer">
+                @foreach ($cardsBi as $card)
+                    <div class="{{ $loop->even ? 'containerCardCarrucel1par' : 'containerCardCarrucel1' }}">
+
+                        <div class="cardContainer1">
+                            <h2>{{ $card['tittle'] }}</h2>
+                            <p>
+                                {{ $card['texto'] }}
+                            </p>
+                        </div>
+                        <div class="carouselConteiner1">
+                            <div class="carouselInner1">
+                                @foreach ($card['imagenes'] as $img)
+                                    <img src="{{ asset($img['imagen']) }}" alt="Card Title 1">
+                                @endforeach
+
+                            </div>
 
                         </div>
 
                     </div>
+                @endforeach
+            </div>
+        </section>
+    </div>
 
-                </div>
-            @endforeach
-        </div>
-    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Tecnología Section -->
+
+
 
 
 
@@ -142,30 +189,30 @@
 
 @section('scripts')
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-    const carousels = document.querySelectorAll('.carouselInner1');
+        document.addEventListener('DOMContentLoaded', function() {
+            const carousels = document.querySelectorAll('.carouselInner1');
 
-    carousels.forEach(carousel => {
-        const images = carousel.querySelectorAll('img');
-        let currentIndex = 0;
+            carousels.forEach(carousel => {
+                const images = carousel.querySelectorAll('img');
+                let currentIndex = 0;
 
-        function showNextImage() {
-            images[currentIndex].classList.remove('active');
-            currentIndex = (currentIndex + 1) % images.length;
-            images[currentIndex].classList.add('active');
-            carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-        }
+                function showNextImage() {
+                    images[currentIndex].classList.remove('active');
+                    currentIndex = (currentIndex + 1) % images.length;
+                    images[currentIndex].classList.add('active');
+                    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+                }
 
-        // Generamos un retraso aleatorio entre 0 y 2000 ms
-        const delay = Math.floor(Math.random() * 2000);
+                // Generamos un retraso aleatorio entre 0 y 2000 ms
+                const delay = Math.floor(Math.random() * 2000);
 
-        // Usamos setTimeout para iniciar el carrusel después del retraso
-        setTimeout(() => {
-            setInterval(showNextImage, 3000);
-        }, delay);
-    
-    });
-});
+                // Usamos setTimeout para iniciar el carrusel después del retraso
+                setTimeout(() => {
+                    setInterval(showNextImage, 3000);
+                }, delay);
+
+            });
+        });
 
 
         document.addEventListener('DOMContentLoaded', function() {

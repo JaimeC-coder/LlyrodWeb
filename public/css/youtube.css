@@ -2,11 +2,13 @@
     font-family: "Raleway", sans-serif !important;
     background-color: aliceblue;
     width: 100%;
+    height: 100vh;
     padding: 0 8%;
     .content {
-        margin-top: 8%;
+        width: 95%;
+        margin: 10% auto;
         h3 {
-            font-size: var(--tituloSecundario);
+            font-size: var(--titulo);
             font-family: "Raleway", sans-serif !important;
             text-transform: uppercase;
             text-align: center;
@@ -16,7 +18,7 @@
             }
         }
         .subtitle {
-            font-size: var(--textTerciario);
+            font-size: var(--subtitulo);
             font-family: "Raleway", sans-serif !important;
             text-align: center;
             color: #666;
