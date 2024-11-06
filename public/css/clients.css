@@ -1,25 +1,41 @@
 .sectionClients{
     width: 100%;
-    background-color: var(--dark);
-    height: 100vh;
+    background-color: #111D43;
+    height: auto;
     .containerClient {
         width: 85%;
-        padding: 5% 8%;
         overflow-x: hidden;
         margin: 0 auto;
         .content {
             width: 95%;
             margin: 5% auto;
             .title {
-                font-size: var(--titulo);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                /* font-size: var(--titulo);
                 font-weight: bold;
-                text-align: left;
-                color: var(--TitulosTextosPrincipales);
-                margin-bottom: 5rem;
+                text-align: center;
+
+                margin-bottom: 5rem; */
+                h2{
+                    display: inline-block;
+                    position: relative;
+                    font-size: var(--titulo);
+                    color: var(--TitulosTextosPrincipales);
+                    margin-bottom: 1rem;
+                }
+                span{
+                    display: inline-block;
+                    width: 15%;
+                    height: 5px;
+                    background-color: var(--BotonEnlaces);
+                }
+
             }
             .description {
                 font-size: var(--textSecundario);
-                text-align: justify;
+                text-align: center;
                 line-height: 1.5;
                 color: var(--CardSecundario);
                 margin-left: auto;
@@ -38,7 +54,6 @@
                 .card {
                     min-width: 300px;
                     height: 200px;
-                    background-color: var(--CardSecundario);
                     border-radius: 0.5rem;
                     display: flex;
                     flex-direction: column;

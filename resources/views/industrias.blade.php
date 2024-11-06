@@ -34,6 +34,7 @@
             <span class="quehacemos">Nuestros desarrollos y soluciones</span>
             <div class="cardsContainer">
                 @foreach ($cardsMineria as $card)
+                   <div class="{{ $loop->even ? 'contentpar':'content' }}">
                     <div class="{{ $loop->even ? 'containerCardCarrucel1par' : 'containerCardCarrucel1' }}">
 
                         <div class="cardContainer1">
@@ -53,6 +54,7 @@
                         </div>
 
                     </div>
+                   </div>
                 @endforeach
             </div>
         </section>
@@ -86,33 +88,27 @@
     </div>
 
 
+    <div class="informationparContainer">
 
-    <div class="informationContainer">
-        <section class="containerCardPrincipal1">
-            <div class="containerCarousel2 cardsSection">
+        <div class="cardContainer">
+            <div class="page-title">
                 <span class="quehacemos">Nuestros desarrollos y soluciones</span>
-                <div class="carouselContainer2">
-                    <div class="carrusel2">
-                        @foreach ($cardsTecnologia as $index)
-                            <div class="carouselItem2">
-                                <img src="{{ asset($index['imagenes']['imagen']) }}">
-                                <div class="carouselContent">
-                                    <h3>{{ $index['tittle'] }}</h3>
-                                    <p>{{ $index['texto'] }}</p>
-                                    <a href="#" class="readMore">Read More &gt;</a>
-                                </div>
-                            </div>
-                        @endforeach
-                    </div>
-                    <div class="carouselButton">
-                        <button class="carousel-button prev" aria-label="Previous slide">&#10094;</button>
-                        <button class="carousel-button next" aria-label="Next slide">&#10095;</button>
-                    </div>
-                </div>
             </div>
-        </section>
-    </div>
 
+            <div class="cardsContainer">
+                @foreach ($cardsTecnologia as $card)
+                    <div class="card">
+                        <img src="{{ asset($card['imagenes']['imagen']) }}" alt="Imagen Home" />
+                        <div class="overlay"></div>
+                        <p class="content">
+                            <span>{{ $card['tittle'] }}</span>
+                        <p>{{ $card['texto'] }}</p>
+                        </p>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
 
     <div class="photosContainer">
         <section class="photoSection" id="due_diligence">
@@ -138,49 +134,28 @@
         </section>
     </div>
 
-    <div class="informationContainer">
-        <section class="cardsSection">
-            <span class="quehacemos">Nuestros desarrollos y soluciones</span>
+
+    <div class="informationparContainer">
+
+        <div class="cardContainer">
+            <div class="page-title">
+                <span class="quehacemos">Nuestros desarrollos y soluciones</span>
+            </div>
+
             <div class="cardsContainer">
                 @foreach ($cardsBi as $card)
-                    <div class="{{ $loop->even ? 'containerCardCarrucel1par' : 'containerCardCarrucel1' }}">
-
-                        <div class="cardContainer1">
-                            <h2>{{ $card['tittle'] }}</h2>
-                            <p>
-                                {{ $card['texto'] }}
-                            </p>
-                        </div>
-                        <div class="carouselConteiner1">
-                            <div class="carouselInner1">
-                                @foreach ($card['imagenes'] as $img)
-                                    <img src="{{ asset($img['imagen']) }}" alt="Card Title 1">
-                                @endforeach
-
-                            </div>
-
-                        </div>
-
+                    <div class="card">
+                        <img src="{{ asset($card['imagenes']['imagen']) }}" alt="Imagen Home" />
+                        <div class="overlay"></div>
+                        <p class="content">
+                            <span>{{ $card['tittle'] }}</span>
+                        <p>{{ $card['texto'] }}</p>
+                        </p>
                     </div>
                 @endforeach
             </div>
-        </section>
+        </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Tecnología Section -->
-
-
 
 
 

@@ -1,6 +1,9 @@
 <footer class="footer">
     <span class="wpp">
-        <i class="bi bi-whatsapp"></i>
+        <a href="https://api.whatsapp.com/send/?phone=%2B51922856403&text=Hola,%20me%20gustar%C3%ADa%20trabajar%20junto%20a%20ustedes&type=phone_number&app_absent=0"
+            target="_blank">
+            <i class="bi bi-whatsapp"></i>
+        </a>
     </span>
     <span class="contacto">Contáctanos</span>
     <span class="info">¿Te interesó este contenido? Contáctanos para más información.</span>

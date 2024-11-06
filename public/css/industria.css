@@ -70,189 +70,199 @@
     }
 }
 
-.cardsSection {
-    display: flex;
-    flex-direction: column;
-    width: 85%;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 80px 60px;
-    margin: 0 auto;
-    .quehacemos {
-        font-size: var(--tituloSecundario);
-        font-family: "Raleway", sans-serif !important;
-        font-weight: 500;
-        text-align: left;
-        margin-bottom: 40px;
-        color: #ffbe00;
-    }
-    .cardsContainer {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        width: 100%;
-    }
-}
 
 /**---------------------------------------Carousel1 ------------------------------------------------------------- */
 
-.containerCardCarrucel1,
-.containerCardCarrucel1par {
-    display: flex;
+.informationContainer{
     width: 100%;
-    height: 500px;
-}
-.containerCardCarrucel1par {
-    flex-direction: row-reverse;
-}
+    height: 100%;
 
-.cardContainer1 {
-    background-color: white;
-    padding: 50px;
-    width: 55%;
-    display: flex;
-    gap: 10%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    h2 {
-        font-size: var(--textPrincipal);
-        margin-bottom: 10px;
+    .cardsSection{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 50px auto;
+
+        .quehacemos{
+            font-size: var(--tituloSecundario);
+            font-family: "Raleway", sans-serif !important;
+            font-weight: 500;
+            text-align: left;
+            margin-bottom: 40px;
+            margin-left: 5%;
+            color: #ffbe00;
+
+        }
+        .cardsContainer{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .content,.contentpar{
+                width: 100%;
+                background-color: rgb(255, 255, 255);
+                display: flex;
+                justify-content: center;
+                .containerCardCarrucel1 ,.containerCardCarrucel1par{
+                    display: flex;
+                    width: 85%;
+                    height: 500px;
+                    .cardContainer1{
+                        background-color: transparent;
+                        padding: 50px;
+                        width: 55%;
+                        display: flex;
+                        gap: 10%;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        h2 {
+                            font-size: var(--textPrincipal);
+                            margin-bottom: 10px;
+                        }
+
+                        p {
+                            font-size: var(--textSecundario);
+                            color: #666;
+                            text-align: justify;
+                            line-height: 25px;
+                        }
+                    }
+                    .carouselConteiner1{
+                        position: relative;
+                        overflow: hidden;
+                        width: 60%;
+                        .carouselInner1{
+                            display: flex;
+                            width: 100%;
+                            height: 100%;
+                            transition: transform 0.5s ease;
+                            img{
+                                height: 100%;
+                                margin: 5% auto;
+                                width: 100%;
+                                border-radius: 15px;
+                            }
+                        }
+                    }
+
+                }
+                .containerCardCarrucel1par{
+                    flex-direction: row-reverse;
+                }
+            }
+            .contentpar{
+                background-color: #111D43;
+                height: 610px;
+                padding: 25px;
+                .containerCardCarrucel1par{
+                    .cardContainer1{
+                        h2 {
+                            color: var(--CardSecundario);
+                        }
+
+                        p {
+                            color: var(--CardSecundario);
+                        }
+                    }
+                }
+            }
+        }
     }
+}
 
-    p {
-        font-size: var(--textSecundario);
-        color: #666;
-        text-align: justify;
-        line-height: 25px;
+/**---------------------------------------seccion ------------------------------------------------------------- */
+.informationparContainer {
+    width: 100%;
+    height: 100%;
+    .cardContainer {
+        width: 95%;
+        height: 100vh;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+        align-items: flex-start;
+        justify-content: space-evenly;
+
+        .page-title {
+            .quehacemos {
+                font-size: var(--tituloSecundario);
+                font-family: "Raleway", sans-serif !important;
+                font-weight: 500;
+                text-align: left;
+                margin-bottom: 40px;
+                color: #ffbe00;
+            }
+        }
+        .cardsContainer {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding-bottom: 20px;
+            .card {
+                position: relative;
+                width: 45%;
+                flex-shrink: 0;
+                aspect-ratio: 1 / 1;
+                overflow: hidden;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+                text-decoration: none;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .overlay {
+                    position: absolute;
+                    inset: 0;
+                    background: linear-gradient(
+                        to top,
+                        rgba(0, 0, 0, 0.8) 0%,
+                        rgba(0, 0, 0, 0.4) 50%,
+                        transparent 100%
+                    );
+                    z-index: 1;
+                }
+                .content {
+                    position: absolute;
+                    display: flex;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    padding: 24px;
+                    z-index: 2;
+                    flex-direction: column;
+                    span {
+                        margin: 0 0 8px 0;
+                        font-size: 24px;
+                        font-weight: bold;
+                        color: white;
+                        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+                    }
+                    a {
+                        display: inline-block;
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: white;
+                        padding: 4px 0;
+                    }
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .card:hover {
+                transform: scale(1.05);
+            }
+        }
     }
-}
-
-.carouselConteiner1 {
-    position: relative;
-    overflow: hidden;
-    width: 60%;
-}
-
-.carouselInner1 {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.5s ease;
-}
-
-.carouselInner1 img {
-    height: 100%;
-    margin: 5% auto;
-    width: 100%;
-    border-radius: 15px;
-}
-
-/* .caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-    text-align: center;
-} */
-
-/**---------------------------------------Carousel2 -------------------------------------------------------------- */
-
-.containerCardPrincipal1 {
-    /* max-width: 1200px;
-    margin: 0 auto; */
-    padding: 2rem;
-}
-
-.carouselContainer2 {
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.carrusel2 {
-    height: 550px;
-    display: flex;
-    flex-wrap: nowrap;
-    padding-left: 10%;
-    align-items: center;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carouselItem2 {
-    flex: 0 0 53%;
-    position: relative;
-    height: 290px;
-    padding: 30px 5rem;
-    box-sizing: border-box;
-}
-
-.carouselItem2 img {
-    width: 45%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 0.5rem;
-}
-
-.carouselContent {
-    position: absolute;
-    top: 15%;
-    right: 10rem;
-    width: 40%;
-    height: 60%;
-    background-color: white;
-    color: #1f2937;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.carouselContent h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.carouselContent p {
-    font-size: 0.875rem;
-    color: #4b5563;
-    margin-bottom: 1rem;
-}
-
-.carousel-button {
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255);
-    border: none;
-    width: 2.5rem;
-    height: 2.5rem;
-    font-size: 1.5rem;
-    color: #1f2937;
-    margin: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.carousel-button:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-}
-
-.carousel-button:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.5);
-}
-
-.carousel-button.prev {
-    left: 1rem;
-}
-
-.carousel-button.next {
-    right: 1rem;
 }
 
 @media (max-width: 800px) {

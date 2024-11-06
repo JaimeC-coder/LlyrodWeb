@@ -9,6 +9,7 @@
                 <li class="li"><a class="a" href="/">Inicio</a></li>
                 <li class="li"><a class="a" href="/#somos">Quienes somos</a></li>
                 <li class="li"><a class="a" href="/nuestro_trabajo">Nuestro trabajo</a></li>
+                <li class="li"><a class="a" href="/#canal">Nuestro Canal</a></li>
                 <li class="li"><a class="a" href="/trabaja_con_nosotros">Contáctanos</a></li>
             </ul>
         </nav>
