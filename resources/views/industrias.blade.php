@@ -31,7 +31,6 @@
 
     <div class="informationContainer">
         <section class="cardsSection">
-            <span class="quehacemos">Nuestros desarrollos y soluciones</span>
             <div class="cardsContainer">
                 @foreach ($cardsMineria as $card)
                    <div class="{{ $loop->even ? 'contentpar':'content' }}">
@@ -91,9 +90,7 @@
     <div class="informationparContainer">
 
         <div class="cardContainer">
-            <div class="page-title">
-                <span class="quehacemos">Nuestros desarrollos y soluciones</span>
-            </div>
+
 
             <div class="cardsContainer">
                 @foreach ($cardsTecnologia as $card)
@@ -138,10 +135,7 @@
     <div class="informationparContainer">
 
         <div class="cardContainer">
-            <div class="page-title">
-                <span class="quehacemos">Nuestros desarrollos y soluciones</span>
-            </div>
-
+           
             <div class="cardsContainer">
                 @foreach ($cardsBi as $card)
                     <div class="card">

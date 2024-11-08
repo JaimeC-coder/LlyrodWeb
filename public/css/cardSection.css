@@ -6,7 +6,7 @@
     .cardContainer {
         width: 95%;
         margin: 0 auto;
-        padding:5% 5% 11% 5%;        ;
+        padding:5% 5% 11% 5%;
         .page-title {
           h3{
             font-size: var(--titulo);
@@ -81,5 +81,36 @@
                 transform: scale(1.05);
             }
         }
+    }
+}
+@media (max-width: 800px) {
+    .cardSection {
+        .page-title {
+            height: auto;
+            h3{
+             text-align: center;
+            }
+          }
+       .cardContainer{
+        width: 100%;
+        .cardsContainer{
+            flex-wrap: wrap;
+        }
+       }
+    }
+}
+@media (max-width: 600px) {
+    .cardSection {
+       height: auto;
+       .cardContainer{
+        width: 100%;
+        .cardsContainer{
+            flex-direction: column;
+            flex-wrap: wrap;
+            .card {
+                width: 100%;
+            }
+        }
+       }
     }
 }

@@ -7,7 +7,7 @@
         .title {
             font-size: var(--titulo);
             font-weight: bold;
-            text-align: left;
+            text-align: center;
             color: #2d3748;
             margin-bottom: 1rem;
         }
@@ -24,8 +24,8 @@
         }
 
         .cardGrid {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
+            display: flex;
+            flex-direction: row;
             gap: 2rem;
             .card {
                 height: auto;
@@ -83,19 +83,26 @@
             }
         }
 
-          @media (min-width: 768px) {
-            .cardGrid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
 
-        @media (min-width: 1024px) {
-            .cardGrid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
+
+
     }
 }
 
+@media (max-width: 800px) {
+    .containerSomos {
+        .content {
+            .title{
+                text-align: center;
+
+            }
+            .cardGrid {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+    }
+}
 
 

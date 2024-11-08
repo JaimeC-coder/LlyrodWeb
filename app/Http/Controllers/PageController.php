@@ -40,7 +40,7 @@ class PageController extends Controller
             [
                 'nombre' => 'NTT data',
                 'imagen' => 'assets/img/clients/NTT_DATA.png',
-                'imagenResponsive' => 'assets/img/clients/NTT_DATA_logo.png'
+                'imagenResponsive' => 'assets/img/clients/NTT_DATA.png'
             ],
             [
                 'nombre' => 'Founderz',
@@ -72,7 +72,7 @@ class PageController extends Controller
                 'imagen' => 'assets/img/clients/REYBANPAC.png',
                 'imagenResponsive' => 'assets/img/clients/REYBANPAC.png'
             ],
-           
+
             [
                 'nombre' => 'Pesquera Reymar – Chile',
                 'imagen' => 'assets/img/clients/PESQUEDA_REYMAR.png',
