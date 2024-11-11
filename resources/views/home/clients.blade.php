@@ -4,13 +4,13 @@
             <div class="title">
 
                 <h2>
-                    Our Partnerss
+                    Nuestros socios
                 </h2>
 <span></span>
             </div>
             <p class="description">
-                Trusted By Many Front Line <br>
-                Team Everywhere
+                “Evolucionamos juntos, trabajando en equipo, fortaleciendo nuestras
+                <br>capacidades y creando valor a cada paso”
             </p>
 
             <div class="cardGrid">
@@ -25,7 +25,7 @@
                             <div class="mediaMobil">
                                 <img src="{{ $client['imagenResponsive'] }}" alt="{{ $client['nombre'] }}" />
                             </div>
-                       
+
                         </div>
                     @endforeach
                     @foreach ($cliens as $client) <!-- Duplicado para efecto de carrusel continuo -->
@@ -36,7 +36,7 @@
                             <div class="mediaMobil">
                                 <img src="{{ $client['imagenResponsive'] }}" alt="{{ $client['nombre'] }}" />
                             </div>
-                       
+
                         </div>
                     @endforeach
                 </div>
