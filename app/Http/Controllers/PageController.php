@@ -14,21 +14,21 @@ class PageController extends Controller
         $cards = [
             [
                 "id" => "mineria",
-                "imagen" => "assets/img/home/mineria_home.png",
+                "imagen" => "assets/img/home/mineria_home.webp",
                 "icon" => "<BsRecycle size={24} />",
                 "tittle" => "Minería & Gestión Social",
                 "link" => "#",
             ],
             [
                 "id" => "due_diligence",
-                "imagen" => "assets/img/home/inteligencia_home.png",
+                "imagen" => "assets/img/home/inteligencia_home.webp",
                 "icon" => "<BsGraphUpArrow size={24} />",
                 "tittle" => "Due Diligence",
                 "link" => "#",
             ],
             [
                 "id" => "tecnologia",
-                "imagen" => "assets/img/home/incubadora_home.png",
+                "imagen" => "assets/img/home/incubadora_home.webp",
                 "icon" => "<BsSun size={24} />",
                 "tittle" => "Digital information",
                 "link" => "#",
@@ -39,44 +39,44 @@ class PageController extends Controller
         $cliens = [
             [
                 'nombre' => 'NTT data',
-                'imagen' => 'assets/img/clients/NTT_DATA.png',
-                'imagenResponsive' => 'assets/img/clients/NTT_DATA.png'
+                'imagen' => 'assets/img/clients/NTT_DATA.webp',
+                'imagenResponsive' => 'assets/img/clients/NTT_DATA.webp'
             ],
             [
                 'nombre' => 'Founderz',
-                'imagen' => 'assets/img/clients/Founderz.png',
-                'imagenResponsive' => 'assets/img/clients/Founderz.png'
+                'imagen' => 'assets/img/clients/Founderz.webp',
+                'imagenResponsive' => 'assets/img/clients/Founderz.webp'
             ],
             [
                 'nombre' => 'Minsur',
-                'imagen' => 'assets/img/clients/MINSUR.png',
-                'imagenResponsive' => 'assets/img/clients/MINSUR.png'
+                'imagen' => 'assets/img/clients/MINSUR.webp',
+                'imagenResponsive' => 'assets/img/clients/MINSUR.webp'
             ],
             [
                 'nombre' => 'Minera Raura',
-                'imagen' => 'assets/img/clients/MINERIA_RAURA.png',
-                'imagenResponsive' => 'assets/img/clients/MINERIA_RAURA.png'
+                'imagen' => 'assets/img/clients/MINERIA_RAURA.webp',
+                'imagenResponsive' => 'assets/img/clients/MINERIA_RAURA.webp'
             ],
             [
                 'nombre' => 'Insuco – Yanacocha',
-                'imagen' => 'assets/img/clients/Insuco.png',
-                'imagenResponsive' => 'assets/img/clients/Insuco.png'
+                'imagen' => 'assets/img/clients/Insuco.webp',
+                'imagenResponsive' => 'assets/img/clients/Insuco.webp'
             ],
             [
                 'nombre' => 'Mar Co. Ltd. - Yamae Group Holding Japan – Japan',
-                'imagen' => 'assets/img/clients/Mar_Co._Ltd.png',
-                'imagenResponsive' => 'assets/img/clients/Mar_Co._Ltd.png'
+                'imagen' => 'assets/img/clients/Mar_Co._Ltd.webp',
+                'imagenResponsive' => 'assets/img/clients/Mar_Co._Ltd.webp'
             ],
             [
                 'nombre' => 'Reybanpac – Ecuador',
-                'imagen' => 'assets/img/clients/REYBANPAC.png',
-                'imagenResponsive' => 'assets/img/clients/REYBANPAC.png'
+                'imagen' => 'assets/img/clients/REYBANPAC.webp',
+                'imagenResponsive' => 'assets/img/clients/REYBANPAC.webp'
             ],
 
             [
                 'nombre' => 'Pesquera Reymar – Chile',
-                'imagen' => 'assets/img/clients/PESQUEDA_REYMAR.png',
-                'imagenResponsive' => 'assets/img/clients/PESQUEDA_REYMAR.png'
+                'imagen' => 'assets/img/clients/PESQUEDA_REYMAR.webp',
+                'imagenResponsive' => 'assets/img/clients/PESQUEDA_REYMAR.webp'
             ],
 
         ];

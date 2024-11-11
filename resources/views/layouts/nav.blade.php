@@ -2,7 +2,7 @@
     <div id="navSection" class="navSection">
         <nav class="navContainer">
             <a class="logoContainer" href="/">
-                <img src="{{ asset('assets/logo_completo.png') }}" class="logo" alt="Logo">
+                <img src="{{ asset('assets/logo_completo.webp') }}" class="logo" alt="Logo">
             </a>
             <button class="menuToggle" id="menuToggle">☰</button>
             <ul class="menu" id="menu">
