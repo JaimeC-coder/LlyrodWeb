@@ -328,17 +328,18 @@
             .cardsContainer {
                 .content,
                 .contentpar {
-                    height: 450px;
+                  
                     align-items: flex-start;
                     .containerCardCarrucel1,
                     .containerCardCarrucel1par {
-                        width: 90%;
-                        height: 500px;
+                        width: 100%;
+                        height: auto;
                         align-content: center;
                         align-items: flex-start;
+                        flex-direction: column;
                         .cardContainer1 {
                             padding: 20px;
-                            width: 55%;
+                            width: 100%;
                         }
                         .carouselConteiner1 {
                             height: 400px;
