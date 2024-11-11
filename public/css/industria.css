@@ -70,7 +70,6 @@
     }
 }
 
-
 .informationContainer {
     width: 100%;
     height: 100%;
@@ -80,23 +79,55 @@
         width: 100%;
         justify-content: center;
         align-items: flex-start;
-        margin: 50px auto;
+        margin: 20px auto;
 
         .cardsContainer {
             display: flex;
             flex-direction: column;
-            gap: 30px;
+            width: 100%;
+            gap: 20px;
             .content,
             .contentpar {
+                position: relative;
                 width: 100%;
-                background-color: rgb(255, 255, 255);
-                display: flex;
-                justify-content: center;
+                flex-shrink: 0;
+                aspect-ratio: 1/ 1;
+                overflow: hidden;
+
+                text-decoration: none;
+                height: 800px;
+                max-height: 850px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: inherit;
+                }
+                .degradadoPortafolioTop1 {
+                    position: absolute;
+                    inset: 0;
+                    background: linear-gradient(
+                        to top,
+                        rgba(3, 3, 33, 0.7) 100%,
+                        rgba(3, 3, 33, 0.7) 50%,
+                        transparent 100%
+                    );
+                    z-index: 1;
+                }
                 .containerCardCarrucel1,
                 .containerCardCarrucel1par {
+                    position: absolute;
                     display: flex;
-                    width: 85%;
-                    height: 500px;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    padding: 24px;
+                    z-index: 2;
+                    flex-direction: row;
+                    width: 80%;
+                    height: 555px;
+                    align-content: center;
+                    justify-content: center;
+                    margin: 5% auto;
                     .cardContainer1 {
                         background-color: transparent;
                         padding: 50px;
@@ -109,52 +140,82 @@
                         h2 {
                             font-size: var(--textPrincipal);
                             margin-bottom: 10px;
+                            color: var(--white);
+                            font-weight: bold;
                         }
 
                         p {
                             font-size: var(--textSecundario);
                             color: #666;
                             text-align: justify;
+                            color: var(--white);
                             line-height: 25px;
                         }
                     }
                     .carouselConteiner1 {
                         position: relative;
+                        max-width: 590px;
+                        margin: 0 auto;
                         overflow: hidden;
-                        width: 60%;
                         .carouselInner1 {
                             display: flex;
-                            width: 100%;
-                            height: 100%;
-                            transition: transform 0.5s ease;
-                            img {
-                                height: 100%;
-                                margin: 5% auto;
+                            transition: transform 0.5s ease-in-out;
+                            height: 400px;
+                            .carousel-image {
                                 width: 100%;
-                                border-radius: 15px;
+                                flex-shrink: 0;
+                                height: 450px;
                             }
                         }
+                        .carousel-button {
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            background-color: rgba(255, 255, 255, 0.7);
+                            border: none;
+                            font-size: 24px;
+                            padding: 10px;
+                            cursor: pointer;
+                            opacity: 0;
+                            transition: opacity 0.3s;
+                        }
+                        .prev {
+                            left: 10px;
+                        }
+
+                        .next {
+                            right: 10px;
+                        }
+                        .carousel-dots {
+                            position: absolute;
+                            bottom: 10px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            display: flex;
+                            gap: 10px;
+                        }
+
+                        .dot {
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                            background-color: rgba(255, 255, 255, 0.5);
+                            cursor: pointer;
+                        }
+
+                        .dot.active {
+                            background-color: white;
+                        }
                     }
+                }
+                .carouselConteiner1:hover .carousel-button {
+                    opacity: 1;
+                }
+                .containerCardCarrucel1par:hover .carousel-button {
+                    opacity: 1;
                 }
                 .containerCardCarrucel1par {
                     flex-direction: row-reverse;
-                }
-            }
-
-            .contentpar {
-                background-color: #111d43;
-                height: 610px;
-                padding: 25px;
-                .containerCardCarrucel1par {
-                    .cardContainer1 {
-                        h2 {
-                            color: var(--CardSecundario);
-                        }
-
-                        p {
-                            color: var(--CardSecundario);
-                        }
-                    }
                 }
             }
         }
@@ -265,10 +326,8 @@
     .informationContainer {
         .cardsSection {
             .cardsContainer {
-
                 .content,
                 .contentpar {
-
                     height: 450px;
                     align-items: flex-start;
                     .containerCardCarrucel1,
@@ -283,12 +342,11 @@
                         }
                         .carouselConteiner1 {
                             height: 400px;
-                            .carouselInner1{
-                                img{
+                            .carouselInner1 {
+                                img {
                                     height: 400px;
                                 }
                             }
-
                         }
                     }
                 }
@@ -296,21 +354,20 @@
         }
     }
 
-
     .informationparContainer {
         .page-title {
             height: auto;
-            h3{
-             text-align: center;
+            h3 {
+                text-align: center;
             }
-          }
-       .cardContainer{
-        width: 100%;
-        height: auto;
-        .cardsContainer{
-            flex-wrap: wrap;
         }
-       }
+        .cardContainer {
+            width: 100%;
+            height: auto;
+            .cardsContainer {
+                flex-wrap: wrap;
+            }
+        }
     }
 }
 
@@ -334,15 +391,15 @@
 
     .informationparContainer {
         height: auto;
-        .cardContainer{
-         width: 100%;
-         .cardsContainer{
-             flex-direction: column;
-             flex-wrap: wrap;
-             .card {
-                 width: 100%;
-             }
-         }
+        .cardContainer {
+            width: 100%;
+            .cardsContainer {
+                flex-direction: column;
+                flex-wrap: wrap;
+                .card {
+                    width: 100%;
+                }
+            }
         }
-     }
+    }
 }

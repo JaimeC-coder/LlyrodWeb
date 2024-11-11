@@ -15,7 +15,7 @@
 
 <section class="imageSection">
     <div class="imageContainer">
-        <video src="{{ asset('assets/video/video_home.mp4') }}" class="imagen" muted loop autoplay></video>
+        <video src="{{ asset('assets/video/video_home.mkv') }}" class="imagen" muted loop autoplay loading="lazy"></video>
         <div class="degradadoPortafolioTop"></div>
         <div class="textandGraph">
             <div class="texto">

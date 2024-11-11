@@ -10,7 +10,7 @@
     <div class="photosContainer">
         <section class="photoSection" id="mineria">
             <div class="photoContainer">
-                <img class="photo" src="{{ asset('assets/industrial/mineria/titulo.png') }}" alt="Minería">
+                <img class="photo" src="{{ asset('assets/industrial/mineria/titulo.webp') }}" alt="Minería" loading="lazy">
                 <div class="degradadoPortafolioTop1"></div>
                 <div class="textContent">
                     <div class="text">
@@ -33,27 +33,31 @@
         <section class="cardsSection">
             <div class="cardsContainer">
                 @foreach ($cardsMineria as $card)
-                   <div class="{{ $loop->even ? 'contentpar':'content' }}">
-                    <div class="{{ $loop->even ? 'containerCardCarrucel1par' : 'containerCardCarrucel1' }}">
-
-                        <div class="cardContainer1">
-                            <h2>{{ $card['tittle'] }}</h2>
-                            <p>
-                                {{ $card['texto'] }}
-                            </p>
-                        </div>
-                        <div class="carouselConteiner1">
-                            <div class="carouselInner1">
-                                @foreach ($card['imagenes'] as $img)
-                                    <img src="{{ asset($img['imagen']) }}" alt="Card Title 1">
-                                @endforeach
+                    <div class="{{ $loop->even ? 'contentpar' : 'content' }}">
+                        <img class="photo" src="{{ asset($card['fondo']) }}" alt="Minería" loading="lazy">
+                        <div class="degradadoPortafolioTop1"></div>
+                        <div class="{{ $loop->even ? 'containerCardCarrucel1par' : 'containerCardCarrucel1' }}">
+                            <div class="cardContainer1">
+                                <h2>{{ $card['tittle'] }}</h2>
+                                <p>
+                                    {{ $card['texto'] }}
+                                </p>
+                            </div>
+                            <div class="carouselConteiner1">
+                                <div class="carouselInner1">
+                                    @foreach ($card['imagenes'] as $img)
+                                        <img src="{{ asset($img['imagen']) }}" class="carousel-image" alt="Card Title 1"
+                                            loading="lazy">
+                                    @endforeach
+                                </div>
+                                <button class="carousel-button prev">&lt;</button>
+                                <button class="carousel-button next">&gt;</button>
+                                <div class="carousel-dots"></div>
 
                             </div>
 
                         </div>
-
                     </div>
-                   </div>
                 @endforeach
             </div>
         </section>
@@ -65,8 +69,8 @@
         <div class="photosContainer">
             <section class="photoSection" id="due_diligence">
                 <div class="photoContainer">
-                    <img class="photo"src="{{ asset('assets/industrial/inteligenciaNegocios/titulo.jpg') }}"
-                        alt="Due Diligence">
+                    <img class="photo"src="{{ asset('assets/industrial/inteligenciaNegocios/titulo.webp') }}"
+                        alt="Due Diligence" loading="lazy">
                     <div class="degradadoPortafolioTop1"></div>
                     <div class="textContent">
                         <div class="text">
@@ -95,11 +99,10 @@
             <div class="cardsContainer">
                 @foreach ($cardsTecnologia as $card)
                     <div class="card">
-                        <img src="{{ asset($card['imagenes']['imagen']) }}" alt="Imagen Home" />
+                        <img src="{{ asset($card['imagenes']['imagen']) }}" alt="Imagen Home" loading="lazy" />
                         <div class="overlay"></div>
                         <p class="content">
                             <span>{{ $card['tittle'] }}</span>
-                        <p>{{ $card['texto'] }}</p>
                         </p>
                     </div>
                 @endforeach
@@ -110,7 +113,7 @@
     <div class="photosContainer">
         <section class="photoSection" id="due_diligence">
             <div class="photoContainer">
-                <img class="photo" src="{{ asset('assets/industrial/tranformacionDigital/titulo.jpg') }}"
+                <img class="photo" src="{{ asset('assets/industrial/tranformacionDigital/titulo.webp') }}" loading="lazy"
                     alt="Tecnología">
                 <div class="degradadoPortafolioTop1"></div>
                 <div class="textContent">
@@ -135,15 +138,14 @@
     <div class="informationparContainer">
 
         <div class="cardContainer">
-           
+
             <div class="cardsContainer">
                 @foreach ($cardsBi as $card)
                     <div class="card">
-                        <img src="{{ asset($card['imagenes']['imagen']) }}" alt="Imagen Home" />
+                        <img src="{{ asset($card['imagenes']['imagen']) }}" alt="Imagen Home" loading="lazy" />
                         <div class="overlay"></div>
                         <p class="content">
                             <span>{{ $card['tittle'] }}</span>
-                        <p>{{ $card['texto'] }}</p>
                         </p>
                     </div>
                 @endforeach
@@ -159,68 +161,54 @@
 @section('scripts')
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const carousels = document.querySelectorAll('.carouselInner1');
+            const carousels = document.querySelectorAll('.carouselConteiner1');
 
-            carousels.forEach(carousel => {
+            carousels.forEach((container) => {
+                const carousel = container.querySelector('.carouselInner1');
                 const images = carousel.querySelectorAll('img');
+                const prevButton = container.querySelector('.prev');
+                const nextButton = container.querySelector('.next');
+                const dotsContainer = container.querySelector('.carousel-dots');
+
                 let currentIndex = 0;
 
-                function showNextImage() {
-                    images[currentIndex].classList.remove('active');
+                // Crear puntos indicadores
+                images.forEach((_, index) => {
+                    const dot = document.createElement('div');
+                    dot.classList.add('dot');
+                    dot.addEventListener('click', () => goToSlide(index));
+                    dotsContainer.appendChild(dot);
+                });
+
+                const dots = dotsContainer.querySelectorAll('.dot');
+
+                function updateCarousel() {
+                    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+                    dots.forEach((dot, index) => {
+                        dot.classList.toggle('active', index === currentIndex);
+                    });
+                }
+
+                function goToSlide(index) {
+                    currentIndex = index;
+                    updateCarousel();
+                }
+
+                function nextSlide() {
                     currentIndex = (currentIndex + 1) % images.length;
-                    images[currentIndex].classList.add('active');
-                    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+                    updateCarousel();
                 }
 
-                // Generamos un retraso aleatorio entre 0 y 2000 ms
-                const delay = Math.floor(Math.random() * 2000);
+                function prevSlide() {
+                    currentIndex = (currentIndex - 1 + images.length) % images.length;
+                    updateCarousel();
+                }
 
-                // Usamos setTimeout para iniciar el carrusel después del retraso
-                setTimeout(() => {
-                    setInterval(showNextImage, 3000);
-                }, delay);
+                nextButton.addEventListener('click', nextSlide);
+                prevButton.addEventListener('click', prevSlide);
 
+                updateCarousel();
             });
-        });
-
-
-        document.addEventListener('DOMContentLoaded', function() {
-            const carousel = document.querySelector('.carrusel2');
-            const items = document.querySelectorAll('.carouselItem2');
-            const prevButton = document.querySelector('.carousel-button.prev');
-            const nextButton = document.querySelector('.carousel-button.next');
-            //quiero que captures el tamaño de la pantalla
-            const screenWidth = window.innerWidth;
-            let currentIndex = 2;
-            const totalItems = items.length;
-
-            function updateCarousel() {
-                if (screenWidth < 800) {
-                    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-                } else {
-                    carousel.style.transform = `translateX(-${currentIndex * 50}%)`;
-                }
-            }
-
-            function nextSlide() {
-                currentIndex = (currentIndex + 1) % totalItems;
-                updateCarousel();
-            }
-
-            function prevSlide() {
-                currentIndex = (currentIndex - 1 + totalItems) % totalItems;
-                updateCarousel();
-            }
-
-            nextButton.addEventListener('click', nextSlide);
-            prevButton.addEventListener('click', prevSlide);
-
-            // Clone first item and append to the end for infinite effect
-            const firstItemClone = items[0].cloneNode(true);
-            carousel.appendChild(firstItemClone);
-
-            // Auto-advance carousel
-            setInterval(nextSlide, 5000);
         });
     </script>
 @endsection
