@@ -23,14 +23,14 @@ class PageController extends Controller
                 "id" => "due_diligence",
                 "imagen" => "assets/img/home/inteligencia_home.webp",
                 "icon" => "<BsGraphUpArrow size={24} />",
-                "tittle" => "Due Diligence",
+                "tittle" => "Quality Due Diligence ",
                 "link" => "#",
             ],
             [
                 "id" => "tecnologia",
                 "imagen" => "assets/img/home/incubadora_home.webp",
                 "icon" => "<BsSun size={24} />",
-                "tittle" => "Digital information",
+                "tittle" => "Transformación Digital",
                 "link" => "#",
             ]
         ];
@@ -110,7 +110,7 @@ class PageController extends Controller
                         "alt" => "Diagnostico 4"
                     ]
                 ],
-                "tittle" => "Diagnóstico Socioeconómico y Diseño del Portafolio de Inversión Social",
+                "tittle" => "Diagnóstico Socioeconómico y Diseño del Portafolio de Inversión Socia",
                 "texto" =>
                 "El diseño y puesta en marcha del diagnóstico realizado, tuvo una cobertura de 43,616 hectáreas y 1,536 habitantes distribuidos en tres regiones del Perú. Incluyó un análisis socioeconómico, evaluación de actividades productivas, condiciones endémicas y oportunidades comerciales sobre las que se diseñaron proyectos alineados con dichas potencialidades, optimizando el impacto de las inversiones sociales en estas comunidades.",
                 "fondo" => "assets/industrial/mineria/DiagnósticoPotencialRaura/Fondo.webp"
@@ -154,40 +154,40 @@ class PageController extends Controller
                         "alt" => "capacitacion4"
                     ]
                 ],
-                "tittle" => "Fortalecimiento y capacidad agropecuarias",
+                "tittle" => "Fortalecimiento de capacidades. ",
                 "texto" =>
-                "Impulsamos el desarrollo técnico agropecuario mediante nuevas tecnologías educativas, promoviendo prácticas que mejoran la eficiencia, cuidan los recursos naturales y aseguran la sostenibilidad. Metodologías adaptadas a las diferentes realidades que conforman cada región es el diferenciador de nuestra propuesta. Acceso a la línea base y resultados a través de las plataformas desarrolladas por nuestros profesionales.",
+                "Impulsamos el desarrollo técnico mediante nuevas tecnologías educativas, promoviendo prácticas que mejoran la eficiencia, cuidan los recursos naturales y aseguran la sostenibilidad. Metodologías adaptadas a las diferentes realidades que conforman cada región es el diferenciador de nuestra propuesta. Acceso a la línea base y resultados a través de las plataformas desarrolladas por nuestros profesionales. ",
                 "fondo" => "assets/industrial/mineria/CapacitacionGanadera/Fondo.webp"
             ],
         ];
-         //! arreglar las imagenes y los textos
+
         $cardsBi = [
             [
                 "imagenes" => [
 
                     "imagen" => "assets/industrial/tranformacionDigital/tranformacionDigital1.webp",
-                    "alt" => "Programas de Aprendizaje para empresas"
+                    "alt" => "Programas de Aprendizaje para empresas. "
 
                 ],
-                "tittle" => "Programas de Aprendizaje para empresas",
+                "tittle" => "Programas de Aprendizaje para empresas. ",
             ],
             [
                 "imagenes" => [
 
                     "imagen" => "assets/industrial/tranformacionDigital/tranformacionDigital2.webp",
-                    "alt" => "Entrenamiento para Data Engineers jr"
+                    "alt" => "Entrenamiento para Data Engineers Jr "
 
                 ],
-                "tittle" => 'Entrenamiento para Data Engineers Jr ',
+                "tittle" => "Entrenamiento para Data Engineers Jr ",
             ],
             [
                 "imagenes" => [
 
                     "imagen" => "assets/industrial/tranformacionDigital/tranformacionDigital3.webp",
-                    "alt" => "Outsourcing especializado"
+                    "alt" => "Outsourcing especializado "
 
                 ],
-                "tittle" => "Outsourcing especializado",
+                "tittle" => "Outsourcing especializado ",
 
             ],
         ];
@@ -199,8 +199,6 @@ class PageController extends Controller
                     "alt" => "transformacion1"
                 ],
                 "tittle" => "Monitoreo y análisis de datos de almacenes en Japón.",
-                "texto" =>
-                "Experiencia de aprendizaje inmersiva y de alto impacto, que proporciona las habilidades y conceptos esenciales en un corto período e impulsa el desarrollo personal y profesional.",
             ],
             [
                 "imagenes" => [
@@ -208,17 +206,13 @@ class PageController extends Controller
                     "alt" => "transformacion1"
                 ],
                 "tittle" => "Monitoreo y análisis de datos de una planta empacadora en Ecuador",
-                "texto" =>
-                "Desarrollamos diagnósticos de potenciales productivas y articulación comercial en zonas de influencia minera, derivando en el análisis de la viabilidad de cadenas.",
             ],
             [
                 "imagenes" => [
                     "imagen" => "assets/industrial/inteligenciaNegocios/inteligencia3.webp",
                     "alt" => "transformacion1"
                 ],
-                "tittle" => "Monitoring and Data Analytics from Seafood Plants in Chile",
-                "texto" =>
-                "Confía en Grupo Llyrod para obtener soluciones de outsourcing especializado. Nuestro enfoque se centra en brindarte servicios personalizados que optimizan tus operaciones y te permiten concentrarte en lo que realmente importa.",
+                "tittle" => "Monitoreo y Análisis de Datos de Plantas de Alimentos del Mar en Chile.",
             ],
 
         ];

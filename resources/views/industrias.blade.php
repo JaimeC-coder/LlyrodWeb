@@ -14,7 +14,7 @@
                 <div class="degradadoPortafolioTop1"></div>
                 <div class="textContent">
                     <div class="text">
-                        <h2 class="titlePrincipal">Minería & Gestión Social</h2>
+                        <h2 class="titlePrincipal">Minería & Gestión Social </h2>
                         <p class="textPrincipalIndustrias">
                             Desarrollamos estudios especializados y proyectos destinados a atender la zona de influencia
                             directa
@@ -74,14 +74,9 @@
                     <div class="degradadoPortafolioTop1"></div>
                     <div class="textContent">
                         <div class="text">
-                            <h2 class="titlePrincipal">Due Diligence</h2>
+                            <h2 class="titlePrincipal">Quality Due Diligence</h2>
                             <p class="textPrincipalIndustrias">
-                                Desarrollamos estudios especializados y proyectos destinados a atender la zona de influencia
-                                directa
-                                e indirecta de mina. Nuestros estandares secundan las politicas corporativas de alto nivel.
-                                Orientamos el desarrollo de nuestros proyectos e intervenciones bajo un enfoque ESG:
-                                Enviromental,
-                                Social and Governance.
+                                Ofrecemos servicios de auditoría y aseguramiento de la calidad para corporaciones internacionales y empresas en Latinoamérica, garantizando altos estándares y cumplimiento normativo. Utilizamos tecnologías avanzadas como cloud storage, big data, data analytics y Power BI para asegurar una supervisión precisa y eficiente de cada proceso.
                             </p>
                         </div>
                     </div>

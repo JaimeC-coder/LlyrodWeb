@@ -29,7 +29,7 @@
                     En <strong>Grupo Llyrod</strong>, Somos una consultora que impulsa el cambio y el crecimiento sostenible,
                     combinando talento joven, experiencia técnica y tecnología avanzada para ofrecer soluciones innovadoras.
                 </span>
-                <a class="buttonVer" href="/nuestro_trabajo">Ver más</a>
+                <a class="buttonVer" href="/nuestro_trabajo">ver más</a>
             </div>
         </div>
     </div>
@@ -73,4 +73,28 @@
             setInterval(autoScroll, 20);
         });
     </script>
+
+
+<script>
+    const video = document.getElementById("myVideo");
+
+    // Muestra los controles cuando se hace hover
+    video.addEventListener("mouseenter", () => {
+      video.controls = true;
+    });
+
+    // Oculta los controles cuando se quita el hover
+    video.addEventListener("mouseleave", () => {
+      video.controls = false;
+    });
+
+    // Reproduce o pausa el video al hacer click
+    video.addEventListener("click", () => {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    });
+  </script>
 @endsection

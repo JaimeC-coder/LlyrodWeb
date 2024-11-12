@@ -12,7 +12,7 @@
              <div class="overlay"></div>
              <p class="content">
                  <span >{{ $card['tittle'] }}</span>
-                     <a href="/industrias#{{ $card['id'] }}">Leer más</a>
+                     <a href="/nuestro_trabajo#{{ $card['id'] }}">Leer más</a>
              </p>
          </div>
 

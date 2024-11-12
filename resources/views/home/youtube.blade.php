@@ -7,7 +7,7 @@
             <p>Accede a la plataforma de aprendizaje más innovadora y condúcete a nuevos</p>
         </div>
         <div class="novedades">
-            <video src="https://founderz.com/wp-content/themes/hello-theme-child/assets/videos/video.mp4#t=10"></video>
+            <video src="{{ asset('assets/video/video_yt.mkv') }}" id="myVideo"></video>
             <img src="{{ asset('assets/img/home/iagenerativa.webp') }}" alt="">
         </div>
 
@@ -62,3 +62,6 @@
         </div>
     </div>
 </section>
+
+
+
