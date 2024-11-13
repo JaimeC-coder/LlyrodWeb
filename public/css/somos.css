@@ -2,107 +2,103 @@
     width: 85%;
     background-color: #FFFFFF;
     padding: 5% 8% 10% 7%;
-    .content {
-        margin-top: 5%;
-        .title {
-            font-size: var(--titulo);
-            font-weight: bold;
-            text-align: center;
-            color: #2d3748;
-            margin-bottom: 1rem;
-        }
-
-        .description {
-            font-size: var(--textSecundario);
-            text-align: justify;
-            line-height: 1.5;
-            color: #4a5568;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 5rem;
-            margin-bottom: 5rem;
-        }
-
-        .cardGrid {
-            display: flex;
-            flex-direction: row;
-            gap: 2rem;
-            .card {
-                height: auto;
-                 background-color: #F9F9F9;
-                padding: 2.5rem;
-                border-radius: 0.5rem;
-                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-                    0 4px 6px -2px rgba(0, 0, 0, 0.05);
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                .media {
-                    width: 3rem;
-                    height: 3rem;
-                    color: #FDBD00;
-                    margin-top: 2rem;
-                    margin-bottom: 2rem;
-                    .icon {
-                        font-size: var(--tituloPrincipal);
-
-                        margin-bottom: 1rem;
-                    }
-                }
-
-                .cardTitle {
-                    height: 40px;
-
-                    font-size: var(--textTerciario);
-                    font-weight: 600;
-                    color: #2d3748;
-                }
-
-                .cardDescription {
-                    height: 100px;
-                    font-size: var(--textTerciario);
-                    text-align: justify;
-                    color: #4a5568;
-                }
-                &:hover {
-                    background-color: #1d2771;
-                    color: white !important;
-                    cursor: pointer;
-                    transition: background-color 0.3s;
-                    & .media {
-                        color: white;
-                    }
-                    & .cardTitle {
-                        color: white;
-                    }
-                    & .cardDescription {
-                        color: white;
-                    }
-                }
-            }
-        }
-
-
-
-
-    }
 }
 
+.containerSomos .content {
+    margin-top: 5%;
+}
+
+.containerSomos .content .title {
+    font-size: var(--titulo);
+    font-weight: bold;
+    text-align: center;
+    color: #2d3748;
+    margin-bottom: 1rem;
+}
+
+.containerSomos .content .description {
+    font-size: var(--textSecundario);
+    text-align: justify;
+    line-height: 1.5;
+    color: #4a5568;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.containerSomos .content .cardGrid {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.containerSomos .content .cardGrid .card {
+    height: auto;
+    background-color: #F9F9F9;
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.containerSomos .content .cardGrid .card .media {
+    width: 3rem;
+    height: 3rem;
+    color: #FDBD00;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.containerSomos .content .cardGrid .card .media .icon {
+    font-size: var(--tituloPrincipal);
+    margin-bottom: 1rem;
+}
+
+.containerSomos .content .cardGrid .card .cardTitle {
+    height: 40px;
+    font-size: var(--textTerciario);
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.containerSomos .content .cardGrid .card .cardDescription {
+    height: 100px;
+    font-size: var(--textTerciario);
+    text-align: justify;
+    color: #4a5568;
+}
+
+.containerSomos .content .cardGrid .card:hover {
+    background-color: #1d2771;
+    color: white !important;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.containerSomos .content .cardGrid .card:hover .media {
+    color: white;
+}
+
+.containerSomos .content .cardGrid .card:hover .cardTitle {
+    color: white;
+}
+
+.containerSomos .content .cardGrid .card:hover .cardDescription {
+    color: white;
+}
+
+/* Media Query para pantallas menores a 800px */
 @media (max-width: 800px) {
-    .containerSomos {
-        .content {
-            .title{
-                text-align: center;
+    .containerSomos .content .title {
+        text-align: center;
+    }
 
-            }
-            .cardGrid {
-                display: flex;
-                flex-direction: column;
-            }
-        }
-
+    .containerSomos .content .cardGrid {
+        display: flex;
+        flex-direction: column;
     }
 }
-
-

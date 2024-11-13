@@ -1,4 +1,7 @@
 <section class="containerYoutube" id="canal">
+    <img class="photo" src="{{ asset('assets/img/home/iaPublicidad.webp') }}" alt="Due Diligence" loading="lazy">
+    <div class="degradadoPortafolioTop1"></div>
+
     <div class="content">
         <div class="page-title">
             <h3>Novedades en nuestro canal</h3>
@@ -13,7 +16,7 @@
 
         <div class="videoContainer">
             <div class="cardtitle">
-              <p>  Sigue nuestro canal para más contenido y aprendizaje</p>
+                <p> Sigue nuestro canal para más contenido y aprendizaje</p>
             </div>
             <div class="video-container">
 
@@ -26,9 +29,8 @@
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <h2>Programa de formación para Data Eng. Jr. Sesión 01</h2>
-                    <p>Aprenderás los fundamentos de la Ingeniería de Datos, conocerás la sintaxis básica de Scala y su
-                        integración con Apache Spark, además de explorar las principales herramientas de almacenamiento
-                        y procesamiento de Big Data usadas en la industria.</p>
+                    <p>Aprenderás fundamentos de Ingeniería de Datos, Scala con Spark y herramientas clave de Big Data usadas en la industria.
+                    </p>
                 </div>
 
                 <div class="video-item">
@@ -40,9 +42,8 @@
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <h2>Programa de formación para Data Eng. Jr. Sesión 02</h2>
-                    <p>Esta sesión aborda herramientas clave para Big Data, incluyendo ETL y streaming con DataFlow y
-                        Pub/Sub, servicios cloud de AWS y Google Cloud, visualización en Power BI y fundamentos de
-                        machine learning para crear arquitecturas de datos efectivas.</p>
+                    <p>Esta sesión cubre herramientas clave para Big Data: ETL, streaming, servicios cloud, visualización y machine learning.
+                    </p>
                 </div>
 
                 <div class="video-item">
@@ -54,14 +55,9 @@
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <h2>Programa de formación para Data Eng. Jr. Sesión 03</h2>
-                    <p>Esta sesión explora los servicios fundamentales de Google Cloud Platform para ingeniería de
-                        datos, cubriendo DataFlow, BigQuery y Bigtable, además de la orquestación con Cloud Functions y
-                        Composer para manejar datos en tiempo real y batch.</p>
+                    <p>La sesión explora servicios clave de Google Cloud: DataFlow, BigQuery, Bigtable, y orquestación con Functions y Composer.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-
-

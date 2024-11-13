@@ -3,408 +3,429 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    .photoSection {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        .photoContainer {
-            width: 100%;
-            flex-shrink: 0;
-            aspect-ratio: 1 / 1;
-            overflow: hidden;
-            height: 100vh;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-            text-decoration: none;
-            .photo {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-            .degradadoPortafolioTop1 {
-                position: absolute;
-                inset: 0;
-                background: linear-gradient(
-                    200deg,
-                    rgb(4, 2, 33, 0) 10%,
-                    rgb(0, 0, 0, 0.85) 100%
-                );
-                z-index: 1;
-            }
-            .textContent {
-                width: 100%;
-                position: absolute;
-                top: 50%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 0px 80px;
-                z-index: 2;
-                .text {
-                    width: 70%;
-                    display: flex;
-                    flex-direction: column;
-                    text-align: start;
-                    .titlePrincipal {
-                        font-size: var(--titulo);
-                        font-weight: 300;
-                        font-family: "Raleway", sans-serif !important;
-                        color: var(--white);
-                    }
-                    .textPrincipalIndustrias {
-                        padding-top: 10px;
-                        padding-left: 10px;
-                        width: 70%;
-                        text-align: justify;
-                        font-size: var(--textSecundario);
-                        font-weight: 300;
-                        font-family: "Raleway", sans-serif !important;
-                        color: var(--white);
-                        border-left: var(--BotonEnlaces) 2px solid;
-                    }
-                }
-            }
-        }
-    }
 }
+
+.photosContainer .photoSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.photosContainer .photoSection .photoContainer {
+    width: 100%;
+    flex-shrink: 0;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    height: 100vh;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.photosContainer .photoSection .photoContainer .photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photosContainer .photoSection .photoContainer .degradadoPortafolioTop1 {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(200deg, rgb(4, 2, 33, 0) 10%, rgb(0, 0, 0, 0.85) 100%);
+    z-index: 1;
+}
+
+.photosContainer .photoSection .photoContainer .textContent {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px;
+    z-index: 2;
+}
+
+.photosContainer .photoSection .photoContainer .textContent .text {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.photosContainer .photoSection .photoContainer .textContent .text .titlePrincipal {
+    font-size: var(--titulo);
+    font-weight: 300;
+    font-family: "Raleway", sans-serif !important;
+    color: var(--white);
+}
+
+.photosContainer .photoSection .photoContainer .textContent .text .textPrincipalIndustrias {
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 70%;
+    text-align: justify;
+    font-size: var(--textSecundario);
+    font-weight: 300;
+    font-family: "Raleway", sans-serif !important;
+    color: var(--white);
+    border-left: var(--BotonEnlaces) 2px solid;
+}
+
 
 .informationContainer {
     width: 100%;
     height: 100%;
-    .cardsSection {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        align-items: flex-start;
-        margin: 20px auto;
-
-        .cardsContainer {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            gap: 20px;
-            .content,
-            .contentpar {
-                position: relative;
-                width: 100%;
-                flex-shrink: 0;
-                aspect-ratio: 1/ 1;
-                overflow: hidden;
-
-                text-decoration: none;
-                height: 800px;
-                max-height: 850px;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: inherit;
-                }
-                .degradadoPortafolioTop1 {
-                    position: absolute;
-                    inset: 0;
-                    background: linear-gradient(
-                        to top,
-                        rgba(3, 3, 33, 0.9) 100%,
-                        rgba(3, 3, 33, 0.9) 50%,
-                        transparent 100%
-                    );
-                    z-index: 1;
-                }
-                .containerCardCarrucel1,
-                .containerCardCarrucel1par {
-                    position: absolute;
-                    display: flex;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    padding: 24px;
-                    z-index: 2;
-                    flex-direction: row;
-                    width: 80%;
-                    height: 555px;
-                    align-content: center;
-                    justify-content: center;
-                    margin: 5% auto;
-                    .cardContainer1 {
-                        background-color: transparent;
-                        padding: 50px;
-                        width: 55%;
-                        display: flex;
-                        gap: 10%;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                        h2 {
-                            font-size: var(--textPrincipal);
-                            margin-bottom: 10px;
-                            color: var(--white);
-                            font-weight: bold;
-                        }
-
-                        p {
-                            font-size: var(--textSecundario);
-                            color: #666;
-                            text-align: justify;
-                            color: var(--white);
-                            line-height: 25px;
-                        }
-                    }
-                    .carouselConteiner1 {
-                        position: relative;
-                        max-width: 590px;
-                        margin: 0 auto;
-                        overflow: hidden;
-                        .carouselInner1 {
-                            display: flex;
-                            transition: transform 0.5s ease-in-out;
-                            height: 400px;
-                            .carousel-image {
-                                width: 100%;
-                                flex-shrink: 0;
-                                height: 450px;
-                                border-radius: 10px;
-                            }
-                        }
-                        .carousel-button {
-                            position: absolute;
-                            top: 50%;
-                            transform: translateY(-50%);
-                            background-color: rgba(255, 255, 255, 0.7);
-                            border: none;
-                            font-size: 24px;
-                            padding: 10px;
-                            cursor: pointer;
-                            opacity: 0;
-                            transition: opacity 0.3s;
-                        }
-                        .prev {
-                            left: 10px;
-                        }
-
-                        .next {
-                            right: 10px;
-                        }
-                        .carousel-dots {
-                            position: absolute;
-                            bottom: 10px;
-                            left: 50%;
-                            transform: translateX(-50%);
-                            display: flex;
-                            gap: 10px;
-                        }
-
-                        .dot {
-                            width: 10px;
-                            height: 10px;
-                            border-radius: 50%;
-                            background-color: rgba(255, 255, 255, 0.5);
-                            cursor: pointer;
-                        }
-
-                        .dot.active {
-                            background-color: white;
-                        }
-                    }
-                }
-                .carouselConteiner1:hover .carousel-button {
-                    opacity: 1;
-                }
-                .containerCardCarrucel1par:hover .carousel-button {
-                    opacity: 1;
-                }
-                .containerCardCarrucel1par {
-                    flex-direction: row-reverse;
-                }
-            }
-        }
-    }
 }
+
+.informationContainer .cardsSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px auto;
+}
+
+.informationContainer .cardsSection .cardsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.informationContainer .cardsSection .cardsContainer .content,
+.informationContainer .cardsSection .cardsContainer .contentpar {
+    position: relative;
+    width: 100%;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    text-decoration: none;
+    height: 800px;
+    max-height: 850px;
+}
+
+.informationContainer .cardsSection .cardsContainer .content img,
+.informationContainer .cardsSection .cardsContainer .contentpar img {
+    width: 100%;
+    height: 100%;
+    object-fit: inherit;
+}
+
+.informationContainer .cardsSection .cardsContainer .content .degradadoPortafolioTop1,
+.informationContainer .cardsSection .cardsContainer .contentpar .degradadoPortafolioTop1 {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(3, 3, 33, 0.9) 100%, rgba(3, 3, 33, 0.9) 50%, transparent 100%);
+    z-index: 1;
+}
+
+.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1,
+.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 24px;
+    z-index: 2;
+    flex-direction: row;
+    width: 80%;
+    height: 555px;
+    align-content: center;
+    justify-content: center;
+    margin: 5% auto;
+}
+
+.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1,
+.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 {
+    background-color: transparent;
+    padding: 50px;
+    width: 55%;
+    display: flex;
+    gap: 10%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1 h2,
+.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 h2 {
+    font-size: var(--textPrincipal);
+    margin-bottom: 10px;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1 p,
+.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 p {
+    font-size: var(--textSecundario);
+    color: var(--white);
+    text-align: justify;
+    line-height: 25px;
+}
+
+.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .carouselConteiner1,
+.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .carouselConteiner1 {
+    position: relative;
+    max-width: 590px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .carouselConteiner1 .carouselInner1,
+.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .carouselConteiner1 .carouselInner1 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 400px;
+}
+
+.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .carouselConteiner1 .carouselInner1 .carousel-image,
+.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .carouselConteiner1 .carouselInner1 .carousel-image {
+    width: 100%;
+    flex-shrink: 0;
+    height: 450px;
+    border-radius: 10px;
+}
+
+.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .carouselConteiner1 .carousel-button,
+.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .carouselConteiner1 .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .carouselConteiner1 .carousel-button.prev,
+.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .carouselConteiner1 .carousel-button.prev {
+    left: 10px;
+}
+
+.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .carouselConteiner1 .carousel-button.next,
+.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .carouselConteiner1 .carousel-button.next {
+    right: 10px;
+}
+
+.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .carouselConteiner1 .carousel-dots,
+.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .carouselConteiner1 .carousel-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .carouselConteiner1 .dot,
+.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .carouselConteiner1 .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .carouselConteiner1 .dot.active,
+.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .carouselConteiner1 .dot.active {
+    background-color: white;
+}
+
+.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1:hover .carousel-button,
+.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par:hover .carousel-button {
+    opacity: 1;
+}
+
+.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par {
+    flex-direction: row-reverse;
+}
+
 
 /**---------------------------------------seccion ------------------------------------------------------------- */
 .informationparContainer {
     width: 100%;
     height: 100%;
-    .cardContainer {
-        width: 95%;
-        height: 100vh;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-        gap: 20px;
-        align-items: flex-start;
-        justify-content: space-evenly;
-
-        .cardsContainer {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding-bottom: 20px;
-            .card {
-                position: relative;
-                width: 45%;
-                flex-shrink: 0;
-                aspect-ratio: 1 / 1;
-                overflow: hidden;
-                border-radius: 8px;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                transition: transform 0.3s ease;
-                text-decoration: none;
-                height: 500px;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: inherit;
-                }
-                .overlay {
-                    position: absolute;
-                    inset: 0;
-                    background: linear-gradient(
-                        to top,
-                        rgba(0, 0, 0, 0.8) 0%,
-                        rgba(0, 0, 0, 0.4) 50%,
-                        transparent 100%
-                    );
-                    z-index: 1;
-                }
-                .content {
-                    position: absolute;
-                    display: flex;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    padding: 24px;
-                    z-index: 2;
-                    flex-direction: column;
-                    height: 130px;
-                    background-color: rgba(0, 0, 0, 0.3);
-                    span {
-                        margin: 0 0 8px 0;
-                        font-size: 24px;
-                        font-weight: bold;
-                        color: white;
-                        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-                    }
-                    a {
-                        display: inline-block;
-                        font-size: 14px;
-                        font-weight: 500;
-                        color: white;
-                        padding: 4px 0;
-                    }
-                    a:hover {
-                        text-decoration: underline;
-                    }
-                }
-            }
-            .card:hover {
-                transform: scale(1.05);
-            }
-        }
-    }
 }
 
+.informationparContainer .cardContainer {
+    width: 95%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.informationparContainer .cardContainer .cardsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.informationparContainer .cardContainer .cardsContainer .card {
+    position: relative;
+    width: 45%;
+    flex-shrink: 0;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    height: 500px;
+}
+.informationparContainer .cardContainer .cardsContainer .card:hover {
+    transform: scale(1.05);
+}
+
+.informationparContainer .cardContainer .cardsContainer .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: inherit;
+}
+
+.informationparContainer .cardContainer .cardsContainer .card .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 50%, transparent 100%);
+    z-index: 1;
+}
+
+.informationparContainer .cardContainer .cardsContainer .card .content {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 24px;
+    z-index: 2;
+    flex-direction: column;
+    height: 130px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.informationparContainer .cardContainer .cardsContainer .card .content span {
+    margin: 0 0 8px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.informationparContainer .cardContainer .cardsContainer .card .content a {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    padding: 4px 0;
+}
+
+.informationparContainer .cardContainer .cardsContainer .card .content a:hover {
+    text-decoration: underline;
+}
+
+
+/* Media Query for max-width: 800px */
 @media (max-width: 800px) {
     .photosContainer {
         height: auto;
-        .photoSection {
-            .photoContainer {
-                height: auto;
-                .textContent {
-                    .text {
-                        width: 100%;
-                        .textPrincipalIndustrias {
-                            width: 90%;
-                        }
-                    }
-                }
-            }
-        }
     }
 
-    .informationContainer {
-        .cardsSection {
-            .cardsContainer {
-                .content,
-                .contentpar {
-
-                    align-items: flex-start;
-                    .containerCardCarrucel1,
-                    .containerCardCarrucel1par {
-                        width: 100%;
-                        height: auto;
-                        align-content: center;
-                        align-items: flex-start;
-                        flex-direction: column;
-                        .cardContainer1 {
-                            padding: 20px;
-                            width: 100%;
-                        }
-                        .carouselConteiner1 {
-                            height: 400px;
-                            .carouselInner1 {
-                                img {
-                                    height: 400px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+    .photosContainer .photoSection .photoContainer {
+        height: auto;
     }
 
-    .informationparContainer {
-        .page-title {
-            height: auto;
-            h3 {
-                text-align: center;
-            }
-        }
-        .cardContainer {
-            width: 100%;
-            height: auto;
-            .cardsContainer {
-                flex-wrap: wrap;
-            }
-        }
+    .photosContainer .photoSection .photoContainer .textContent .text {
+        width: 100%;
+    }
+
+    .photosContainer .photoSection .photoContainer .textContent .text .textPrincipalIndustrias {
+        width: 90%;
+    }
+
+    .informationContainer .cardsSection .cardsContainer .content,
+    .informationContainer .cardsSection .cardsContainer .contentpar {
+        align-items: flex-start;
+    }
+
+    .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1,
+    .informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par {
+        width: 100%;
+        height: auto;
+        align-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1,
+    .informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .carouselConteiner1,
+    .informationContainer .cardsSection .cardsContainers .contentpar .containerCardCarrucel1par .carouselConteiner1 {
+        height: 400px;
+    }
+
+    .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .carouselConteiner1 .carouselInner1 img,
+    .informationContainer .cardsSection .cardsContainers .contentpar .containerCardCarrucel1par .carouselConteiner1 .carouselInner1 img {
+        height: 400px;
+    }
+
+    .informationparContainer .page-title h3 {
+        text-align: center;
+    }
+
+    .informationparContainer .cardContainer {
+        width: 100%;
+        height: auto;
+    }
+
+    .informationparContainer .cardContainer .cardsContainer {
+        flex-wrap: wrap;
     }
 }
 
+/* Media Query for max-width: 600px */
 @media (max-width: 600px) {
     .photosContainer {
         height: auto;
-        .photoSection {
-            .photoContainer {
-                height: auto;
-                .textContent {
-                    .text {
-                        width: 100%;
-                        .textPrincipalIndustrias {
-                            display: none;
-                        }
-                    }
-                }
-            }
-        }
     }
 
-    .informationparContainer {
+    .photosContainer .photoSection .photoContainer {
         height: auto;
-        .cardContainer {
-            width: 100%;
-            .cardsContainer {
-                flex-direction: column;
-                flex-wrap: wrap;
-                .card {
-                    width: 100%;
-                }
-            }
-        }
+    }
+
+    .photosContainer .photoSection .photoContainer .textContent .text .textPrincipalIndustrias {
+        display: none;
+    }
+
+    .informationparContainer .cardContainer {
+        width: 100%;
+    }
+
+    .informationparContainer .cardContainer .cardsContainer {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .informationparContainer .cardContainer .cardsContainer .card {
+        width: 100%;
     }
 }
+
