@@ -110,9 +110,9 @@ class PageController extends Controller
                         "alt" => "Diagnostico 4"
                     ]
                 ],
-                "tittle" => "Diagnóstico Socioeconómico y Diseño del Portafolio de Inversión Socia",
+                "tittle" => "Diagnóstico Socioeconómico y Diseño del Portafolio de Inversión Social",
                 "texto" =>
-                "El diseño y puesta en marcha del diagnóstico realizado, tuvo una cobertura de 43,616 hectáreas y 1,536 habitantes distribuidos en tres regiones del Perú. Incluyó un análisis socioeconómico, evaluación de actividades productivas, condiciones endémicas y oportunidades comerciales sobre las que se diseñaron proyectos alineados con dichas potencialidades, optimizando el impacto de las inversiones sociales en estas comunidades.",
+                "El diseño y ejecución del diagnóstico abarcó 43,616 hectáreas y benefició a 1,536 habitantes en tres regiones del Perú. Se realizó un análisis socioeconómico, una evaluación de actividades productivas, condiciones endémicas y oportunidades comerciales, sobre las cuales se estructuraron proyectos alineados a estas potencialidades, optimizando así el impacto de las inversiones sociales en las comunidades.",
                 "fondo" => "assets/industrial/mineria/DiagnósticoPotencialRaura/Fondo.webp"
             ],
             [
@@ -132,7 +132,7 @@ class PageController extends Controller
                 ],
                 "tittle" => 'Plan de prevención de fenómeno de "El Niño" ',
                 "texto" =>
-                "Ante una posible afectación del aparato productivo de los sectores, dada por la probabilidad de ocurrencia del fenómeno de El Niño en el 2023, se analizó la base de datos climatológica y modeló los posibles escenarios a enfrentar. Este estudio tomo en cuenta condiciones propias de cada sector así como información de las principales instancias gubernamentales generadoras de estudios relativos a estos fenómenos climatológicos. Usamos lo último en tecnología para que el usuario acceda a esta información con absoluta facilidad.",
+                "Ante una posible afectación del aparato productivo de los sectores, dada por la probabilidad de ocurrencia del fenómeno de El Niño en el 2023, se analizó la base de datos climatológica y modeló los posibles escenarios a enfrentar. Este estudio tomo en cuenta condiciones propias de cada sector así como información de las principales instancias gubernamentales generadoras de estudios relativos a estos fenómenos climatológicos. Usamos lo último en tecnología para que el usuario acceda a esta información de manera ágil y sencilla.",
                 "fondo" => "assets/industrial/mineria/PlanPrevencion/Fondo.webp"
             ],
             [

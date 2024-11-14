@@ -52,7 +52,7 @@
 .cardSection .cardContainer .cardsContainer .card .overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(3, 3, 33, 0.5), rgba(3, 3, 33, 0.5));
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
     z-index: 1;
 }
 
