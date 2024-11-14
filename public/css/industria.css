@@ -428,4 +428,23 @@
         width: 100%;
     }
 }
+@media (max-width: 550px) {
+    .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1 h2, .informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 h2 {
+        font-size: var(--textTerciario);
+        text-align: center;
+    }
+    .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1 p, .informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 p {
+        font-size: var(--textTerciario);
+        color: var(--white);
+        text-align: justify;
+        line-height: 20px;
+    }
+
+    .informationparContainer .cardContainer .cardsContainer .card {
+        width: 80%;
+    }
+    .informationparContainer .cardContainer .cardsContainer {
+        align-items: center;
+    }
+}
 

@@ -1,7 +1,5 @@
-<section class="containerYoutube" id="canal">
-    <img class="photo" src="{{ asset('assets/img/home/iaPublicidad.webp') }}" alt="Due Diligence" loading="lazy">
-    <div class="degradadoPortafolioTop1"></div>
-
+<section class="containerYoutube" id="canal"
+    style="background-image: url('{{ asset('assets/img/home/iaPublicidad.webp') }}');">
     <div class="content">
         <div class="page-title">
             <h3>Novedades en nuestro canal</h3>
@@ -29,7 +27,8 @@
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <h2>Programa de formación para Data Eng. Jr. Sesión 01</h2>
-                    <p>Aprenderás fundamentos de Ingeniería de Datos, Scala con Spark y herramientas clave de Big Data usadas en la industria.
+                    <p>Aprenderás fundamentos de Ingeniería de Datos, Scala con Spark y herramientas clave de Big Data
+                        usadas en la industria.
                     </p>
                 </div>
 
@@ -42,7 +41,8 @@
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <h2>Programa de formación para Data Eng. Jr. Sesión 02</h2>
-                    <p>Esta sesión cubre herramientas clave para Big Data: ETL, streaming, servicios cloud, visualización y machine learning.
+                    <p>Esta sesión cubre herramientas clave para Big Data: ETL, streaming, servicios cloud,
+                        visualización y machine learning.
                     </p>
                 </div>
 
@@ -55,7 +55,8 @@
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <h2>Programa de formación para Data Eng. Jr. Sesión 03</h2>
-                    <p>La sesión explora servicios clave de Google Cloud: DataFlow, BigQuery, Bigtable, y orquestación con Functions y Composer.</p>
+                    <p>La sesión explora servicios clave de Google Cloud: DataFlow, BigQuery, Bigtable, y orquestación
+                        con Functions y Composer.</p>
                 </div>
             </div>
         </div>

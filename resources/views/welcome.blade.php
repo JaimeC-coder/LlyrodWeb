@@ -35,6 +35,7 @@
     </div>
 </section>
 
+
 <section class="cardSection">
   @include('home.cardSection')
 </section>

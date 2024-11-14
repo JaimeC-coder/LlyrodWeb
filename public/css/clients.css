@@ -27,6 +27,7 @@
     font-size: var(--titulo);
     color: var(--TitulosTextosPrincipales);
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .sectionClients .containerClient .content .title span {

@@ -1,23 +1,20 @@
 .containerYoutube {
-    border-top: #fff 25px solid;
     font-family: "Raleway", sans-serif !important;
     width: 100%;
     height: auto;
-    flex-shrink: 0;
-    aspect-ratio: 1 / 1;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-decoration: none;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-top: #fff 25px solid;
 }
 
-.containerYoutube .photo {
-    width: 100%;
-    height: 100%;
-    object-fit: inherit;
-}
-
-.containerYoutube .degradadoPortafolioTop1 {
+.containerYoutube::before {
+    content: "";
     position: absolute;
     inset: 0;
     background: linear-gradient(to top, rgba(3, 3, 33, 0.9) 100%, rgba(3, 3, 33, 0.9) 50%, transparent 100%);
@@ -28,11 +25,16 @@
     width: 100%;
     margin: 10% auto;
     align-items: center;
-    padding: 0px 80px 30px;
-    position: absolute;
-    top: 0%;
+    padding: 20px;
+    position: relative;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--SeccionesSecundarias);
 }
+
+
 
 .containerYoutube .content .page-title {
     display: flex;
@@ -175,19 +177,47 @@
     }
 
     .containerYoutube .content .novedades video {
-        width: 80%;
+        width: 60%;
         height: auto;
     }
 
     .containerYoutube .content .novedades img {
-        width: 70%;
+        width: 50%;
         height: auto;
     }
 }
 
-/* Media Query para pantallas menores a 768px */
-@media (max-width: 768px) {
-    .containerYoutube .content .videoContainer .video-container .video-item {
-        width: 100%;
+@media (max-width: 600px) {
+    .containerYoutube .content .page-title p {
+        font-size: var(--textSecundario);
     }
+    .containerYoutube .content .videoContainer .video-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .containerYoutube .content .videoContainer .video-container .video-item {
+        width: calc(55.333% - 20px);
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 500px) {
+    .containerYoutube .content .page-title p {
+        font-size: var(--textTerciario);
+    }
+    .containerYoutube .content .novedades video {
+        width: 90%;
+        height: auto;
+    }
+
+    .containerYoutube .content .novedades img {
+        width: 80%;
+        height: auto;
+    }
+        .containerYoutube .content .videoContainer .video-container .video-item {
+            width: 100%;
+            margin-bottom: 40px;
+        }
 }
