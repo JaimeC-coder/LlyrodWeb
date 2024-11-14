@@ -33,7 +33,11 @@
 .photosContainer .photoSection .photoContainer .degradadoPortafolioTop1 {
     position: absolute;
     inset: 0;
-    background: linear-gradient(200deg, rgb(4, 2, 33, 0) 10%, rgb(0, 0, 0, 0.85) 100%);
+    background: linear-gradient(
+        200deg,
+        rgb(4, 2, 33, 0) 10%,
+        rgb(0, 0, 0, 0.85) 100%
+    );
     z-index: 1;
 }
 
@@ -55,14 +59,24 @@
     text-align: start;
 }
 
-.photosContainer .photoSection .photoContainer .textContent .text .titlePrincipal {
+.photosContainer
+    .photoSection
+    .photoContainer
+    .textContent
+    .text
+    .titlePrincipal {
     font-size: var(--titulo);
     font-weight: 300;
     font-family: "Raleway", sans-serif !important;
     color: var(--white);
 }
 
-.photosContainer .photoSection .photoContainer .textContent .text .textPrincipalIndustrias {
+.photosContainer
+    .photoSection
+    .photoContainer
+    .textContent
+    .text
+    .textPrincipalIndustrias {
     padding-top: 10px;
     padding-left: 10px;
     width: 70%;
@@ -73,7 +87,6 @@
     color: var(--white);
     border-left: var(--BotonEnlaces) 2px solid;
 }
-
 
 .informationContainer {
     width: 100%;
@@ -115,16 +128,37 @@
     object-fit: inherit;
 }
 
-.informationContainer .cardsSection .cardsContainer .content .degradadoPortafolioTop1,
-.informationContainer .cardsSection .cardsContainer .contentpar .degradadoPortafolioTop1 {
+.informationContainer
+    .cardsSection
+    .cardsContainer
+    .content
+    .degradadoPortafolioTop1,
+.informationContainer
+    .cardsSection
+    .cardsContainer
+    .contentpar
+    .degradadoPortafolioTop1 {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(3, 3, 33, 0.9) 100%, rgba(3, 3, 33, 0.9) 50%, transparent 100%);
+    background: linear-gradient(
+        to top,
+        rgba(3, 3, 33, 0.9) 100%,
+        rgba(3, 3, 33, 0.9) 50%,
+        transparent 100%
+    );
     z-index: 1;
 }
 
-.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1,
-.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par {
+.informationContainer
+    .cardsSection
+    .cardsContainer
+    .content
+    .containerCardCarrucel1,
+.informationContainer
+    .cardsSection
+    .cardsContainer
+    .contentpar
+    .containerCardCarrucel1par {
     position: absolute;
     display: flex;
     bottom: 0;
@@ -140,8 +174,18 @@
     margin: 5% auto;
 }
 
-.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1,
-.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 {
+.informationContainer
+    .cardsSection
+    .cardsContainer
+    .content
+    .containerCardCarrucel1
+    .cardContainer1,
+.informationContainer
+    .cardsSection
+    .cardsContainer
+    .contentpar
+    .containerCardCarrucel1par
+    .cardContainer1 {
     background-color: transparent;
     padding: 50px;
     width: 55%;
@@ -152,47 +196,119 @@
     justify-content: center;
 }
 
-.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1 h2,
-.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 h2 {
+.informationContainer
+    .cardsSection
+    .cardsContainer
+    .content
+    .containerCardCarrucel1
+    .cardContainer1
+    h2,
+.informationContainer
+    .cardsSection
+    .cardsContainer
+    .contentpar
+    .containerCardCarrucel1par
+    .cardContainer1
+    h2 {
     font-size: var(--textPrincipal);
     margin-bottom: 10px;
     color: var(--white);
     font-weight: bold;
 }
 
-.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1 p,
-.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 p {
+.informationContainer
+    .cardsSection
+    .cardsContainer
+    .content
+    .containerCardCarrucel1
+    .cardContainer1
+    p,
+.informationContainer
+    .cardsSection
+    .cardsContainer
+    .contentpar
+    .containerCardCarrucel1par
+    .cardContainer1
+    p {
     font-size: var(--textSecundario);
     color: var(--white);
     text-align: justify;
     line-height: 25px;
 }
 
-.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .carouselConteiner1,
-.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .carouselConteiner1 {
+.informationContainer
+    .cardsSection
+    .cardsContainer
+    .content
+    .containerCardCarrucel1
+    .carouselConteiner1,
+.informationContainer
+    .cardsSection
+    .cardsContainer
+    .contentpar
+    .containerCardCarrucel1par
+    .carouselConteiner1 {
     position: relative;
     max-width: 590px;
     margin: 0 auto;
     overflow: hidden;
 }
 
-.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .carouselConteiner1 .carouselInner1,
-.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .carouselConteiner1 .carouselInner1 {
+.informationContainer
+    .cardsSection
+    .cardsContainer
+    .content
+    .containerCardCarrucel1
+    .carouselConteiner1
+    .carouselInner1,
+.informationContainer
+    .cardsSection
+    .cardsContainer
+    .contentpar
+    .containerCardCarrucel1par
+    .carouselConteiner1
+    .carouselInner1 {
     display: flex;
     transition: transform 0.5s ease-in-out;
     height: 400px;
 }
 
-.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .carouselConteiner1 .carouselInner1 .carousel-image,
-.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .carouselConteiner1 .carouselInner1 .carousel-image {
+.informationContainer
+    .cardsSection
+    .cardsContainer
+    .content
+    .containerCardCarrucel1
+    .carouselConteiner1
+    .carouselInner1
+    .carousel-image,
+.informationContainer
+    .cardsSection
+    .cardsContainer
+    .contentpar
+    .containerCardCarrucel1par
+    .carouselConteiner1
+    .carouselInner1
+    .carousel-image {
     width: 100%;
     flex-shrink: 0;
     height: 450px;
     border-radius: 10px;
 }
 
-.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .carouselConteiner1 .carousel-button,
-.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .carouselConteiner1 .carousel-button {
+.informationContainer
+    .cardsSection
+    .cardsContainer
+    .content
+    .containerCardCarrucel1
+    .carouselConteiner1
+    .carousel-button,
+.informationContainer
+    .cardsSection
+    .cardsContainer
+    .contentpar
+    .containerCardCarrucel1par
+    .carouselConteiner1
+    .carousel-button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -205,18 +321,54 @@
     transition: opacity 0.3s;
 }
 
-.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .carouselConteiner1 .carousel-button.prev,
-.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .carouselConteiner1 .carousel-button.prev {
+.informationContainer
+    .cardsSection
+    .cardsContainer
+    .content
+    .containerCardCarrucel1
+    .carouselConteiner1
+    .carousel-button.prev,
+.informationContainer
+    .cardsSection
+    .cardsContainer
+    .contentpar
+    .containerCardCarrucel1par
+    .carouselConteiner1
+    .carousel-button.prev {
     left: 10px;
 }
 
-.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .carouselConteiner1 .carousel-button.next,
-.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .carouselConteiner1 .carousel-button.next {
+.informationContainer
+    .cardsSection
+    .cardsContainer
+    .content
+    .containerCardCarrucel1
+    .carouselConteiner1
+    .carousel-button.next,
+.informationContainer
+    .cardsSection
+    .cardsContainer
+    .contentpar
+    .containerCardCarrucel1par
+    .carouselConteiner1
+    .carousel-button.next {
     right: 10px;
 }
 
-.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .carouselConteiner1 .carousel-dots,
-.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .carouselConteiner1 .carousel-dots {
+.informationContainer
+    .cardsSection
+    .cardsContainer
+    .content
+    .containerCardCarrucel1
+    .carouselConteiner1
+    .carousel-dots,
+.informationContainer
+    .cardsSection
+    .cardsContainer
+    .contentpar
+    .containerCardCarrucel1par
+    .carouselConteiner1
+    .carousel-dots {
     position: absolute;
     bottom: 10px;
     left: 50%;
@@ -225,8 +377,20 @@
     gap: 10px;
 }
 
-.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .carouselConteiner1 .dot,
-.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .carouselConteiner1 .dot {
+.informationContainer
+    .cardsSection
+    .cardsContainer
+    .content
+    .containerCardCarrucel1
+    .carouselConteiner1
+    .dot,
+.informationContainer
+    .cardsSection
+    .cardsContainer
+    .contentpar
+    .containerCardCarrucel1par
+    .carouselConteiner1
+    .dot {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -234,20 +398,45 @@
     cursor: pointer;
 }
 
-.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .carouselConteiner1 .dot.active,
-.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .carouselConteiner1 .dot.active {
+.informationContainer
+    .cardsSection
+    .cardsContainer
+    .content
+    .containerCardCarrucel1
+    .carouselConteiner1
+    .dot.active,
+.informationContainer
+    .cardsSection
+    .cardsContainer
+    .contentpar
+    .containerCardCarrucel1par
+    .carouselConteiner1
+    .dot.active {
     background-color: white;
 }
 
-.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1:hover .carousel-button,
-.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par:hover .carousel-button {
+.informationContainer
+    .cardsSection
+    .cardsContainer
+    .content
+    .containerCardCarrucel1:hover
+    .carousel-button,
+.informationContainer
+    .cardsSection
+    .cardsContainer
+    .contentpar
+    .containerCardCarrucel1par:hover
+    .carousel-button {
     opacity: 1;
 }
 
-.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par {
+.informationContainer
+    .cardsSection
+    .cardsContainer
+    .contentpar
+    .containerCardCarrucel1par {
     flex-direction: row-reverse;
 }
-
 
 /**---------------------------------------seccion ------------------------------------------------------------- */
 .informationparContainer {
@@ -301,7 +490,12 @@
 .informationparContainer .cardContainer .cardsContainer .card .overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 50%, transparent 100%);
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.8) 50%,
+        transparent 100%
+    );
     z-index: 1;
 }
 
@@ -338,7 +532,6 @@
     text-decoration: underline;
 }
 
-
 /* Media Query for max-width: 800px */
 @media (max-width: 800px) {
     .photosContainer {
@@ -353,7 +546,12 @@
         width: 100%;
     }
 
-    .photosContainer .photoSection .photoContainer .textContent .text .textPrincipalIndustrias {
+    .photosContainer
+        .photoSection
+        .photoContainer
+        .textContent
+        .text
+        .textPrincipalIndustrias {
         width: 90%;
     }
 
@@ -362,8 +560,16 @@
         align-items: flex-start;
     }
 
-    .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1,
-    .informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par {
+    .informationContainer
+        .cardsSection
+        .cardsContainer
+        .content
+        .containerCardCarrucel1,
+    .informationContainer
+        .cardsSection
+        .cardsContainer
+        .contentpar
+        .containerCardCarrucel1par {
         width: 100%;
         height: auto;
         align-content: center;
@@ -371,19 +577,53 @@
         flex-direction: column;
     }
 
-    .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1,
-    .informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 {
+    .informationContainer
+        .cardsSection
+        .cardsContainer
+        .content
+        .containerCardCarrucel1
+        .cardContainer1,
+    .informationContainer
+        .cardsSection
+        .cardsContainer
+        .contentpar
+        .containerCardCarrucel1par
+        .cardContainer1 {
         padding: 20px;
         width: 100%;
     }
 
-    .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .carouselConteiner1,
-    .informationContainer .cardsSection .cardsContainers .contentpar .containerCardCarrucel1par .carouselConteiner1 {
+    .informationContainer
+        .cardsSection
+        .cardsContainer
+        .content
+        .containerCardCarrucel1
+        .carouselConteiner1,
+    .informationContainer
+        .cardsSection
+        .cardsContainers
+        .contentpar
+        .containerCardCarrucel1par
+        .carouselConteiner1 {
         height: 400px;
     }
 
-    .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .carouselConteiner1 .carouselInner1 img,
-    .informationContainer .cardsSection .cardsContainers .contentpar .containerCardCarrucel1par .carouselConteiner1 .carouselInner1 img {
+    .informationContainer
+        .cardsSection
+        .cardsContainer
+        .content
+        .containerCardCarrucel1
+        .carouselConteiner1
+        .carouselInner1
+        img,
+    .informationContainer
+        .cardsSection
+        .cardsContainers
+        .contentpar
+        .containerCardCarrucel1par
+        .carouselConteiner1
+        .carouselInner1
+        img {
         height: 400px;
     }
 
@@ -411,7 +651,12 @@
         height: auto;
     }
 
-    .photosContainer .photoSection .photoContainer .textContent .text .textPrincipalIndustrias {
+    .photosContainer
+        .photoSection
+        .photoContainer
+        .textContent
+        .text
+        .textPrincipalIndustrias {
         display: none;
     }
 
@@ -429,11 +674,37 @@
     }
 }
 @media (max-width: 550px) {
-    .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1 h2, .informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 h2 {
+    .informationContainer
+        .cardsSection
+        .cardsContainer
+        .content
+        .containerCardCarrucel1
+        .cardContainer1
+        h2,
+    .informationContainer
+        .cardsSection
+        .cardsContainer
+        .contentpar
+        .containerCardCarrucel1par
+        .cardContainer1
+        h2 {
         font-size: var(--textTerciario);
         text-align: center;
     }
-    .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1 p, .informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 p {
+    .informationContainer
+        .cardsSection
+        .cardsContainer
+        .content
+        .containerCardCarrucel1
+        .cardContainer1
+        p,
+    .informationContainer
+        .cardsSection
+        .cardsContainer
+        .contentpar
+        .containerCardCarrucel1par
+        .cardContainer1
+        p {
         font-size: var(--textTerciario);
         color: var(--white);
         text-align: justify;
@@ -447,4 +718,37 @@
         align-items: center;
     }
 }
+@media (max-width: 450px) {
 
+    .photosContainer .photoSection .photoContainer .textContent {
+        padding: 0px 10px;
+    }
+
+
+
+    .informationparContainer .cardContainer {
+        width: 95%;
+        height: auto;
+        margin: 20px 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .informationparContainer .cardContainer .cardsContainer {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        max-width: 400px;
+
+        padding-bottom: 20px;
+        align-items: center;
+        margin: 0;
+    }
+    .informationparContainer .cardContainer .cardsContainer .card {
+        height: 400px;
+        width: 90%;
+    }
+    .informationparContainer .cardContainer .cardsContainer .card .content {
+        padding: 20px;
+        height: 140px;
+    }
+}
