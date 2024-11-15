@@ -164,8 +164,8 @@
     font-weight: bold;
 }
 
-.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1 p,
-.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 p {
+.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1 >p,
+.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1> p {
     font-size: var(--textSecundario);
     color: var(--white);
     text-align: justify;
@@ -264,7 +264,6 @@
 .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1 .contentIcons .contetIcon .tooltip1 p,
 .informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 .contentIcons .contetIcon .tooltip1 p {
     font-size: 14px;
-    font-weight: bold;
     color: #333;
     text-align: justify;
 
