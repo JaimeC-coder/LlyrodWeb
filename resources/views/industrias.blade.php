@@ -134,13 +134,7 @@
                     <div class="text">
                         <h2 class="titlePrincipal">Transformación digital & IA</h2>
                         <p class="textPrincipalIndustrias">
-                            Grupo Llyrod es un punto de encuentro para mentes inquisitivas y apasionadas. Aquí, nuestros
-                            equipos y colaboradores exploran ideas vanguardistas, desarrollan soluciones disruptivas y
-                            forjan alianzas estratégicas para el futuro. Fomentamos la experimentación y el aprendizaje
-                            constante, brindando un entorno que nutre la innovación y el crecimiento.
-                            Utilizamos sistemas de gestión de datos y análisis avanzados para recopilar información valiosa
-                            sobre el rendimiento de nuestras operaciones, lo que nos permite tomar decisiones más acertadas
-                            y basadas en datos en tiempo real.
+                            Grupo Llyrod es un punto de encuentro para mentes inquietas. Nuestros equipos exploran ideas vanguardistas, desarrollan soluciones disruptivas y forjan alianzas estratégicas. Fomentamos la experimentación y el aprendizaje constante, creando un entorno que nutre la innovación. Utilizamos sistemas de gestión de datos y análisis avanzados para recopilar información sobre el rendimiento, lo que nos permite tomar decisiones acertadas basadas en datos en tiempo real.
                         </p>
                     </div>
                 </div>

@@ -7,12 +7,12 @@
 
      <div class="cardsContainer">
          @foreach ($cards as $card)
-         <div onclick="window.location.href='/nuestro_trabajo#{{ $card['id']}}'"  class="card">
+         <div onclick="window.location.href='/nuestroTrabajo#{{ $card['id']}}'"  class="card">
              <img src="{{ asset($card['imagen']) }}" alt="Imagen Home" />
              <div class="overlay"></div>
              <p class="content">
                  <span >{{ $card['tittle'] }}</span>
-                     <a href="/nuestro_trabajo#{{ $card['id'] }}">Leer más</a>
+                     <a href="/nuestroTrabajo#{{ $card['id'] }}">Leer más</a>
              </p>
          </div>
 

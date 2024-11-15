@@ -29,7 +29,7 @@
                     En <strong>Grupo Llyrod</strong>, Somos una consultora que impulsa el cambio y el crecimiento sostenible,
                     combinando talento joven, experiencia técnica y tecnología avanzada para ofrecer soluciones innovadoras.
                 </span>
-                <a class="buttonVer" href="/nuestro_trabajo">ver más</a>
+                <a class="buttonVer" href="/nuestroTrabajo">ver más</a>
             </div>
         </div>
     </div>

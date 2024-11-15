@@ -11,6 +11,10 @@ class PageController extends Controller
     public function index()
     {
         $pageTitle = "Llyrod | Home";
+        $metaData = [
+            'robots' => 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
+
+        ];
         $cards = [
             [
                 "id" => "mineria",
@@ -84,6 +88,7 @@ class PageController extends Controller
     {
         $pageTitle = "Llyrod | Nuestros Trabajos";
 
+
         $cardsMineria = [
             [
                 "imagenes" => [
@@ -110,21 +115,21 @@ class PageController extends Controller
                 'icons' => [
                     [
                         'icon' => 'bi bi-file-earmark-bar-graph-fill',
-                        'tittle' => 'Análisis Socioeconómico',
+                        'tittle' => 'Visualizadores en PBI',
                         'color'=>'#F0CA18',
-                        'texto' => 'Realizamos un diagnóstico exhaustivo de las condiciones socioeconómicas de las comunidades, evaluando actividades productivas y oportunidades de desarrollo que optimizan el impacto social de las inversiones en la región.'
+                        'texto' => 'Diseño de un Dashboard en Power BI para una consulta ágil y sencilla de todos los indicadores resultantes del estudio, por región, comunidad, caserío, geo-referenciado y conectado a google maps.'
                     ],
                     [
                         'icon' => 'bi bi-database',
-                        'tittle' => 'Base de Datos Regional',
+                        'tittle' => 'Base de datos',
                         'color'=>'#2497F0',
-                        'texto' => 'Desarrollamos una base de datos completa que centraliza la información de las comunidades, facilitando la planificación y ejecución de proyectos de inversión social basados en las necesidades y potencialidades de cada región.'
+                        'texto' => 'Desarrollamos una base de datos en Big Query que centraliza la información recogida en campo, vinculando a los indicadores regionales que posee el estado.'
                     ],
                     [
                         'icon' => 'bi bi-cloud',
-                        'tittle' => 'Portafolio en la Nube',
+                        'tittle' => 'Portafolio en GCP',
                         'color'=>'#3A8AC0',
-                        'texto' => 'El portafolio de inversión social está disponible en la nube, permitiendo a las comunidades y aliados acceder a información actualizada sobre proyectos, oportunidades comerciales y estrategias de desarrollo social.'
+                        'texto' => 'El registro de datos del estudio está disponible en nube, Google Cloud Platform, facilitando al usuario la consulta y procesamiento de datos posterior.'
                     ]
                 ],
                 "fondo" => "assets/industrial/mineria/DiagnósticoPotencialRaura/Fondo.webp"
@@ -146,14 +151,14 @@ class PageController extends Controller
                 ],
                 "tittle" => 'Plan de prevención de fenómeno de "El Niño" ',
                 "texto" =>
-                "Ante una posible afectación del aparato productivo de los sectores, dada por la probabilidad de ocurrencia del fenómeno de El Niño en el 2023, se analizó la base de datos climatológica y modeló los posibles escenarios a enfrentar. Este estudio tomo en cuenta condiciones propias de cada sector así como información de las principales instancias gubernamentales generadoras de estudios relativos a estos fenómenos climatológicos. Usamos lo último en tecnología para que el usuario acceda a esta información de manera ágil y sencilla.",
+                "Frente a la posible afectación del aparato productivo por el fenómeno de El Niño en 2023, se analizó la base de datos climatológica y se modelaron escenarios. Este estudio consideró condiciones sectoriales y datos de instancias gubernamentales. Además, usamos tecnología avanzada para facilitar el acceso a la información de manera ágil y sencilla.",
 
                 'icons' => [
                     [
                         'icon' => 'bi bi-file-earmark-bar-graph-fill',
-                        'tittle' => 'Análisis Climatológico',
+                        'tittle' => 'Visualizador en PBI',
                         'color'=>'#F0CA18',
-                        'texto' => 'Realizamos un análisis profundo de datos climatológicos históricos y actuales, modelando posibles escenarios para prever el impacto del fenómeno de El Niño en los sectores productivos y brindar información estratégica para su prevención.'
+                        'texto' => 'Dashboard interactivo con información climatológica, análisis por sector y plan de prevención según peligros y vulnerabilidades identificadas.'
                     ],
                     [
                         'icon' => 'bi bi-database',
@@ -164,9 +169,9 @@ class PageController extends Controller
                     ],
                     [
                         'icon' => 'bi bi-cloud',
-                        'tittle' => 'Acceso en la Nube',
+                        'tittle' => 'Acceso a la Nube GCP',
                         'color'=>'#3A8AC0',
-                        'texto' => 'Ofrecemos una plataforma en la nube que facilita la consulta de información sobre El Niño, disponible para usuarios en tiempo real, asegurando acceso ágil y simplificado a los datos y resultados de análisis climatológico.'
+                        'texto' => 'Accedemos a la plataforma de GCP para facilitar la consulta de información, estando a disposición del usuario en tiempo real.'
                     ]
                 ],
 
@@ -258,21 +263,21 @@ class PageController extends Controller
                     "imagen" => "assets/industrial/inteligenciaNegocios/inteligencia1.webp",
                     "alt" => "transformacion1"
                 ],
-                "tittle" => "Monitoreo y análisis de datos de almacenes en Japón.",
+                "tittle" => "Monitoreo y análisis de datos de almacenes desde Japón.",
             ],
             [
                 "imagenes" => [
                     "imagen" => "assets/industrial/inteligenciaNegocios/inteligencia2.webp",
                     "alt" => "transformacion1"
                 ],
-                "tittle" => "Monitoreo y análisis de datos de una planta empacadora en Ecuador",
+                "tittle" => "Monitoreo y análisis de exportación bananera desde Ecuador.",
             ],
             [
                 "imagenes" => [
                     "imagen" => "assets/industrial/inteligenciaNegocios/inteligencia3.webp",
                     "alt" => "transformacion1"
                 ],
-                "tittle" => "Monitoreo y Análisis de Datos de Plantas de Alimentos del Mar en Chile.",
+                "tittle" => "Monitoreo y Análisis de Datos hidrobiológicos desde chile.",
             ],
 
         ];
