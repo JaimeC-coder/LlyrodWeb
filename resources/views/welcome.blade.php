@@ -1,6 +1,22 @@
 @extends('layouts.body')
 
-@section('title', $pageTitle)
+@section('meta')
+<meta name="robots" content="{{ $metaData['robots'] }}">
+<meta name="description" content="{{ $metaData['description'] }}">
+<meta name="keywords" content="{{ $metaData['keywords'] }}">
+
+<!-- Open Graph Meta Tags -->
+@foreach($metaData['og'] as $og)
+    <meta property="og:{{ $og['type'] }}" content="{{ $og['content'] }}">
+@endforeach
+
+<!-- Twitter Meta Tags -->
+@foreach($metaData['twitter'] as $twitter)
+    <meta name="twitter:{{ $twitter['type'] }}" content="{{ $twitter['content'] }}">
+@endforeach
+
+<title>{{ $metaData['title'] }}</title>
+@endsection
 
 @section('styles')
 <link rel="stylesheet" href="{{ asset('css/home.css') }}">
@@ -18,7 +34,7 @@
         <video src="{{ asset('assets/video/video_home.mkv') }}" class="imagen" muted loop autoplay loading="lazy"></video>
         <div class="degradadoPortafolioTop"></div>
         <div class="textandGraph">
-            <div class="texto">
+            <h1 class="texto">
                 <span class="textoSecundario">Transformamos desafíos en oportunidades</span>
                 <span class="textoPrincipal">
                     En <strong>Grupo Llyrod</strong>, creemos en el poder de la innovación y el talento joven para impulsar el cambio y el crecimiento sostenible.
@@ -30,7 +46,7 @@
                     combinando talento joven, experiencia técnica y tecnología avanzada para ofrecer soluciones innovadoras.
                 </span>
                 <a class="buttonVer" href="/nuestroTrabajo">ver más</a>
-            </div>
+            </h1>
         </div>
     </div>
 </section>

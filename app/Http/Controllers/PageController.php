@@ -10,11 +10,88 @@ class PageController extends Controller
     //
     public function index()
     {
-        $pageTitle = "Llyrod | Home";
+        $pageTitle = "Grupo Llyrod | Home";
         $metaData = [
             'robots' => 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
-
+            'title' => 'Grupo Llyrod | Consultoría en Minería, Transformación Digital, Auditoría de la Calidad y Due Diligence',
+            'description' => 'Grupo Llyrod, expertos en consultoría para proyectos de minería, transformación digital, auditoría de la calidad. ¡Transformamos tu negocio con soluciones a medida!',
+            'keywords' => 'Minería, Transformación Digital, Due Diligence, Consultoría, Gestión de Proyectos, Consultoría en Minería, Consultoría en Transformación Digital, Consultoría en Auditoría de la Calidad, Consultoría en Due Diligence, Auditoría de Calidad',
+            'image' => 'https://grupollyrod.com/assets/img/home/mineria_home.webp',
+            'url' => 'https://grupollyrod.com/',
+            'type' => 'website',
+            'locale' => 'es_PE',
+            'site_name' => 'Grupo Llyrod',
+            'author' => 'Grupo Llyrod',
+            'twitter' => [
+                [
+                    'type' => 'card',
+                    'content' => 'summary_large_image'
+                ],
+                [
+                    'type' => 'site',
+                    'content' => '@grupollyrod'
+                ],
+                [
+                    'type' => 'creator',
+                    'content' => '@grupollyrod'
+                ],
+                [
+                    'type' => 'title',
+                    'content' => 'Grupo Llyrod | Consultoría en Minería, Transformación Digital, Auditoría de la Calidad y Due Diligence'
+                ],
+                [
+                    'type' => 'description',
+                    'content' => 'Grupo Llyrod, expertos en consultoría para proyectos de minería, transformación digital, auditoría de la calidad y calidad due diligence. ¡Transformamos tu negocio con soluciones a medida!'
+                ],
+                [
+                    'type' => 'image',
+                    'content' => 'https://grupollyrod.com/assets/img/home/mineria_home.webp'
+                ]
+            ],
+            'og' => [
+                [
+                    'type' => 'title',
+                    'content' => 'Grupo Llyrod | Consultoría en Minería, Transformación Digital, Auditoría de la Calidad y Due Diligence'
+                ],
+                [
+                    'type' => 'description',
+                    'content' => 'Grupo Llyrod, expertos en consultoría para proyectos de minería, transformación digital, auditoría de la calidad y calidad due diligence. ¡Transformamos tu negocio con soluciones a medida!'
+                ],
+                [
+                    'type' => 'image',
+                    'content' => 'https://grupollyrod.com/assets/img/home/mineria_home.webp'
+                ],
+                [
+                    'type' => 'url',
+                    'content' => 'https://grupollyrod.com/'
+                ],
+                [
+                    'type' => 'type',
+                    'content' => 'website'
+                ],
+                [
+                    'type' => 'site_name',
+                    'content' => 'Grupo Llyrod'
+                ],
+                [
+                    'type' => 'locale',
+                    'content' => 'es_PE'
+                ],
+                [
+                    'type' => 'locale:alternate',
+                    'content' => 'en_US'
+                ],
+                [
+                    'type' => 'locale:alternate',
+                    'content' => 'es_ES'
+                ],
+                [
+                    'type' => 'locale:alternate',
+                    'content' => 'es_CL'
+                ]
+            ]
         ];
+
         $cards = [
             [
                 "id" => "mineria",
@@ -82,11 +159,91 @@ class PageController extends Controller
 
 
 
-        return view('welcome', compact('cards', 'pageTitle', 'cliens'));
+        return view('welcome', compact('cards', 'pageTitle', 'cliens','metaData'));
     }
     public function industria()
     {
         $pageTitle = "Llyrod | Nuestros Trabajos";
+        $metaData = [
+            'robots' => 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
+            'title' => 'Grupo Llyrod | Nuestro Trabajo | Consultoría en Minería , Transformación Digital y Auditoria de la Calidad',
+            'description' => 'Conoce los proyectos destacados de Grupo Llyrod en minería, transformación digital y auditoria de la calidad. Nuestra experiencia en gestión de proyectos se refleja en resultados exitosos para nuestros clientes.',
+            'keywords' => 'Proyectos de Minería, Consultoría en Transformación Digital, Gestión de Proyectos, Due Diligence, Casos de Éxito, Consultoría Empresarial, Consultoría en Minería, Consultoría en Transformación Digital , Auditoria de la Calidad',
+            'image' => 'https://grupollyrod.com/assets/img/proyectos/proyecto_mineria.webp',
+            'url' => url('nuestroTrabajo'),
+            'type' => 'website',
+            'locale' => 'es_PE',
+            'site_name' => 'Grupo Llyrod',
+            'author' => 'Grupo Llyrod',
+            'twitter' => [
+                [
+                    'type' => 'card',
+                    'content' => 'summary_large_image'
+                ],
+                [
+                    'type' => 'site',
+                    'content' => '@grupollyrod'
+                ],
+                [
+                    'type' => 'creator',
+                    'content' => '@grupollyrod'
+                ],
+                [
+                    'type' => 'title',
+                    'content' => 'Grupo Llyrod | Nuestro Trabajo | Consultoría en Minería , Transformación Digital y Auditoria de la Calidad'
+                ],
+                [
+                    'type' => 'description',
+                    'content' => 'Conoce los proyectos destacados de Grupo Llyrod en minería, transformación digital y auditoria de la calidad. Nuestra experiencia en gestión de proyectos se refleja en resultados exitosos para nuestros clientes.'
+                ],
+                [
+                    'type' => 'image',
+                    'content' => 'https://grupollyrod.com/assets/img/proyectos/proyecto_mineria.webp'
+                ]
+            ],
+            'og' => [
+                [
+                    'type' => 'title',
+                    'content' => 'Grupo Llyrod | Nuestro Trabajo | Consultoría en Minería , Transformación Digital y Auditoria de la Calidad'
+                ],
+                [
+                    'type' => 'description',
+                    'content' => 'Conoce los proyectos destacados de Grupo Llyrod en minería, transformación digital y auditoria de la calidad. Nuestra experiencia en gestión de proyectos se refleja en resultados exitosos para nuestros clientes.'
+                ],
+                [
+                    'type' => 'image',
+                    'content' => 'https://grupollyrod.com/assets/img/proyectos/proyecto_mineria.webp'
+                ],
+                [
+                    'type' => 'url',
+                    'content' => url('nuestroTrabajo')
+                ],
+                [
+                    'type' => 'type',
+                    'content' => 'website'
+                ],
+                [
+                    'type' => 'site_name',
+                    'content' => 'Grupo Llyrod'
+                ],
+                [
+                    'type' => 'locale',
+                    'content' => 'es_PE'
+                ],
+                [
+                    'type' => 'locale:alternate',
+                    'content' => 'en_US'
+                ],
+                [
+                    'type' => 'locale:alternate',
+                    'content' => 'es_PE'
+                ],
+                [
+                    'type' => 'locale:alternate',
+                    'content' =>  'es_CL'
+                ]
+            ]
+        ];
 
 
         $cardsMineria = [
@@ -116,19 +273,19 @@ class PageController extends Controller
                     [
                         'icon' => 'bi bi-file-earmark-bar-graph-fill',
                         'tittle' => 'Visualizadores en PBI',
-                        'color'=>'#F0CA18',
+                        'color' => '#F0CA18',
                         'texto' => 'Diseño de un Dashboard en Power BI para una consulta ágil y sencilla de todos los indicadores resultantes del estudio, por región, comunidad, caserío, geo-referenciado y conectado a google maps.'
                     ],
                     [
                         'icon' => 'bi bi-database',
                         'tittle' => 'Base de datos',
-                        'color'=>'#2497F0',
+                        'color' => '#2497F0',
                         'texto' => 'Desarrollamos una base de datos en Big Query que centraliza la información recogida en campo, vinculando a los indicadores regionales que posee el estado.'
                     ],
                     [
                         'icon' => 'bi bi-cloud',
                         'tittle' => 'Portafolio en GCP',
-                        'color'=>'#3A8AC0',
+                        'color' => '#3A8AC0',
                         'texto' => 'El registro de datos del estudio está disponible en nube, Google Cloud Platform, facilitando al usuario la consulta y procesamiento de datos posterior.'
                     ]
                 ],
@@ -157,20 +314,20 @@ class PageController extends Controller
                     [
                         'icon' => 'bi bi-file-earmark-bar-graph-fill',
                         'tittle' => 'Visualizador en PBI',
-                        'color'=>'#F0CA18',
+                        'color' => '#F0CA18',
                         'texto' => 'Dashboard interactivo con información climatológica, análisis por sector y plan de prevención según peligros y vulnerabilidades identificadas.'
                     ],
                     [
                         'icon' => 'bi bi-database',
                         'tittle' => 'Base de Datos Sectorial',
-                        'color'=>'#2497F0',
+                        'color' => '#2497F0',
 
                         'texto' => 'Contamos con una base de datos robusta que integra información sectorial relevante y estudios de diversas entidades gubernamentales, permitiendo un acceso organizado a datos clave para la toma de decisiones preventivas.'
                     ],
                     [
                         'icon' => 'bi bi-cloud',
                         'tittle' => 'Acceso a la Nube GCP',
-                        'color'=>'#3A8AC0',
+                        'color' => '#3A8AC0',
                         'texto' => 'Accedemos a la plataforma de GCP para facilitar la consulta de información, estando a disposición del usuario en tiempo real.'
                     ]
                 ],
@@ -204,19 +361,19 @@ class PageController extends Controller
                     [
                         'icon' => 'bi bi-file-earmark-bar-graph-fill',
                         'tittle' => 'Análisis de datos',
-                        'color'=>'#F0CA18',
+                        'color' => '#F0CA18',
                         'texto' => 'Utilizamos herramientas avanzadas de análisis para transformar datos en información útil. Esto permite la toma de decisiones fundamentadas y una planificación estratégica basada en resultados medibles.'
                     ],
                     [
                         'icon' => 'bi bi-database',
                         'tittle' => 'Base de datos',
-                        'color'=>'#2497F0',
+                        'color' => '#2497F0',
                         'texto' => 'Almacenamos y gestionamos datos de manera segura y eficiente, asegurando accesibilidad y protección de la información para sustentar procesos sostenibles y mejorar la efectividad operativa.'
                     ],
                     [
                         'icon' => 'bi bi-cloud',
                         'tittle' => 'Nube',
-                        'color'=>'#3A8AC0',
+                        'color' => '#3A8AC0',
                         'texto' => 'Aprovechamos la tecnología en la nube para ofrecer soluciones escalables y accesibles desde cualquier lugar, facilitando la colaboración en tiempo real y la optimización de recursos tecnológicos.'
                     ]
 
@@ -284,12 +441,93 @@ class PageController extends Controller
 
 
 
-        return view('industrias', compact('cardsMineria', 'cardsTecnologia', 'cardsBi', 'pageTitle'));
+        return view('industrias', compact('cardsMineria', 'cardsTecnologia', 'cardsBi', 'pageTitle', 'metaData'));
     }
     public function contact()
     {
         $pageTitle = "Llyrod | Contacto";
+        $metaData = [
+            'robots' => 'index, follow',
+            'title' => 'Grupo Llyrod | Contáctanos | Asesoría en Minería y Transformación Digital',
+            'description' => '¿Necesitas asesoría en minería o transformación digital? Ponte en contacto con Grupo Llyrod para obtener soluciones personalizadas a tus necesidades.',
+            'keywords' => 'Contacto, Consultoría en Minería, Consultoría Digital, Contacto Empresarial, Asesoría en Proyectos, Consultoría en Transformación Digital',
+            'image' => asset('assets/img/contactanos/contacto.webp'),
+            'url' => "https://grupollyrod.com/contacto/",
+            'type' => 'website',
+            'locale' => 'es_PE',
+            'site_name' => 'Grupo Llyrod',
+            'author' => 'Grupo Llyrod',
+            'twitter' => [
+                [
+                    'type' => 'twitter_card',
+                    'content' => 'summary_large_image'
+                ],
+                [
+                    'type' => 'twitter_site',
+                    'content' => '@grupollyrod'
+                ],
+                [
+                    'type' => 'twitter_creator',
+                    'content' => '@grupollyrod'
+                ],
+                [
+                    'type' => 'twitter_title',
+                    'content' => 'Grupo Llyrod | Contáctanos | Asesoría en Minería y Transformación Digital'
+                ],
+                [
+                    'type' => 'twitter_description',
+                    'content' => '¿Necesitas asesoría en minería o transformación digital? Ponte en contacto con Grupo Llyrod para obtener soluciones personalizadas a tus necesidades.'
+                ],
+                [
+                    'type' => 'twitter_image',
+                    'content' => asset('assets/img/contactanos/contacto.webp')
+                ]
+            ],
+            'og' => [
+                [
+                    'type' => 'og_title',
+                    'content' => 'Grupo Llyrod | Contáctanos | Asesoría en Minería , Transformación Digital y Auditoria de la Calidad'
+                ],
+                [
+                    'type' => 'og_description',
+                    'content' => '¿Necesitas asesoría en minería , transformación digital o auditoria de la calidad? Ponte en contacto con Grupo Llyrod para obtener soluciones personalizadas a tus necesidades.'
+                ],
+                [
+                    'type' => 'og_image',
+                    'content' => asset('assets/img/contactanos/contacto.webp')
+                ],
+                [
+                    'type' => 'og_url',
+                    'content' => url('contactanos')
+                ],
+                [
+                    'type' => 'og_type',
+                    'content' => 'website'
+                ],
+                [
+                    'type' => 'og_site_name',
+                    'content' => 'Grupo Llyrod'
+                ],
+                [
+                    'type' => 'og_locale',
+                    'content' => 'es_PE'
+                ],
+                [
+                    'type' => 'og_locale_alternate',
+                    'content' => 'en_US'
+                ],
+                [
+                    'type' => 'og_locale_alternate',
+                    'content' => 'es_PE'
+                ],
+                [
+                    'type' => 'og_locale_alternate',
+                    'content' => 'es_CL'
+                ]
 
-        return view('contact', compact('pageTitle'));
+            ],
+        ];
+
+        return view('contact', compact('pageTitle', 'metaData'));
     }
 }

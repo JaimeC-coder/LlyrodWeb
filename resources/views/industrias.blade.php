@@ -1,7 +1,22 @@
 @extends('layouts.body')
 
-@section('title', $pageTitle)
+@section('meta')
+<meta name="robots" content="{{ $metaData['robots'] }}">
+<meta name="description" content="{{ $metaData['description'] }}">
+<meta name="keywords" content="{{ $metaData['keywords'] }}">
 
+<!-- Open Graph Meta Tags -->
+@foreach($metaData['og'] as $og)
+    <meta property="og:{{ $og['type'] }}" content="{{ $og['content'] }}">
+@endforeach
+
+<!-- Twitter Meta Tags -->
+@foreach($metaData['twitter'] as $twitter)
+    <meta name="twitter:{{ $twitter['type'] }}" content="{{ $twitter['content'] }}">
+@endforeach
+
+<title>{{ $metaData['title'] }}</title>
+@endsection
 @section('styles')
     <link rel="stylesheet" href="{{ asset('css/industria.css') }}">
 @endsection
