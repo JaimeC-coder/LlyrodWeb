@@ -42,6 +42,22 @@
                                 <p>
                                     {{ $card['texto'] }}
                                 </p>
+                             <div class="contentIcons">
+                                @foreach ($card['icons'] as $icon)
+                                <div class="contetIcon" style="color:{{$icon['color']}};" >
+                                    <i class="{{ $icon['icon'] }}"></i>
+                                    <div class="tooltip1">
+                                        <h4>
+                                            {{ $icon['tittle'] }}
+                                        </h4>
+                                        <br>
+                                        <p>
+                                            {{ $icon['texto'] }}
+                                        </p>
+                                    </div>
+                                </div>
+                            @endforeach
+                             </div>
                             </div>
                             <div class="carouselConteiner1">
                                 <div class="carouselInner1">
@@ -76,7 +92,10 @@
                         <div class="text">
                             <h2 class="titlePrincipal">Quality Due Diligence</h2>
                             <p class="textPrincipalIndustrias">
-                                Ofrecemos servicios de auditoría y aseguramiento de la calidad para corporaciones internacionales y empresas en Latinoamérica, garantizando altos estándares y cumplimiento normativo. Utilizamos tecnologías avanzadas como cloud storage, big data, data analytics y Power BI para asegurar una supervisión precisa y eficiente de cada proceso.
+                                Ofrecemos servicios de auditoría y aseguramiento de la calidad para corporaciones
+                                internacionales y empresas en Latinoamérica, garantizando altos estándares y cumplimiento
+                                normativo. Utilizamos tecnologías avanzadas como cloud storage, big data, data analytics y
+                                Power BI para asegurar una supervisión precisa y eficiente de cada proceso.
                             </p>
                         </div>
                     </div>

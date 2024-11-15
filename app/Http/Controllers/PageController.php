@@ -15,23 +15,17 @@ class PageController extends Controller
             [
                 "id" => "mineria",
                 "imagen" => "assets/img/home/mineria_home.webp",
-                "icon" => "<BsRecycle size={24} />",
                 "tittle" => "Minería & Gestión Social",
-                "link" => "#",
             ],
             [
                 "id" => "due_diligence",
                 "imagen" => "assets/img/home/inteligencia_home.webp",
-                "icon" => "<BsGraphUpArrow size={24} />",
                 "tittle" => "Quality Due Diligence ",
-                "link" => "#",
             ],
             [
                 "id" => "tecnologia",
                 "imagen" => "assets/img/home/incubadora_home.webp",
-                "icon" => "<BsSun size={24} />",
                 "tittle" => "Transformación Digital",
-                "link" => "#",
             ]
         ];
 
@@ -113,6 +107,26 @@ class PageController extends Controller
                 "tittle" => "Diagnóstico Socioeconómico y Diseño del Portafolio de Inversión Social",
                 "texto" =>
                 "El diseño y ejecución del diagnóstico abarcó 43,616 hectáreas y benefició a 1,536 habitantes en tres regiones del Perú. Se realizó un análisis socioeconómico, una evaluación de actividades productivas, condiciones endémicas y oportunidades comerciales, sobre las cuales se estructuraron proyectos alineados a estas potencialidades, optimizando así el impacto de las inversiones sociales en las comunidades.",
+                'icons' => [
+                    [
+                        'icon' => 'bi bi-file-earmark-bar-graph-fill',
+                        'tittle' => 'Análisis Socioeconómico',
+                        'color'=>'#F0CA18',
+                        'texto' => 'Realizamos un diagnóstico exhaustivo de las condiciones socioeconómicas de las comunidades, evaluando actividades productivas y oportunidades de desarrollo que optimizan el impacto social de las inversiones en la región.'
+                    ],
+                    [
+                        'icon' => 'bi bi-database',
+                        'tittle' => 'Base de Datos Regional',
+                        'color'=>'#2497F0',
+                        'texto' => 'Desarrollamos una base de datos completa que centraliza la información de las comunidades, facilitando la planificación y ejecución de proyectos de inversión social basados en las necesidades y potencialidades de cada región.'
+                    ],
+                    [
+                        'icon' => 'bi bi-cloud',
+                        'tittle' => 'Portafolio en la Nube',
+                        'color'=>'#3A8AC0',
+                        'texto' => 'El portafolio de inversión social está disponible en la nube, permitiendo a las comunidades y aliados acceder a información actualizada sobre proyectos, oportunidades comerciales y estrategias de desarrollo social.'
+                    ]
+                ],
                 "fondo" => "assets/industrial/mineria/DiagnósticoPotencialRaura/Fondo.webp"
             ],
             [
@@ -133,6 +147,30 @@ class PageController extends Controller
                 "tittle" => 'Plan de prevención de fenómeno de "El Niño" ',
                 "texto" =>
                 "Ante una posible afectación del aparato productivo de los sectores, dada por la probabilidad de ocurrencia del fenómeno de El Niño en el 2023, se analizó la base de datos climatológica y modeló los posibles escenarios a enfrentar. Este estudio tomo en cuenta condiciones propias de cada sector así como información de las principales instancias gubernamentales generadoras de estudios relativos a estos fenómenos climatológicos. Usamos lo último en tecnología para que el usuario acceda a esta información de manera ágil y sencilla.",
+
+                'icons' => [
+                    [
+                        'icon' => 'bi bi-file-earmark-bar-graph-fill',
+                        'tittle' => 'Análisis Climatológico',
+                        'color'=>'#F0CA18',
+                        'texto' => 'Realizamos un análisis profundo de datos climatológicos históricos y actuales, modelando posibles escenarios para prever el impacto del fenómeno de El Niño en los sectores productivos y brindar información estratégica para su prevención.'
+                    ],
+                    [
+                        'icon' => 'bi bi-database',
+                        'tittle' => 'Base de Datos Sectorial',
+                        'color'=>'#2497F0',
+
+                        'texto' => 'Contamos con una base de datos robusta que integra información sectorial relevante y estudios de diversas entidades gubernamentales, permitiendo un acceso organizado a datos clave para la toma de decisiones preventivas.'
+                    ],
+                    [
+                        'icon' => 'bi bi-cloud',
+                        'tittle' => 'Acceso en la Nube',
+                        'color'=>'#3A8AC0',
+                        'texto' => 'Ofrecemos una plataforma en la nube que facilita la consulta de información sobre El Niño, disponible para usuarios en tiempo real, asegurando acceso ágil y simplificado a los datos y resultados de análisis climatológico.'
+                    ]
+                ],
+
+
                 "fondo" => "assets/industrial/mineria/PlanPrevencion/Fondo.webp"
             ],
             [
@@ -157,6 +195,28 @@ class PageController extends Controller
                 "tittle" => "Fortalecimiento de capacidades. ",
                 "texto" =>
                 "Impulsamos el desarrollo técnico mediante nuevas tecnologías educativas, promoviendo prácticas que mejoran la eficiencia, cuidan los recursos naturales y aseguran la sostenibilidad. Metodologías adaptadas a las diferentes realidades que conforman cada región es el diferenciador de nuestra propuesta. Acceso a la línea base y resultados a través de las plataformas desarrolladas por nuestros profesionales. ",
+                'icons' => [
+                    [
+                        'icon' => 'bi bi-file-earmark-bar-graph-fill',
+                        'tittle' => 'Análisis de datos',
+                        'color'=>'#F0CA18',
+                        'texto' => 'Utilizamos herramientas avanzadas de análisis para transformar datos en información útil. Esto permite la toma de decisiones fundamentadas y una planificación estratégica basada en resultados medibles.'
+                    ],
+                    [
+                        'icon' => 'bi bi-database',
+                        'tittle' => 'Base de datos',
+                        'color'=>'#2497F0',
+                        'texto' => 'Almacenamos y gestionamos datos de manera segura y eficiente, asegurando accesibilidad y protección de la información para sustentar procesos sostenibles y mejorar la efectividad operativa.'
+                    ],
+                    [
+                        'icon' => 'bi bi-cloud',
+                        'tittle' => 'Nube',
+                        'color'=>'#3A8AC0',
+                        'texto' => 'Aprovechamos la tecnología en la nube para ofrecer soluciones escalables y accesibles desde cualquier lugar, facilitando la colaboración en tiempo real y la optimización de recursos tecnológicos.'
+                    ]
+
+
+                ],
                 "fondo" => "assets/industrial/mineria/CapacitacionGanadera/Fondo.webp"
             ],
         ];

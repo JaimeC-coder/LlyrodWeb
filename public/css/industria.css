@@ -170,6 +170,104 @@
     color: var(--white);
     text-align: justify;
     line-height: 25px;
+    border-left: var(--BotonEnlaces) 2px solid;
+    padding-left: 10px;
+}
+
+.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1 .contentIcons,
+.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 .contentIcons {
+    display: inline-flex;
+    gap: 20px;
+}
+
+.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1 .contentIcons .contetIcon,
+.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 .contentIcons .contetIcon {
+    width: 60px;
+    height: 60px;
+    background-color: aliceblue;
+    padding: 5px 10px 16px 11px;
+    font-size: 40px;
+    z-index: 1000;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1 .contentIcons .contetIcon:hover .tooltip1 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 .contentIcons .contetIcon:hover .tooltip1 {
+
+    visibility: visible;
+    opacity: 1;
+}
+
+.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1 .contentIcons .contetIcon .tooltip1,
+.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 .contentIcons .contetIcon .tooltip1 {
+    width: 350px;
+    background-color: #f1f1f1;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 26%;
+    z-index: 1001;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 14px;
+}
+
+.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 .contentIcons .contetIcon .tooltip1 {
+
+    bottom: 17%;
+
+}
+
+
+
+.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1 .contentIcons .contetIcon .tooltip1::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0%;
+    left: 6%;
+    transform: translate(-50%, 34%) rotate(45deg);
+}
+
+.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 .contentIcons .contetIcon .tooltip1::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0%;
+    left: 6%;
+    transform: translate(-50%, 34%) rotate(45deg);
+}
+
+.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1 .contentIcons .contetIcon .tooltip1 h4,
+.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 .contentIcons .contetIcon .tooltip1 h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+
+}
+
+.informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1 .contentIcons .contetIcon .tooltip1 p,
+.informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 .contentIcons .contetIcon .tooltip1 p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    text-align: justify;
+
 }
 
 .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .carouselConteiner1,
@@ -305,10 +403,7 @@
 .informationparContainer .cardContainer .cardsContainer .card .overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top,
-            rgba(0, 0, 0, 0.8) 0%,
-            rgba(0, 0, 0, 0.8) 50%,
-            transparent 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, rgba(8, 17, 1, 0.863) 100%);
     z-index: 1;
 }
 
@@ -346,6 +441,48 @@
 }
 
 /* Media Query for max-width: 800px */
+@media (max-width: 1200px) {
+
+    .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1,
+    .informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par {
+        position: absolute;
+        display: flex;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 24px;
+        z-index: 2;
+        flex-direction: row;
+        width: 90%;
+        height: 555px;
+        align-content: center;
+        justify-content: center;
+        margin: 10% auto;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1,
+    .informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 {
+        background-color: transparent;
+        padding: 30px;
+        width: 90%;
+        display: flex;
+        gap: 38%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .carouselConteiner1,
+    .informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .carouselConteiner1 {
+        position: relative;
+        max-width: 350px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+}
+
 @media (max-width: 800px) {
     .photosContainer {
         height: auto;
@@ -375,6 +512,7 @@
         align-content: center;
         align-items: flex-start;
         flex-direction: column;
+        margin: 0% auto;
     }
 
     .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1,
@@ -385,7 +523,8 @@
 
     .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .carouselConteiner1,
     .informationContainer .cardsSection .cardsContainers .contentpar .containerCardCarrucel1par .carouselConteiner1 {
-        height: 400px;
+        height: 370px;
+        max-width: 430px;
     }
 
     .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .carouselConteiner1 .carouselInner1 img,
@@ -404,6 +543,75 @@
 
     .informationparContainer .cardContainer .cardsContainer {
         flex-wrap: wrap;
+    }
+
+    .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .carouselConteiner1 .carouselInner1,
+    .informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .carouselConteiner1 .carouselInner1 {
+        height: 340px;
+    }
+
+    .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .carouselConteiner1 .carouselInner1 .carousel-image,
+    .informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .carouselConteiner1 .carouselInner1 .carousel-image {
+        height: 310px;
+    }
+
+
+    .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1 .contentIcons,
+    .informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 .contentIcons{
+        padding: 20px;
+    }
+    .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1 .contentIcons .contetIcon,
+    .informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 .contentIcons .contetIcon {
+        width: 40px;
+        height: 40px;
+        padding: 5px 0px 0px 8px;
+        font-size: 25px;
+    }
+
+    .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1 .contentIcons .contetIcon .tooltip1 {
+        top: 4%;
+        bottom: auto;
+
+    }
+
+    .informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 .contentIcons .contetIcon .tooltip1 {
+
+        top: 7%;
+        bottom: auto;
+
+    }
+
+    /* .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1 .contentIcons .contetIcon .tooltip1::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0%;
+    left: 6%;
+    transform: translate(-50%, 34%) rotate(45deg);
+  } */
+    .informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 .contentIcons .contetIcon .tooltip1::before {
+        left: 3%;
+
+    }
+
+    .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1 .contentIcons .contetIcon .tooltip1 h4,
+    .informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 .contentIcons .contetIcon .tooltip1 h4 {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+        text-align: center;
+
+    }
+
+    .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1 .contentIcons .contetIcon .tooltip1 p,
+    .informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 .contentIcons .contetIcon .tooltip1 p {
+        font-size: 14px;
+        font-weight: bold;
+        color: #333;
+        text-align: justify;
+
     }
 }
 
@@ -433,6 +641,35 @@
     .informationparContainer .cardContainer .cardsContainer .card {
         width: 100%;
     }
+    .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1, .informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 {
+        padding: 0px;
+    }
+    .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1 .contentIcons .contetIcon .tooltip1 {
+        top: 12%;
+        right: 5%;
+    }
+    .informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 .contentIcons .contetIcon .tooltip1 {
+        top: 18%;
+        right:10%;
+        bottom: auto;
+    }
+    .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .cardContainer1 .contentIcons .contetIcon .tooltip1::before {
+        content: "";
+        width: 15px;
+        height: 15px;
+        background-color:  #ffffff00;
+        position: absolute;
+        bottom: 0%;
+        left: calc(100% - 15px);
+        transform: translate(-50%, 34%) rotate(45deg);
+    }
+
+    .informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .cardContainer1 .contentIcons .contetIcon .tooltip1::before {
+
+        background-color:  #ffffff00;
+
+    }
+
 }
 
 @media (max-width: 550px) {
@@ -495,5 +732,10 @@
     .informationparContainer .cardContainer .cardsContainer .card .content {
         padding: 20px;
         height: 140px;
+    }
+
+    .informationContainer .cardsSection .cardsContainer .content .containerCardCarrucel1 .carouselConteiner1 .carouselInner1,
+    .informationContainer .cardsSection .cardsContainer .contentpar .containerCardCarrucel1par .carouselConteiner1 .carouselInner1 {
+        height: 320px;
     }
 }

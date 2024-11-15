@@ -27,11 +27,7 @@
 
                 <label for="mensaje">Mensaje:</label>
                 <textarea id="mensaje" name="mensaje" required></textarea>
-
-                <label for="archivos">Archivos:</label>
-                <input type="file" id="archivos" name="archivos" multiple>
-                <div id="archivo-lista"></div>
-
+                
                 <button type="submit">Enviar</button>
             </form>
         </div>

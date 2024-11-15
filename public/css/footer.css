@@ -63,10 +63,11 @@
     border-radius: 50%;
     cursor: pointer;
     position: fixed;
-    a {
-        color: rgb(4, 113, 11);
-        text-decoration: none;
-    }
+
+}
+.wpp a {
+    color: rgb(4, 113, 11);
+    text-decoration: none;
 }
 
 
