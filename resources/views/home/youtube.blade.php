@@ -5,11 +5,15 @@
             <h3>Novedades en nuestro canal</h3>
             <p>IA e Innovación en colaboración con Microsoft - <br>
                 Founderz Edición 2024</p>
-            <p>Accede a la plataforma de aprendizaje más innovadora y condúcete a nuevos</p>
+            <p>Accede a la plataforma de aprendizaje más innovadora.</p>
         </div>
         <div class="novedades">
-            <video src="{{ asset('assets/video/video_yt.mkv') }}" id="myVideo"></video>
-            <img src="{{ asset('assets/img/home/iagenerativa.webp') }}" alt="">
+            <video src="{{ asset('assets/video/video_yt.mkv') }}" id="myVideo" data-aos="fade-right"
+            data-aos-offset="400"
+            data-aos-easing="linear"></video>
+            <img src="{{ asset('assets/img/home/iagenerativa.webp') }}" alt="" data-aos="fade-left"
+            data-aos-offset="400"
+            data-aos-easing="linear">
         </div>
 
         <div class="videoContainer">

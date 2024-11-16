@@ -73,21 +73,23 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const cardGrid = document.querySelector('.cardGrid');
-            console.log(cardGrid);
-            let scrollAmount = 0;
-            const scrollStep = 2; // Cantidad de píxeles por desplazamiento
-            const maxScrollLeft = cardGrid.scrollWidth - cardGrid.clientWidth;
+    const content = cardGrid.querySelector('.content');
 
-            function autoScroll() {
-                scrollAmount += scrollStep;
-                if (scrollAmount >= maxScrollLeft) {
-                    scrollAmount = 0; // Reinicia el desplazamiento al inicio
-                }
-                cardGrid.scrollLeft = scrollAmount;
-            }
+    // Duplicar el contenido para un efecto de bucle
+    content.innerHTML += content.innerHTML;
 
-            // Ajusta la velocidad del desplazamiento (ms)
-            setInterval(autoScroll, 20);
+    let scrollAmount = 0;
+    const scrollStep = 2; // Cantidad de píxeles por desplazamiento
+
+    function autoScroll() {
+        scrollAmount += scrollStep;
+        if (scrollAmount >= content.scrollWidth / 2) {
+            scrollAmount = 0; // Reinicia el desplazamiento de manera suave
+        }
+        cardGrid.scrollLeft = scrollAmount;
+    }
+
+    setInterval(autoScroll, 20);
         });
     </script>
 

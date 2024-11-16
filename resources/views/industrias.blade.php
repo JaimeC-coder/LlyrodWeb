@@ -52,12 +52,13 @@
                         <img class="photo" src="{{ asset($card['fondo']) }}" alt="Minería y gestion social" loading="lazy">
                         <div class="degradadoPortafolioTop1"></div>
                         <div class="{{ $loop->even ? 'containerCardCarrucel1par' : 'containerCardCarrucel1' }}">
-                            <div class="cardContainer1">
+                            <div class="cardContainer1"  data-aos-offset="400"
+                            data-aos-easing="linear" data-aos="fade-right">
                                 <h2>{{ $card['tittle'] }}</h2>
                                 <p>
                                     {{ $card['texto'] }}
                                 </p>
-                             <div class="contentIcons">
+                             <div class="contentIcons" >
                                 @foreach ($card['icons'] as $icon)
                                 <div class="contetIcon" style="color:{{$icon['color']}};" >
                                     <i class="{{ $icon['icon'] }}"></i>
@@ -75,7 +76,8 @@
                              </div>
                             </div>
                             <div class="carouselConteiner1">
-                                <div class="carouselInner1">
+                                <div class="carouselInner1" data-aos-offset="400"
+                                data-aos-easing="linear" data-aos="fade-left">
                                     @foreach ($card['imagenes'] as $img)
                                         <img src="{{ asset($img['imagen']) }}" class="carousel-image" alt="Card Title 1"
                                             loading="lazy">

@@ -7,7 +7,9 @@
 
         <div class="cardGrid">
             <!-- Card 1 -->
-            <div class="card">
+            <div class="card" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
                 <span class="media">
                     <i class="bi bi-people"></i>
                 </span>
@@ -18,7 +20,9 @@
             </div>
 
             <!-- Card 2 -->
-            <div class="card">
+            <div class="card" data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
                 <span class="media">
                     <i class="bi bi-lightbulb"></i>
                 </span>
@@ -29,7 +33,9 @@
             </div>
 
             <!-- Card 3 -->
-            <div class="card">
+            <div class="card" data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
                 <span class="media">
                     <i class="bi bi-shield-check"></i>
                 </span>
@@ -40,7 +46,9 @@
             </div>
 
             <!-- Card 4 -->
-            <div class="card">
+            <div class="card" data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
                 <span class="media">
                     <i class="bi bi-globe-americas"></i>
                 </span>

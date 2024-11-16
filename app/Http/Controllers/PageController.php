@@ -97,16 +97,19 @@ class PageController extends Controller
                 "id" => "mineria",
                 "imagen" => "assets/img/home/mineria_home.webp",
                 "tittle" => "Minería & Gestión Social",
+                "data-aos" => "fade-right",
             ],
             [
                 "id" => "due_diligence",
                 "imagen" => "assets/img/home/inteligencia_home.webp",
                 "tittle" => "Quality Due Diligence ",
+                "data-aos" => "fade-up"
             ],
             [
                 "id" => "tecnologia",
                 "imagen" => "assets/img/home/incubadora_home.webp",
                 "tittle" => "Transformación Digital",
+                "data-aos" => "fade-left",
             ]
         ];
 
@@ -271,7 +274,7 @@ class PageController extends Controller
                 "El diseño y ejecución del diagnóstico abarcó 43,616 hectáreas y benefició a 1,536 habitantes en tres regiones del Perú. Se realizó un análisis socioeconómico, una evaluación de actividades productivas, condiciones endémicas y oportunidades comerciales, sobre las cuales se estructuraron proyectos alineados a estas potencialidades, optimizando así el impacto de las inversiones sociales en las comunidades.",
                 'icons' => [
                     [
-                        'icon' => 'bi bi-file-earmark-bar-graph-fill',
+                        'icon' => 'fas fa-chart-bar',
                         'tittle' => 'Visualizadores en PBI',
                         'color' => '#F0CA18',
                         'texto' => 'Diseño de un Dashboard en Power BI para una consulta ágil y sencilla de todos los indicadores resultantes del estudio, por región, comunidad, caserío, geo-referenciado y conectado a google maps.'
@@ -283,7 +286,7 @@ class PageController extends Controller
                         'texto' => 'Desarrollamos una base de datos en Big Query que centraliza la información recogida en campo, vinculando a los indicadores regionales que posee el estado.'
                     ],
                     [
-                        'icon' => 'bi bi-cloud',
+                        'icon' => 'fas fa-cloud',
                         'tittle' => 'Portafolio en GCP',
                         'color' => '#3A8AC0',
                         'texto' => 'El registro de datos del estudio está disponible en nube, Google Cloud Platform, facilitando al usuario la consulta y procesamiento de datos posterior.'
@@ -312,7 +315,7 @@ class PageController extends Controller
 
                 'icons' => [
                     [
-                        'icon' => 'bi bi-file-earmark-bar-graph-fill',
+                        'icon' => 'fas fa-chart-bar',
                         'tittle' => 'Visualizador en PBI',
                         'color' => '#F0CA18',
                         'texto' => 'Dashboard interactivo con información climatológica, análisis por sector y plan de prevención según peligros y vulnerabilidades identificadas.'
@@ -325,7 +328,7 @@ class PageController extends Controller
                         'texto' => 'Contamos con una base de datos robusta que integra información sectorial relevante y estudios de diversas entidades gubernamentales, permitiendo un acceso organizado a datos clave para la toma de decisiones preventivas.'
                     ],
                     [
-                        'icon' => 'bi bi-cloud',
+                        'icon' => 'fas fa-cloud',
                         'tittle' => 'Acceso a la Nube GCP',
                         'color' => '#3A8AC0',
                         'texto' => 'Accedemos a la plataforma de GCP para facilitar la consulta de información, estando a disposición del usuario en tiempo real.'
@@ -359,7 +362,7 @@ class PageController extends Controller
                 "Impulsamos el desarrollo técnico mediante nuevas tecnologías educativas, promoviendo prácticas que mejoran la eficiencia, cuidan los recursos naturales y aseguran la sostenibilidad. Metodologías adaptadas a las diferentes realidades que conforman cada región es el diferenciador de nuestra propuesta. Acceso a la línea base y resultados a través de las plataformas desarrolladas por nuestros profesionales. ",
                 'icons' => [
                     [
-                        'icon' => 'bi bi-file-earmark-bar-graph-fill',
+                        'icon' => 'fas fa-chart-bar',
                         'tittle' => 'Análisis de datos',
                         'color' => '#F0CA18',
                         'texto' => 'Utilizamos herramientas avanzadas de análisis para transformar datos en información útil. Esto permite la toma de decisiones fundamentadas y una planificación estratégica basada en resultados medibles.'
@@ -371,7 +374,7 @@ class PageController extends Controller
                         'texto' => 'Almacenamos y gestionamos datos de manera segura y eficiente, asegurando accesibilidad y protección de la información para sustentar procesos sostenibles y mejorar la efectividad operativa.'
                     ],
                     [
-                        'icon' => 'bi bi-cloud',
+                        'icon' => 'fas fa-cloud',
                         'tittle' => 'Nube',
                         'color' => '#3A8AC0',
                         'texto' => 'Aprovechamos la tecnología en la nube para ofrecer soluciones escalables y accesibles desde cualquier lugar, facilitando la colaboración en tiempo real y la optimización de recursos tecnológicos.'
