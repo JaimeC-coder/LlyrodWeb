@@ -49,7 +49,7 @@
             <div class="cardsContainer">
                 @foreach ($cardsMineria as $card)
                     <div class="{{ $loop->even ? 'contentpar' : 'content' }}">
-                        <img class="photo" src="{{ asset($card['fondo']) }}" alt="Minería" loading="lazy">
+                        <img class="photo" src="{{ asset($card['fondo']) }}" alt="Minería y gestion social" loading="lazy">
                         <div class="degradadoPortafolioTop1"></div>
                         <div class="{{ $loop->even ? 'containerCardCarrucel1par' : 'containerCardCarrucel1' }}">
                             <div class="cardContainer1">
@@ -101,7 +101,7 @@
             <section class="photoSection" id="due_diligence">
                 <div class="photoContainer">
                     <img class="photo"src="{{ asset('assets/industrial/inteligenciaNegocios/titulo.webp') }}"
-                        alt="Due Diligence" loading="lazy">
+                        alt="Quality Due Diligence" loading="lazy">
                     <div class="degradadoPortafolioTop1"></div>
                     <div class="textContent">
                         <div class="text">
@@ -143,7 +143,7 @@
         <section class="photoSection" id="due_diligence">
             <div class="photoContainer">
                 <img class="photo" src="{{ asset('assets/industrial/tranformacionDigital/titulo.webp') }}" loading="lazy"
-                    alt="Tecnología">
+                    alt="Transformación digital & IA">
                 <div class="degradadoPortafolioTop1"></div>
                 <div class="textContent">
                     <div class="text">
