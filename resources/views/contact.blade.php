@@ -39,10 +39,10 @@
                 <div class="information">
 
                     <div class="info">
-                        <p> <i class="bi bi-telephone-inbound-fill"></i> +51 032 940 000</p>
+                        <p><i class="fa-solid fa-phone-volume fa-lg"></i> +51 032 940 000</p>
                     </div>
                     <div class="info">
-                        <p><i class="bi bi-envelope-at-fill"></i> xxxxx@grupollyrod.com
+                        <p><i class="fa-solid fa-envelope-circle-check fa-lg"></i> xxxxx@grupollyrod.com
                     </div>
 
                 </div>
@@ -70,21 +70,3 @@
 
 
 
-@section('scripts')
-    <script>
-        document.getElementById('archivos').addEventListener('change', function(e) {
-            var lista = document.getElementById('archivo-lista');
-            lista.innerHTML = '';
-            for (var i = 0; i < this.files.length; i++) {
-                lista.innerHTML += this.files[i].name + '<br>';
-            }
-        });
-
-        document.getElementById('formulario-contacto').addEventListener('submit', function(e) {
-            e.preventDefault();
-            // Aquí iría el código para enviar el formulario
-            console.log('Formulario enviado');
-            alert('Formulario enviado con éxito!');
-        });
-    </script>
-@endsection

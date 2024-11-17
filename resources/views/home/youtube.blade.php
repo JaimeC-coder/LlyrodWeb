@@ -8,12 +8,13 @@
             <p>Accede a la plataforma de aprendizaje más innovadora.</p>
         </div>
         <div class="novedades">
-            <video src="{{ asset('assets/video/video_yt.mkv') }}" id="myVideo" data-aos="fade-right"
-            data-aos-offset="400"
-            data-aos-easing="linear"></video>
+            <video id="myVideo" data-aos="fade-right" data-aos-offset="400" data-aos-easing="linear" width="100%"  
+                autoplay playsinline>
+                <source src="{{ asset('assets/video/video_yt.mkv') }}" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
             <img src="{{ asset('assets/img/home/iagenerativa.webp') }}" alt="" data-aos="fade-left"
-            data-aos-offset="400"
-            data-aos-easing="linear">
+                data-aos-offset="400" data-aos-easing="linear">
         </div>
 
         <div class="videoContainer">

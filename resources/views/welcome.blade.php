@@ -1,119 +1,113 @@
 @extends('layouts.body')
 
 @section('meta')
-<meta name="robots" content="{{ $metaData['robots'] }}">
-<meta name="description" content="{{ $metaData['description'] }}">
-<meta name="keywords" content="{{ $metaData['keywords'] }}">
+    <meta name="robots" content="{{ $metaData['robots'] }}">
+    <meta name="description" content="{{ $metaData['description'] }}">
+    <meta name="keywords" content="{{ $metaData['keywords'] }}">
 
-<!-- Open Graph Meta Tags -->
-@foreach($metaData['og'] as $og)
-    <meta property="og:{{ $og['type'] }}" content="{{ $og['content'] }}">
-@endforeach
+    <!-- Open Graph Meta Tags -->
+    @foreach ($metaData['og'] as $og)
+        <meta property="og:{{ $og['type'] }}" content="{{ $og['content'] }}">
+    @endforeach
 
-<!-- Twitter Meta Tags -->
-@foreach($metaData['twitter'] as $twitter)
-    <meta name="twitter:{{ $twitter['type'] }}" content="{{ $twitter['content'] }}">
-@endforeach
+    <!-- Twitter Meta Tags -->
+    @foreach ($metaData['twitter'] as $twitter)
+        <meta name="twitter:{{ $twitter['type'] }}" content="{{ $twitter['content'] }}">
+    @endforeach
 
-<title>{{ $metaData['title'] }}</title>
+    <title>{{ $metaData['title'] }}</title>
 @endsection
 
 @section('styles')
-<link rel="stylesheet" href="{{ asset('css/home.css') }}">
-<link rel="stylesheet" href="{{ asset('css/somos.css') }}">
-<link rel="stylesheet" href="{{ asset('css/youtube.css') }}">
-<link rel="stylesheet" href="{{ asset('css/clients.css') }}">
-<link rel="stylesheet" href="{{ asset('css/cardSection.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/somos.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/youtube.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/clients.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/cardSection.css') }}">
 @endsection
 
 @section('content')
+    <section class="imageSection">
+        <div class="imageContainer">
+            <video src="{{ asset('assets/video/video_home.mkv') }}" class="imagen" muted loop autoplay
+                loading="lazy"></video>
+            <div class="degradadoPortafolioTop"></div>
+            <div class="textandGraph">
+                <h1 class="texto">
+                    <span class="textoSecundario">Transformamos desafíos en oportunidades</span>
+                    <span class="textoPrincipal">
+                        En <strong>Grupo Llyrod</strong>, creemos en el poder de la innovación y el talento joven para
+                        impulsar el cambio y el crecimiento sostenible.
+                        Somos una consultora especializada que combina experiencia técnica y tecnología de vanguardia para
+                        ofrecer soluciones que trascienden lo convencional.
+                    </span>
 
-
-<section class="imageSection">
-    <div class="imageContainer">
-        <video src="{{ asset('assets/video/video_home.mkv') }}" class="imagen" muted loop autoplay loading="lazy"></video>
-        <div class="degradadoPortafolioTop"></div>
-        <div class="textandGraph">
-            <h1 class="texto">
-                <span class="textoSecundario">Transformamos desafíos en oportunidades</span>
-                <span class="textoPrincipal">
-                    En <strong>Grupo Llyrod</strong>, creemos en el poder de la innovación y el talento joven para impulsar el cambio y el crecimiento sostenible.
-                    Somos una consultora especializada que combina experiencia técnica y tecnología de vanguardia para ofrecer soluciones que trascienden lo convencional.
-                </span>
-
-                <span class="textoPrincipalmovil">
-                    En <strong>Grupo Llyrod</strong>, Somos una consultora que impulsa el cambio y el crecimiento sostenible,
-                    combinando talento joven, experiencia técnica y tecnología avanzada para ofrecer soluciones innovadoras.
-                </span>
-                <a class="buttonVer" href="/nuestroTrabajo">ver más</a>
-            </h1>
+                    <span class="textoPrincipalmovil">
+                        En <strong>Grupo Llyrod</strong>, Somos una consultora que impulsa el cambio y el crecimiento
+                        sostenible,
+                        combinando talento joven, experiencia técnica y tecnología avanzada para ofrecer soluciones
+                        innovadoras.
+                    </span>
+                    <a class="buttonVer" href="/nuestroTrabajo">ver más</a>
+                </h1>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
-<section class="cardSection">
-  @include('home.cardSection')
-</section>
+    <section class="cardSection">
+        @include('home.cardSection')
+    </section>
 
-<section class="infoSection" id="somos">
-    @include('home.somos')
+    <section class="infoSection" id="somos">
+        @include('home.somos')
 
-    @include('home.clients')
-
-
-    @include('home.youtube')
-</section>
+        @include('home.clients')
 
 
-
+        @include('home.youtube')
+    </section>
 @endsection
 
 @section('scripts')
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const cardGrid = document.querySelector('.cardGrid');
-    const content = cardGrid.querySelector('.content');
+        const video = document.getElementById("myVideo");
+        const section = document.getElementById("canal");
+        video.addEventListener("mouseenter", () => {
+            video.controls = true;
+        });
+        video.addEventListener("mouseleave", () => {
+            video.controls = false;
+        });
+        video.addEventListener("click", () => {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        });
+        const enableSound = () => {
+            video.muted = false; // Desactiva el mute
+            video.play(); // Reproduce el video
+            console.log("Sonido habilitado");
+        };
+        const isSectionVisible = () => {
+            const rect = section.getBoundingClientRect();
+            return rect.bottom >= 0 && rect.top <= window.innerHeight;
+        };
 
-    // Duplicar el contenido para un efecto de bucle
-    content.innerHTML += content.innerHTML;
-
-    let scrollAmount = 0;
-    const scrollStep = 2; // Cantidad de píxeles por desplazamiento
-
-    function autoScroll() {
-        scrollAmount += scrollStep;
-        if (scrollAmount >= content.scrollWidth / 2) {
-            scrollAmount = 0; // Reinicia el desplazamiento de manera suave
-        }
-        cardGrid.scrollLeft = scrollAmount;
-    }
-
-    setInterval(autoScroll, 20);
+        const handleScroll = () => {
+            if (isSectionVisible()) {
+                console.log("Video is visible");
+                video.play(); // Reproduce el video
+            } else {
+                console.log("Video is not visible");
+                video.pause(); // Pausa el video
+            }
+        };
+        window.addEventListener("scroll", handleScroll);
+        document.addEventListener("click", enableSound, {
+            once: true
         });
     </script>
-
-
-<script>
-    const video = document.getElementById("myVideo");
-
-    // Muestra los controles cuando se hace hover
-    video.addEventListener("mouseenter", () => {
-      video.controls = true;
-    });
-
-    // Oculta los controles cuando se quita el hover
-    video.addEventListener("mouseleave", () => {
-      video.controls = false;
-    });
-
-    // Reproduce o pausa el video al hacer click
-    video.addEventListener("click", () => {
-      if (video.paused) {
-        video.play();
-      } else {
-        video.pause();
-      }
-    });
-  </script>
 @endsection

@@ -11,7 +11,7 @@
             data-aos-offset="300"
             data-aos-easing="ease-in-sine">
                 <span class="media">
-                    <i class="bi bi-people"></i>
+                    <i class="fa-solid fa-user-group fa-flip-horizontal fa-lg"></i>
                 </span>
                 <h3 class="cardTitle">ENFOQUE HUMANO</h3>
                 <p class="cardDescription">
@@ -24,7 +24,7 @@
             data-aos-offset="300"
             data-aos-easing="ease-in-sine">
                 <span class="media">
-                    <i class="bi bi-lightbulb"></i>
+                    <i class="fa-solid fa-lightbulb fa-lg"></i>
                 </span>
                 <h3 class="cardTitle">EXPERIENCIA Y PASIÓN</h3>
                 <p class="cardDescription">
@@ -37,7 +37,7 @@
             data-aos-offset="300"
             data-aos-easing="ease-in-sine">
                 <span class="media">
-                    <i class="bi bi-shield-check"></i>
+                    <i class="fa-solid fa-shield-halved fa-lg"></i>
                 </span>
                 <h3 class="cardTitle">COMPROMISO CON LA EXCELENCIA</h3>
                 <p class="cardDescription">
@@ -50,7 +50,7 @@
             data-aos-offset="300"
             data-aos-easing="ease-in-sine">
                 <span class="media">
-                    <i class="bi bi-globe-americas"></i>
+                    <i class="fa-solid fa-globe fa-lg"></i>
                 </span>
                 <h3 class="cardTitle">VISIÓN SOSTENIBLE</h3>
                 <p class="cardDescription">
