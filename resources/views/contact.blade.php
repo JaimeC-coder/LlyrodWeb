@@ -39,10 +39,10 @@
                 <div class="information">
 
                     <div class="info">
-                        <p><i class="fa-solid fa-phone-volume fa-lg"></i> +51 032 940 000</p>
+                        <p><i class="fa-solid fa-phone-volume fa-lg"></i> +51 922 856 403</p>
                     </div>
                     <div class="info">
-                        <p><i class="fa-solid fa-envelope-circle-check fa-lg"></i> xxxxx@grupollyrod.com
+                        <p><i class="fa-solid fa-envelope-circle-check fa-lg"></i>administracion@grupollyrod.com
                     </div>
 
                 </div>
