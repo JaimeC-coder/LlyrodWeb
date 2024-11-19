@@ -22,5 +22,5 @@
     <a href="https://api.whatsapp.com/send/?phone=%2B51922856403&text=Hola,%20me%20gustar%C3%ADa%20trabajar%20junto%20a%20ustedes&type=phone_number&app_absent=0" target="_blank">
         <i class="fa-brands fa-square-whatsapp" style="border-radius:50%;"></i>
     </a>
-    <span class="tooltip">Hola, me gustaría trabajar junto a ustedes.</span>
+    <span class="tooltip">Hola, ¿En qué te podemos ayudar?</span>
 </div>

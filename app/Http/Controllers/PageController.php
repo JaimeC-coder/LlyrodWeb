@@ -271,7 +271,7 @@ class PageController extends Controller
                 ],
                 "tittle" => "Diagnóstico Socioeconómico y Diseño del Portafolio de Inversión Social",
                 "texto" =>
-                "El diseño y ejecución del diagnóstico abarcó 43,616 hectáreas y benefició a 1,536 habitantes en tres regiones del Perú. Se realizó un análisis socioeconómico, una evaluación de actividades productivas, condiciones endémicas y oportunidades comerciales, sobre las cuales se estructuraron proyectos alineados a estas potencialidades, optimizando así el impacto de las inversiones sociales en las comunidades.",
+                "El diagnóstico abarcó 43,616 hectáreas y benefició a 1,536 habitantes en tres regiones del Perú. Incluyó un análisis socioeconómico, evaluación de actividades productivas, condiciones endémicas y oportunidades comerciales, estructurando proyectos alineados a estas potencialidades para optimizar el impacto de las inversiones sociales en las comunidades.",
                 'icons' => [
                     [
                         'icon' => 'fa-solid fa-chart-simple',
@@ -359,7 +359,7 @@ class PageController extends Controller
                 ],
                 "tittle" => "Fortalecimiento de capacidades. ",
                 "texto" =>
-                "Impulsamos el desarrollo técnico mediante nuevas tecnologías educativas, promoviendo prácticas que mejoran la eficiencia, cuidan los recursos naturales y aseguran la sostenibilidad. Metodologías adaptadas a las diferentes realidades que conforman cada región es el diferenciador de nuestra propuesta. Acceso a la línea base y resultados a través de las plataformas desarrolladas por nuestros profesionales. ",
+                "Impulsamos el desarrollo técnico con nuevas tecnologías educativas, promoviendo prácticas que mejoran la eficiencia, cuidan los recursos naturales y aseguran sostenibilidad. Metodologías adaptadas a las realidades de cada región son nuestro diferenciador. Acceso a la línea base y resultados mediante plataformas desarrolladas por nuestros profesionales.",
                 'icons' => [
                     [
                         'icon' => 'fa-solid fa-chart-simple',

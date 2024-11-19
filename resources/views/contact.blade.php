@@ -42,9 +42,18 @@
                         <p><i class="fa-solid fa-phone-volume fa-lg"></i> +51 922 856 403</p>
                     </div>
                     <div class="info">
-                        <p><i class="fa-solid fa-envelope-circle-check fa-lg"></i>administracion@grupollyrod.com
+                        <p><i class="fa-solid fa-envelope-circle-check fa-lg"></i> administracion@grupollyrod.com
                     </div>
 
+                </div>
+                <div class="titulo">
+                    <p>Síguenos en las redes sociales</p>
+                </div>
+                <div class="information">
+
+                    <div class="info">
+                        <p>Únete a la conversación en <a href="https://www.facebook.com/grupollyrod">Facebook</a> , <a href="https://www.linkedin.com/company/grupo-llyrod/"> LinkedIn</a> o visitanos en <a href="https://www.youtube.com/@GrupoLlyrod">YouTube</a>.</p>
+                    </div>
                 </div>
             </div>
             <div class="contactForm">
