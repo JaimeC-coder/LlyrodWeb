@@ -540,26 +540,30 @@ class PageController extends Controller
 
     public function enviarGmail(Request $request)
     {
-        //   return response()->json($request->all());
-        $email = $request->email;
-        $name = $request->name;
-        $message = $request->message;
-        $emailOuput = "centurionjaime@gmail.com";
-        $header = "From: noreply@example.com" . "\r\n";
-        $header .= "Reply-To: noreply@example.com" . "\r\n";
-        $header .= "X-Mailer: PHP/" . phpversion() . "\r\n";
-        $header .= "MIME-Version: 1.0" . "\r\n";
-        $header .= "Content-Type: text/html; charset=UTF-8" . "\r\n";
 
-        $message = "El usuario $name con el correo $email ha enviado el siguiente mensaje: <br> $message";
+        try {
 
-        $mail = mail($emailOuput, "Contacto desde la web", $message, $header);
+            $email = $request->correo;
+            $name = $request->nombre;
+            $message = $request->mensaje;
+            $emailOuput = "administracion@grupollyrod.com";
+            $header = "From: noreply@grupollyrod.com" . "\r\n";
+            $header .= "Reply-To: noreply@grupollyrod.com" . "\r\n";
+            $header .= "X-Mailer: PHP/" . phpversion() . "\r\n";
+            $header .= "MIME-Version: 1.0" . "\r\n";
+            $header .= "Content-Type: text/html; charset=UTF-8" . "\r\n";
 
-        if ($mail) {
-            return redirect('contactanos')->with("mensaje","Correo enviado correctamente");
+            $message = "El usuario $name con el correo $email ha enviado el siguiente mensaje: <br> $message";
 
-        } else {
-            return redirect('contactanos')->with("mensaje","Error al enviar el correo");
+            $mail = mail($emailOuput, "Contacto desde la web", $message, $header);
+
+            if ($mail) {
+                return redirect('contactanos')->with('success', "Correo enviado correctamente");
+            } else {
+                return redirect('contactanos')->with('success', "Error al enviar el correo");
+            }
+        } catch (\Throwable $th) {
+            return redirect('contactanos')->with('success', $th->getMessage());
         }
     }
 }

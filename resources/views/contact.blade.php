@@ -46,27 +46,14 @@
                     </div>
 
                 </div>
-                <div class="titulo">
-                    <p>Síguenos en las redes sociales</p>
-                </div>
-                <div class="information">
+               
 
-                    <div class="info">
-                        <p>Únete a la conversación en <a href="https://www.facebook.com/grupollyrod">Facebook</a> , <a href="https://www.linkedin.com/company/grupo-llyrod/"> LinkedIn</a> o visitanos en <a href="https://www.youtube.com/@GrupoLlyrod">YouTube</a>.</p>
-                    </div>
-                </div>
             </div>
             <div class="contactForm">
                 <div class="container">
-
-                    @if (session('mensaje'))
-                        <div class="alert alert-success">
-                            {{ session('mensaje') }}
-                        </div>
-                    @endif
                     <form id="formulario-contacto" action="{{ route('contactPost') }}" method="POST">
                         @csrf
-                        <label for="nombre">Nombre:</label>
+                        <label for="nombre" >Nombre:</label>
                         <input type="text" id="nombre" name="nombre" required>
 
                         <label for="correo">Correo electrónico:</label>
@@ -85,7 +72,25 @@
 
 @endsection
 
+@section('scripts')
+    <script src="{{ asset('js/contact.js') }}"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    let success = '{{ session('success') }}';
+    if (success) {
+        Swal.fire({
+            title: '<b style="font-size: 35px"> ¡Gracias! </b>',
+            html: '<b style="font-size: 20px">El correo fue enviado correctamente.</b>',
+            icon: 'success',
+            confirmButtonText: 'Aceptar'
+        });
+    }
+st
+</script>
+
+@endsection
 
 
 
