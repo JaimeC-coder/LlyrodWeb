@@ -162,7 +162,7 @@ class PageController extends Controller
 
 
 
-        return view('welcome', compact('cards', 'pageTitle', 'cliens','metaData'));
+        return view('welcome', compact('cards', 'pageTitle', 'cliens', 'metaData'));
     }
     public function industria()
     {
@@ -536,5 +536,30 @@ class PageController extends Controller
         ];
 
         return view('contact', compact('pageTitle', 'metaData'));
+    }
+
+    public function enviarGmail(Request $request)
+    {
+        //   return response()->json($request->all());
+        $email = $request->email;
+        $name = $request->name;
+        $message = $request->message;
+        $emailOuput = "centurionjaime@gmail.com";
+        $header = "From: noreply@example.com" . "\r\n";
+        $header .= "Reply-To: noreply@example.com" . "\r\n";
+        $header .= "X-Mailer: PHP/" . phpversion() . "\r\n";
+        $header .= "MIME-Version: 1.0" . "\r\n";
+        $header .= "Content-Type: text/html; charset=UTF-8" . "\r\n";
+
+        $message = "El usuario $name con el correo $email ha enviado el siguiente mensaje: <br> $message";
+
+        $mail = mail($emailOuput, "Contacto desde la web", $message, $header);
+
+        if ($mail) {
+            return redirect('contactanos')->with("mensaje","Correo enviado correctamente");
+
+        } else {
+            return redirect('contactanos')->with("mensaje","Error al enviar el correo");
+        }
     }
 }

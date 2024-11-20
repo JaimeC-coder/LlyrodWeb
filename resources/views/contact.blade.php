@@ -58,7 +58,14 @@
             </div>
             <div class="contactForm">
                 <div class="container">
-                    <form id="formulario-contacto">
+
+                    @if (session('mensaje'))
+                        <div class="alert alert-success">
+                            {{ session('mensaje') }}
+                        </div>
+                    @endif
+                    <form id="formulario-contacto" action="{{ route('contactPost') }}" method="POST">
+                        @csrf
                         <label for="nombre">Nombre:</label>
                         <input type="text" id="nombre" name="nombre" required>
 
@@ -74,7 +81,11 @@
             </div>
         </div>
     </div>
+
+
 @endsection
+
+
 
 
 
