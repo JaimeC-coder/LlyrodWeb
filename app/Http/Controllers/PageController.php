@@ -267,6 +267,10 @@ class PageController extends Controller
                     [
                         "imagen" => "assets/industrial/mineria/DiagnósticoPotencialRaura/diagnostico4.webp",
                         "alt" => "Diagnostico 4"
+                    ],
+                    [
+                        "imagen" => "assets/industrial/mineria/DiagnósticoPotencialRaura/PowerBI.webp",
+                        "alt" => "Diagnostico 5"
                     ]
                 ],
                 "tittle" => "Diagnóstico Socioeconómico y Diseño del Portafolio de Inversión Social",
