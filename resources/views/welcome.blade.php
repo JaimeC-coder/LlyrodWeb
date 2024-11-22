@@ -70,6 +70,7 @@
 @endsection
 
 @section('scripts')
+
     <script>
         const video = document.getElementById("myVideo");
         const section = document.getElementById("canal");
@@ -79,18 +80,8 @@
         video.addEventListener("mouseleave", () => {
             video.controls = false;
         });
-        video.addEventListener("click", () => {
-            if (video.paused) {
-                video.play();
-            } else {
-                video.pause();
-            }
-        });
-        const enableSound = () => {
-            video.muted = false; // Desactiva el mute
-            video.play(); // Reproduce el video
-            console.log("Sonido habilitado");
-        };
+
+
         const isSectionVisible = () => {
             const rect = section.getBoundingClientRect();
             return rect.bottom >= 0 && rect.top <= window.innerHeight;
@@ -98,16 +89,11 @@
 
         const handleScroll = () => {
             if (isSectionVisible()) {
-                console.log("Video is visible");
                 video.play(); // Reproduce el video
             } else {
-                console.log("Video is not visible");
                 video.pause(); // Pausa el video
             }
         };
         window.addEventListener("scroll", handleScroll);
-        document.addEventListener("click", enableSound, {
-            once: true
-        });
     </script>
 @endsection

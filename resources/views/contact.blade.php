@@ -26,7 +26,7 @@
 
 @section('content')
     <div class="content">
-        <div class="contentImage"  style="background-image: url('{{ asset('assets/img/home/contact.webp') }}');">
+        <div class="contentImage" style="background-image: url('{{ asset('assets/img/home/fondoss.jpg') }}');">
             <div class="contentText">
                 <p>Contacta a Grupo Llyrod</p>
             </div>
@@ -46,14 +46,14 @@
                     </div>
 
                 </div>
-               
+
 
             </div>
             <div class="contactForm">
                 <div class="container">
                     <form id="formulario-contacto" action="{{ route('contactPost') }}" method="POST">
                         @csrf
-                        <label for="nombre" >Nombre:</label>
+                        <label for="nombre">Nombre:</label>
                         <input type="text" id="nombre" name="nombre" required>
 
                         <label for="correo">Correo electrónico:</label>
@@ -68,30 +68,21 @@
             </div>
         </div>
     </div>
-
-
 @endsection
 
 @section('scripts')
-    <script src="{{ asset('js/contact.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-<script>
-    let success = '{{ session('success') }}';
-    if (success) {
-        Swal.fire({
-            title: '<b style="font-size: 35px"> ¡Gracias! </b>',
-            html: '<b style="font-size: 20px">El correo fue enviado correctamente.</b>',
-            icon: 'success',
-            confirmButtonText: 'Aceptar'
-        });
-    }
-st
-</script>
-
+    <script>
+        let success = '{{ session('success') }}';
+        if (success) {
+            Swal.fire({
+                title: '<b style="font-size: 35px"> ¡Gracias! </b>',
+                html: '<b style="font-size: 20px">El correo fue enviado correctamente.</b>',
+                icon: 'success',
+                confirmButtonText: 'Aceptar'
+            });
+        }
+        st
+    </script>
 @endsection
-
-
-
-

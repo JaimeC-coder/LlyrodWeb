@@ -169,15 +169,15 @@ class PageController extends Controller
         $pageTitle = "Llyrod | Nuestros Trabajos";
         $metaData = [
             'robots' => 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
-            'title' => 'Grupo Llyrod | Nuestro Trabajo | Consultoría en Minería , Transformación Digital y Auditoria de la Calidad',
+            'title' => 'Grupo Llyrod | Nuestro Trabajo | Consultoría en Minería | Transformación Digital | Auditoria de la Calidad',
             'description' => 'Conoce los proyectos destacados de Grupo Llyrod en minería, transformación digital y auditoria de la calidad. Nuestra experiencia en gestión de proyectos se refleja en resultados exitosos para nuestros clientes.',
-            'keywords' => 'Proyectos de Minería, Consultoría en Transformación Digital, Gestión de Proyectos, Due Diligence, Casos de Éxito, Consultoría Empresarial, Consultoría en Minería, Consultoría en Transformación Digital , Auditoria de la Calidad',
+            'keywords' => 'Grupo Llyrod ,Proyectos de Minería, Consultoría en Transformación Digital, Gestión de Proyectos, Due Diligence, Casos de Éxito, Consultoría Empresarial, Consultoría en Minería, Consultoría en Transformación Digital , Auditoria de la Calidad',
             'image' => 'https://grupollyrod.com/assets/img/proyectos/proyecto_mineria.webp',
             'url' => url('nuestroTrabajo'),
             'type' => 'website',
             'locale' => 'es_PE',
             'site_name' => 'Grupo Llyrod',
-            'author' => 'Grupo Llyrod',
+            'author' => 'GrupoLlyrod',
             'twitter' => [
                 [
                     'type' => 'card',
@@ -193,7 +193,7 @@ class PageController extends Controller
                 ],
                 [
                     'type' => 'title',
-                    'content' => 'Grupo Llyrod | Nuestro Trabajo | Consultoría en Minería , Transformación Digital y Auditoria de la Calidad'
+                    'content' => 'Grupo Llyrod | Nuestro Trabajo | Consultoría en Minería | Transformación Digital | Auditoria de la Calidad',
                 ],
                 [
                     'type' => 'description',
@@ -207,7 +207,7 @@ class PageController extends Controller
             'og' => [
                 [
                     'type' => 'title',
-                    'content' => 'Grupo Llyrod | Nuestro Trabajo | Consultoría en Minería , Transformación Digital y Auditoria de la Calidad'
+                    'content' => 'Grupo Llyrod | Nuestro Trabajo | Consultoría en Minería | Transformación Digital | Auditoria de la Calidad',
                 ],
                 [
                     'type' => 'description',
