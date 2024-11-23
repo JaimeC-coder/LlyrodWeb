@@ -33,36 +33,77 @@
         </div>
         <div class="contentInformation">
             <div class="contactinfo">
-                <div class="titulo">
-                    <p> Información de contacto</p>
-                </div>
-                <div class="information">
+                <h4>¿Cómo te podríamos ayudar?</h4>
+                <p>Llena los campos para contactarnos contigo
 
-                    <div class="info">
-                        <p><i class="fa-solid fa-phone-volume fa-lg"></i> +51 922 856 403</p>
-                    </div>
-                    <div class="info">
-                        <p><i class="fa-solid fa-envelope-circle-check fa-lg"></i> administracion@grupollyrod.com
-                    </div>
-
-                </div>
-
-
+                </p>
             </div>
+
             <div class="contactForm">
                 <div class="container">
                     <form id="formulario-contacto" action="{{ route('contactPost') }}" method="POST">
+                        <strong>*Todos los campos son obligatorios</strong>
+
+
+                        <label for="checkedInteresado">Interesado o Interesada en:</label>
+
+                        <div class="radiobuton">
+                            <input type="radio" id="checkedInteresado" name="checkedInteresado" required>
+                            <label for="checkedInteresado">Solicitar un servicio</label>
+                        </div>
+                        <div class="radiobuton">
+                            <input type="radio" id="checkedInteresado" name="checkedInteresado" required>
+                            <label for="checkedInteresado">Recursos Humanos</label>
+                        </div>
+                        <div class="radiobuton">
+                            <input type="radio" id="checkedInteresado" name="checkedInteresado" required>
+                            <label for="checkedInteresado">Consulta en medios</label>
+                        </div>
+                        <div class="radiobuton">
+                            <input type="radio" id="checkedInteresado" name="checkedInteresado" required>
+                            <label for="checkedInteresado">Alianzas</label>
+                        </div>
+                        <div class="radiobuton">
+                            <input type="radio" id="checkedInteresado" name="checkedInteresado" required>
+                            <label for="checkedInteresado">Otros</label>
+                        </div>
+
                         @csrf
                         <label for="nombre">Nombre:</label>
                         <input type="text" id="nombre" name="nombre" required>
 
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                        <label for="compania">Compañia:</label>
+                        <input type="text" id="compania" name="compania" required>
+                        <label for="cargo">Cargo:</label>
+                        <input type="text" id="cargo" name="cargo" required>
+
+
                         <label for="correo">Correo electrónico:</label>
                         <input type="email" id="correo" name="correo" required>
+
+                        <label for="telefono">Telefono:</label>
+                        <input type="text" id="telefono" name="telefono" required>
 
                         <label for="mensaje">Mensaje:</label>
                         <textarea id="mensaje" name="mensaje" required></textarea>
 
-                        <button type="submit">Enviar</button>
+                        <label for="checkedInformacion">Acepto recibir información de Grupo Llyrod</label>
+
+                        <div class="radiobuton">
+                            <input type="radio" id="checkedInformacion" name="checkedInformacion" required>
+                            <label for="checkedInformacion"> Si</label>
+                        </div>
+                        <div class="radiobuton">
+                            <input type="radio" id="checkedInformacion" name="checkedInformacion" required>
+                            <label for="checkedInformacion"> No</label>
+                        </div>
+
+
+
+
+                        <button type="submit">Enviar mensaje <i class="fa-solid fa-arrow-right"></i></button>
                     </form>
                 </div>
             </div>
