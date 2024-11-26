@@ -26,7 +26,7 @@
 
 @section('content')
     <div class="content">
-        <div class="contentImage" style="background-image: url('{{ asset('assets/img/home/fondoss.jpg') }}');">
+        <div class="contentImage" style="background-image: url('{{ asset('assets/img/home/contact.webp') }}');">
             <div class="contentText">
                 <p>Contacta a Grupo Llyrod</p>
             </div>
