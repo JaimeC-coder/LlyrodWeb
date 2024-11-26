@@ -21,11 +21,12 @@
     overflow: hidden;
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-size: cover;
     background-position: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, .1);
+    flex-direction: row;
     border-top: 25px solid #fff
 }
 

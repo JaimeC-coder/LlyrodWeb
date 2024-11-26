@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="language" content="es">
-    <meta name="google-site-verification" content="60Pg4zZYWbV44IxV6rLUJfUL9gea8Wr8leNK_ms4n5U" />
+    <meta name="google-site-verification" content="BMB3Uvk8wA9WB25L8_-kTa7eY5XiYLDX_f8NgZFlxao" />
     @yield('meta')
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
