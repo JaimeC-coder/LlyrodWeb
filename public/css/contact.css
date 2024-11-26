@@ -199,7 +199,7 @@ input[type="radio"]:checked::after {
 
 @media (max-width:800px) {
     .content .contentInformation {
-        height: 75vh
+        height: auto
     }
 
     .content .contentInformation .contactinfo {

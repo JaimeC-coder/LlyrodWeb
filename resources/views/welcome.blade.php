@@ -96,4 +96,8 @@
         };
         window.addEventListener("scroll", handleScroll);
     </script>
+    <script>
+           var copy = document.querySelector("#clientsCard").cloneNode(true);
+           document.querySelector("#cardClients").appendChild(copy);
+    </script>
 @endsection

@@ -142,7 +142,7 @@
     </div>
 
     <div class="photosContainer">
-        <section class="photoSection" id="due_diligence">
+        <section class="photoSection" id="tecnologia">
             <div class="photoContainer">
                 <img class="photo" src="{{ asset('assets/industrial/tranformacionDigital/titulo.webp') }}" loading="lazy"
                     alt="Transformación digital & IA">

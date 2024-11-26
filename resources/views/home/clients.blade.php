@@ -6,38 +6,17 @@
                 <h2>
                     Nuestros socios
                 </h2>
-<span></span>
             </div>
             <p class="description">
                 “Evolucionamos juntos, trabajando en equipo, fortaleciendo nuestras
                 <br>capacidades y creando valor a cada paso”
             </p>
 
-            <div class="cardGrid">
-
-                <div class="cardGrid">
-
-                    @foreach ($cliens as $client)
-                        <div class="card">
-                            <div class="media">
-                                <img src="{{ $client['imagen'] }}" alt="{{ $client['nombre'] }}" />
-                            </div>
-                            <div class="mediaMobil">
-                                <img src="{{ $client['imagenResponsive'] }}" alt="{{ $client['nombre'] }}" />
-                            </div>
-
-                        </div>
-                    @endforeach
-                    @foreach ($cliens as $client) <!-- Duplicado para efecto de carrusel continuo -->
-                        <div class="card">
-                            <div class="media">
-                                <img src="{{ $client['imagen'] }}" alt="{{ $client['nombre'] }}" />
-                            </div>
-                            <div class="mediaMobil">
-                                <img src="{{ $client['imagenResponsive'] }}" alt="{{ $client['nombre'] }}" />
-                            </div>
-
-                        </div>
+            <div class="cardGrid" id="cardClients">
+              <div  class="card" id="clientsCard" style="--count: {{ count($cliens) }};">
+                @foreach ($cliens as $client)
+                <img src="{{ $client['imagen'] }}" alt="{{ $client['nombre'] }}" />
+            
                     @endforeach
                 </div>
 

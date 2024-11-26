@@ -42,33 +42,34 @@
             <div class="contactForm">
                 <div class="container">
                     <form id="formulario-contacto" action="{{ route('contactPost') }}" method="POST">
+
+                        @csrf
                         <strong>*Todos los campos son obligatorios</strong>
 
 
                         <label for="checkedInteresado">Interesado o Interesada en:</label>
 
                         <div class="radiobuton">
-                            <input type="radio" id="checkedInteresado" name="checkedInteresado" required>
+                            <input type="radio" id="checkedInteresado" name="checkedInteresado" value="Solicitar un servicio" required>
                             <label for="checkedInteresado">Solicitar un servicio</label>
                         </div>
                         <div class="radiobuton">
-                            <input type="radio" id="checkedInteresado" name="checkedInteresado" required>
+                            <input type="radio" id="checkedInteresado" name="checkedInteresado" value="Recursos Humanos" required>
                             <label for="checkedInteresado">Recursos Humanos</label>
                         </div>
                         <div class="radiobuton">
-                            <input type="radio" id="checkedInteresado" name="checkedInteresado" required>
+                            <input type="radio" id="checkedInteresado" name="checkedInteresado" value="Consulta en medios" required>
                             <label for="checkedInteresado">Consulta en medios</label>
                         </div>
                         <div class="radiobuton">
-                            <input type="radio" id="checkedInteresado" name="checkedInteresado" required>
+                            <input type="radio" id="checkedInteresado" name="checkedInteresado" value="Alianzas" required>
                             <label for="checkedInteresado">Alianzas</label>
                         </div>
                         <div class="radiobuton">
-                            <input type="radio" id="checkedInteresado" name="checkedInteresado" required>
+                            <input type="radio" id="checkedInteresado" name="checkedInteresado" value="Otros" required>
                             <label for="checkedInteresado">Otros</label>
                         </div>
 
-                        @csrf
                         <label for="nombre">Nombre:</label>
                         <input type="text" id="nombre" name="nombre" required>
 
@@ -92,15 +93,13 @@
                         <label for="checkedInformacion">Acepto recibir información de Grupo Llyrod</label>
 
                         <div class="radiobuton">
-                            <input type="radio" id="checkedInformacion" name="checkedInformacion" required>
+                            <input type="radio" id="checkedInformacion" name="checkedInformacion" value="Si" required>
                             <label for="checkedInformacion"> Si</label>
                         </div>
                         <div class="radiobuton">
-                            <input type="radio" id="checkedInformacion" name="checkedInformacion" required>
+                            <input type="radio" id="checkedInformacion" name="checkedInformacion" value="No" required>
                             <label for="checkedInformacion"> No</label>
                         </div>
-
-
 
 
                         <button type="submit">Enviar mensaje <i class="fa-solid fa-arrow-right"></i></button>

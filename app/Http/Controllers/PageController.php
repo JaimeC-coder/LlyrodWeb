@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\informacion;
+use GuzzleHttp\Promise\Create;
 use Illuminate\Http\Request;
 
 
@@ -543,19 +545,48 @@ class PageController extends Controller
 
         try {
 
+            $interesado = $request->checkedInteresado;
+            $apellido = $request->apellido;
+            $compania = $request->compania;
+            $cargo = $request->cargo;
             $email = $request->correo;
+            $telefono = $request->telefono;
             $name = $request->nombre;
             $message = $request->mensaje;
-            $emailOuput = "administracion@grupollyrod.com";
-            $header = "From: noreply@grupollyrod.com" . "\r\n";
-            $header .= "Reply-To: noreply@grupollyrod.com" . "\r\n";
-            $header .= "X-Mailer: PHP/" . phpversion() . "\r\n";
-            $header .= "MIME-Version: 1.0" . "\r\n";
-            $header .= "Content-Type: text/html; charset=UTF-8" . "\r\n";
+            $checkedInformacion = $request->checkedInformacion;
 
-            $message = "El usuario $name con el correo $email ha enviado el siguiente mensaje: <br> $message";
+            $informacacion = informacion::create([
+                'interesado' => $interesado,
+                'name' => $name,
+                'apellido' => $apellido,
+                'compania' => $compania,
+                'cargo' => $cargo,
+                'email' => $email,
+                'telefono' => $telefono,
+                'message' => $message,
+                'checkedInformacion' => $checkedInformacion
+            ]);
+            if ($informacacion) {
+                $emailOuput = "administracion@grupollyrod.com";
+                $header = "From: noreply@grupollyrod.com" . "\r\n";
+                $header .= "Reply-To: noreply@grupollyrod.com" . "\r\n";
+                $header .= "X-Mailer: PHP/" . phpversion() . "\r\n";
+                $header .= "MIME-Version: 1.0" . "\r\n";
+                $header .= "Content-Type: text/html; charset=UTF-8" . "\r\n";
 
-            $mail = mail($emailOuput, "Contacto desde la web", $message, $header);
+                $message = "
+                El usuario $name  $apellido tiene el siguiente interés: $interesado <br>
+                es de la empresa $compania <br>
+                con el cargo de $cargo <br>
+                tiene el número de teléfono $telefono <br>
+                y recibir información adicional: $checkedInformacion <br>
+                 con el correo $email ha enviado el siguiente mensaje: <br> $message";
+
+                $mail = mail($emailOuput, "Contacto desde la web", $message, $header);
+            } else {
+                return redirect('contactanos')->with('success', "Error al enviar el correo");
+            }
+
 
             if ($mail) {
                 return redirect('contactanos')->with('success', "Correo enviado correctamente");
