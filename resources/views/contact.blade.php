@@ -59,10 +59,6 @@
                             <label for="checkedInteresado">Recursos Humanos</label>
                         </div>
                         <div class="radiobuton">
-                            <input type="radio" id="checkedInteresado" name="checkedInteresado" value="Consulta en medios" required>
-                            <label for="checkedInteresado">Consulta en medios</label>
-                        </div>
-                        <div class="radiobuton">
                             <input type="radio" id="checkedInteresado" name="checkedInteresado" value="Alianzas" required>
                             <label for="checkedInteresado">Alianzas</label>
                         </div>
